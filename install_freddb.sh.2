@@ -1,14 +1,16 @@
 #!/bin/bash
+#set -e
+##########################################################################
+#set -euo pipefail
+#trap 'echo "❌ Error en la línea $LINENO. Saliendo..."; exit 1' ERR
 # Recupera la ruta actual del scrupit en ejecucion
+
 SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 
 GUM_FILE="$SCRIPT_DIR/install_gum.sh"
 UTILS_FILE="$SCRIPT_DIR/utils.sh"
 FRED_FILE="$SCRIPT_DIR/freddb.sh"
 PACKAGES_FILE="$SCRIPT_DIR/fred.packages"
-
-
-#Check mandatory files
 
 if [ ! -f "$GUM_FILE" ]; then
     echo "❌ El archivo $GUM_FILE no existe."
@@ -26,7 +28,8 @@ source "$SCRIPT_DIR/install_gum.sh"
 source "$SCRIPT_DIR/utils.sh"
 source "$SCRIPT_DIR/freddb.sh"
 
-gum spin --spinner dot --title "Running some checks..." -- sleep 3
+echo "Running some checks..."
+
 
 #Checking root permissions
 if [ "$EUID" -ne 0 ]; then
@@ -52,12 +55,13 @@ if [ ! -f "$PACKAGES_FILE" ]; then
     exit 1
 fi
 
-gum spin --spinner dot --title "Checks Ok..." -- sleep 2
 clear
 gum spin --spinner dot --title "Internet conection...Ok" -- sleep 2
 gum spin --spinner dot --title "FRED internet repositories...Ok" -- sleep 2
 gum spin --spinner dot --title "Root permissions...Ok" -- sleep 2
 gum spin --spinner dot --title "Packages...Ok" -- sleep 2
+
+####echo "$(timestamp) ✅ ete" | tee -a "$LOG_FILE_NAME"
 
 
 mapfile -t packages < <(grep -v '^#' "$SCRIPT_DIR/fred.packages" | grep -v '^$')
@@ -95,16 +99,14 @@ gum spin --spinner dot --title "Please wait..." -- sleep 3
 #7. FRED DB CREATION AND MIGRATIONS
 
 continue(){
-   gum spin --spinner dot --title "Installing FRED..." -- sleep 5
    gum log --structured --level debug "Creating file..." name file.txt  
-   gum spin --spinner dot --title "1...." -- sleep 5
+   gum spin --spinner dot --title "Buying Bubble Gum..." -- sleep 5
 
 
 }
 
 gum format -- "# Instalation steps" "1. Configure repositorios Keyring" "2. Add repositories" "3. Setting up CZ PIN" "4. Setting up Postfix"  "5. Installing up PostgreSQL" "6. Installing FRED DB package" "7. FRED DB CREATION AND MIGRATIONS"
 
-gum format -- "# ================="
 gum confirm && continue || echo "No"
 #echo 'Continue ?:hand:' | gum format -t emoji
 exit 0 

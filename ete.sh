@@ -1,2 +1,2 @@
-clear
+yasdf
 echo "teee"

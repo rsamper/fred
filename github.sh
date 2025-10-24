@@ -57,25 +57,25 @@ if [ "$1" == "rsamper" ]; then
 fi
 
 if [ "$3" == "clone" ]; then
-    echo "✅ OK: El primer argumento es igual a clone."
-    echo "git $git_action $git_connection"
+    git "$git_action $git_connection"
     git $git_action $git_connection
+    echo "✅ OK: Operacion exitosa -> clone"
     exit 0
 fi
 
-
 if [ "$3" == "pull" ]; then
-    echo "✅ OK: El primer argumento es igual a pull."
     echo "git $git_action $git_connection"
     git pull $git_connection
+    echo "✅ OK: Operacion exitosa -> pull"
     exit 0
 fi
 
 if [ "$3" == "push" ]; then
-    echo "✅ OK: El primer argumento es igual a push."
+    echo "git push $git_connection"
     git add .
     git commit -m $4
     git push  $git_connection
+    echo "✅ OK: Operacion exitosa -> push"
     exit 0
 fi
 

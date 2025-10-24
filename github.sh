@@ -34,14 +34,9 @@ git_action="$3"
 commit_message="$4"
 
 
-#echo "✅ OK: Argumentos validados correctamente."
-#echo "Argumento 1 cuenta: $account"
-#echo "Argumento 2 repo: $repo"
-#echo "Argumento 3 action: $git_action"
-#echo "Argumento 4 commit: $commit_message"
 
 if [ "$1" == "nic" ]; then
-    echo "✅ OK: El primer argumento es igual a NIC."
+    #echo "✅ OK: El primer argumento es igual a NIC."
     git_token=$GIT_TOKEN_NIC
     git_account="rsamper"
     git_connection="https://$GIT_TOKEN_NIC@github.com/$GIT_ACCOUNT_NIC/$repo.git"  
@@ -49,7 +44,6 @@ if [ "$1" == "nic" ]; then
 fi
 
 if [ "$1" == "rsamper" ]; then
-    echo "✅ OK: El primer argumento es igual a rsamper."
     git_token=$GIT_TOKEN_SAMPER
     git_account="rsamper"
     git_connection="https://$GIT_TOKEN_SAMPER@github.com/$GIT_ACCOUNT_SAMPER/$repo.git"  
@@ -65,7 +59,7 @@ fi
 
 if [ "$3" == "pull" ]; then
     echo "git $git_action $git_connection"
-    git pull $git_connection
+    git pull $git_connection > /dev/null
     echo "✅ OK: Operacion exitosa -> pull"
     exit 0
 fi

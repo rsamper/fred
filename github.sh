@@ -68,7 +68,7 @@ if [ "$3" == "push" ]; then
     echo "git push $git_connection"
     git add .
     git commit -m $4
-    git push  $git_connection
+    git push  $git_connection > /dev/null
     echo "✅ OK: Operacion exitosa -> push"
     exit 0
 fi

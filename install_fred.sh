@@ -52,14 +52,28 @@ PRE_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/pre.packages"
 
 
 #Check mandatory files
+
+init_files(){
+  print_message  "Check mandatory files..."
+  check_file "$UTILS_FILE"  
+  check_file "$PRE_FILE"  
+  check_file "$DB_FILE" 
+  check_file "$PRE_PACKAGES_FILE" 
+  check_file "$DB_PACKAGES_FILE" 
+  print_message  "Mandatory files: Ok"
+}
+
+init_os(){
+  print_message  "Check mandatory OS..."
+  #check_os
+  #check_root
+  print_message  "OS: Ok"
+}
 init(){
-    check_file "$UTILS_FILE"  
-    check_file "$PRE_FILE" 
-    check_file "$DB_FILE" 
-    check_file "$PRE_PACKAGES_FILE" 
-    check_file "$DB_PACKAGES_FILE" 
-    check_os
-    check_root
+  print_message  "Initialazing..."  
+  init_files
+  init_os
+  print_message  "Init complete: Ok"
 }
 
 source "$UTILS_FILE"
@@ -97,10 +111,9 @@ select_package(){
 # Main function
 main() {
    clear 
-   print_message "Script running"
-   #echo "Parámetro recibido: $1"    
-   #get_packages $DB_PACKAGES_FILE
+   print_message  "Script running"
    init
+   pause
    select_package $1
    #
 }
@@ -109,7 +122,17 @@ main() {
 main "$@"
 
 
+
+
+
+
+
 ##########################################################################
+
+   #echo "Parámetro recibido: $1"    
+   #get_packages $DB_PACKAGES_FILE
+
+
 #if [ ! -f "$GUM_FILE" ]; then
 #    echo "❌ El archivo $GUM_FILE no existe."
 #    echo "End exit code 1"

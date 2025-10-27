@@ -1,54 +1,225 @@
-[2025-10-15 17:19:46] - Incluyendo pre.sh
-[2025-10-15 17:19:46] - Script running
-[2025-10-15 17:19:46] - Verificando versión del sistema operativo...
-[2025-10-15 17:19:46] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
-[2025-10-15 17:19:46] - ✅ Root user OK.
-[2025-10-15 17:19:46] - Ejecutando pre.sh
-[2025-10-15 17:19:46] - Instalando pre requisitos
-[2025-10-15 17:19:46] - 1.Setting CZ Keyring
-[2025-10-15 17:19:46] - Ejecutando mkdir -p /usr/share/keyrings/
-[2025-10-15 17:19:46] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
-[2025-10-15 17:19:46] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-15 17:19:47] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-15 17:19:47] - ✅ OK: 1.Setting CZ Keyring
-[2025-10-15 17:19:47] - 2.Adding CZ Source list
-[2025-10-15 17:19:47] - ✅ Fuente agregada correctamente.
-[2025-10-15 17:19:47] - ✅ OK: 2.Adding CZ Source list
-[2025-10-15 17:19:47] - 3.Setting CZ PIN file
-[2025-10-15 17:19:47] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-15 17:19:48] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-15 17:19:48] - ✅ OK: 3.Setting CZ PIN file
-[2025-10-15 17:19:48] - 4.Update souces
-[2025-10-15 17:19:48] - Ejecutando apt update
-[2025-10-15 17:19:50] - ✅ OK: El comando se ejecutó correctamente: apt update
-[2025-10-15 17:19:50] - ✅ OK: 4.Update sources
-[2025-10-15 17:19:50] - Instalando ca-certificates  curl  gnupg  lsb-release postfix
-[2025-10-15 17:19:50] - Verificando paquetes: ca-certificates curl gnupg lsb-release postfix
-[2025-10-15 17:19:50] - 🔍 Verificando estado de los paquetes solicitados...
-[2025-10-15 17:19:50] - 🔍 Verificando estado de los paquetes solicitados...
-[2025-10-15 17:19:50] - ✅ El paquete 'ca-certificates' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'ca-certificates' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'curl' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'curl' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'gnupg' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'gnupg' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'lsb-release' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'lsb-release' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'postfix' ya está instalado.
-[2025-10-15 17:19:50] - ✅ El paquete 'postfix' ya está instalado.
-[2025-10-15 17:19:50] - 👍 No hay paquetes nuevos para instalar.
-[2025-10-15 17:19:50] - 👍 No hay paquetes nuevos para instalar.
-[2025-10-15 17:19:50] - ----------------------------------------------------
-[2025-10-15 17:19:50] - 📊 Resumen final:
-[2025-10-15 17:19:50] - 📊 Resumen final:
-[2025-10-15 17:19:50] - ✅ Instalados en esta ejecución: 0
-[2025-10-15 17:19:50] - ✅ Instalados en esta ejecución: 0
-[2025-10-15 17:19:50] - ❌ Fallidos: 0
-[2025-10-15 17:19:50] - ❌ Fallidos: 0
-[2025-10-15 17:19:50] - ℹ️ Ya estaban instalados: 5
-[2025-10-15 17:19:50] - ℹ️ Ya estaban instalados: 5
-[2025-10-15 17:19:50] - 📝 Revisa 'install.log' para más detalles.
-[2025-10-15 17:19:50] - 📝 Revisa 'install.log' para más detalles.
-[2025-10-15 17:19:52] - ✅ OK: PRE Requisitos instalados exitosamente
-[2025-10-15 17:19:52] - ✅ OK: Requisitos instalados exitosamente
-[2025-10-15 17:19:52] - Instalando base de datos
+[2025-10-27 15:22:18] - Incluyendo pre.sh
+[2025-10-27 15:22:18] - Script running
+[2025-10-27 15:22:40] - Incluyendo pre.sh
+[2025-10-27 15:22:40] - Script running
+[2025-10-27 15:25:35] - Incluyendo pre.sh
+[2025-10-27 15:25:35] - Script running
+[2025-10-27 15:25:35] - Check mandatory files
+[2025-10-27 15:25:35] - Verificando versión del sistema operativo...
+[2025-10-27 15:25:35] - ❌ Sistema operativo no compatible: Ubuntu 24.04.2 LTS
+[2025-10-27 15:25:35] - Solo se admite Ubuntu 20.04 o Debian 10.
+[2025-10-27 15:26:06] - Incluyendo pre.sh
+[2025-10-27 15:26:06] - Script running
+[2025-10-27 15:26:06] - Check mandatory files
+[2025-10-27 15:26:06] - Verificando versión del sistema operativo...
+[2025-10-27 15:26:06] - ❌ Sistema operativo no compatible: Ubuntu 24.04.2 LTS
+[2025-10-27 15:26:06] - Solo se admite Ubuntu 20.04 o Debian 10.
+[2025-10-27 15:26:08] - Incluyendo pre.sh
+[2025-10-27 15:26:08] - Script running
+[2025-10-27 15:26:08] - Check mandatory files
+[2025-10-27 15:26:08] - Verificando versión del sistema operativo...
+[2025-10-27 15:26:08] - ❌ Sistema operativo no compatible: Ubuntu 24.04.2 LTS
+[2025-10-27 15:26:08] - Solo se admite Ubuntu 20.04 o Debian 10.
+[2025-10-27 15:26:12] - Incluyendo pre.sh
+[2025-10-27 15:26:12] - Script running
+[2025-10-27 15:26:12] - Check mandatory files
+[2025-10-27 15:26:12] - Verificando versión del sistema operativo...
+[2025-10-27 15:26:12] - ❌ Sistema operativo no compatible: Ubuntu 24.04.2 LTS
+[2025-10-27 15:26:12] - Solo se admite Ubuntu 20.04 o Debian 10.
+[2025-10-27 15:26:23] - Incluyendo pre.sh
+[2025-10-27 15:26:23] - Script running
+[2025-10-27 15:26:23] - Check mandatory files
+[2025-10-27 15:26:23] - Check mandatory files...Ok
+[2025-10-27 15:26:52] - Incluyendo pre.sh
+[2025-10-27 15:26:52] - Script running
+[2025-10-27 15:26:52] - Check mandatory files...
+[2025-10-27 15:26:52] - Mandatory files: Ok
+[2025-10-27 15:29:50] - Incluyendo pre.sh
+[2025-10-27 15:29:50] - Script running
+[2025-10-27 15:29:50] - Check mandatory files...
+[2025-10-27 15:29:50] - Mandatory files: Ok
+[2025-10-27 15:29:50] - Check mandatory OS...
+[2025-10-27 15:29:50] - Verificando versión del sistema operativo...
+[2025-10-27 15:29:50] - ❌ Sistema operativo no compatible: Ubuntu 24.04.2 LTS
+[2025-10-27 15:29:50] - Solo se admite Ubuntu 20.04 o Debian 10.
+[2025-10-27 15:30:11] - Incluyendo pre.sh
+[2025-10-27 15:30:11] - Script running
+[2025-10-27 15:30:11] - Check mandatory files...
+[2025-10-27 15:30:11] - Mandatory files: Ok
+[2025-10-27 15:30:11] - Check mandatory OS...
+[2025-10-27 15:30:11] - ❌ Please run installation as root.
+[2025-10-27 15:30:21] - Incluyendo pre.sh
+[2025-10-27 15:30:21] - Script running
+[2025-10-27 15:30:21] - Check mandatory files...
+[2025-10-27 15:30:21] - Mandatory files: Ok
+[2025-10-27 15:30:21] - Check mandatory OS...
+[2025-10-27 15:30:21] - OS: Ok
+[2025-10-27 15:31:09] - Incluyendo pre.sh
+[2025-10-27 15:31:09] - Script running
+[2025-10-27 15:31:09] - Check mandatory files...
+[2025-10-27 15:31:09] - Mandatory files: Ok
+[2025-10-27 15:31:09] - Check mandatory OS...
+[2025-10-27 15:31:09] - OS: Ok
+[2025-10-27 15:31:09] - Init complete: Ok
+[2025-10-27 15:31:48] - Incluyendo pre.sh
+[2025-10-27 15:31:48] - Script running
+[2025-10-27 15:31:48] - Initialazing...
+[2025-10-27 15:31:48] - Check mandatory files...
+[2025-10-27 15:31:48] - Mandatory files: Ok
+[2025-10-27 15:31:48] - Check mandatory OS...
+[2025-10-27 15:31:48] - OS: Ok
+[2025-10-27 15:31:48] - Init complete: Ok
+[2025-10-27 15:32:26] - Incluyendo pre.sh
+[2025-10-27 15:32:26] - Script running
+[2025-10-27 15:32:26] - Initialazing...
+[2025-10-27 15:32:26] - Check mandatory files...
+[2025-10-27 15:32:26] - Mandatory files: Ok
+[2025-10-27 15:32:26] - Check mandatory OS...
+[2025-10-27 15:32:26] - OS: Ok
+[2025-10-27 15:32:26] - Init complete: Ok
+[2025-10-27 15:32:35] - Incluyendo pre.sh
+[2025-10-27 15:32:35] - Script running
+[2025-10-27 15:32:35] - Initialazing...
+[2025-10-27 15:32:35] - Check mandatory files...
+[2025-10-27 15:32:35] - Mandatory files: Ok
+[2025-10-27 15:32:35] - Check mandatory OS...
+[2025-10-27 15:32:35] - OS: Ok
+[2025-10-27 15:32:35] - Init complete: Ok
+[2025-10-27 15:32:38] - Incluyendo pre.sh
+[2025-10-27 15:32:38] - Script running
+[2025-10-27 15:32:38] - Initialazing...
+[2025-10-27 15:32:38] - Check mandatory files...
+[2025-10-27 15:32:38] - Mandatory files: Ok
+[2025-10-27 15:32:38] - Check mandatory OS...
+[2025-10-27 15:32:38] - OS: Ok
+[2025-10-27 15:32:38] - Init complete: Ok
+[2025-10-27 15:33:52] - Incluyendo pre.sh
+[2025-10-27 15:33:52] - Script running
+[2025-10-27 15:33:52] - Initialazing...
+[2025-10-27 15:33:52] - Check mandatory files...
+[2025-10-27 15:33:52] - Mandatory files: Ok
+[2025-10-27 15:33:52] - Check mandatory OS...
+[2025-10-27 15:33:52] - OS: Ok
+[2025-10-27 15:33:52] - Init complete: Ok
+[2025-10-27 15:34:36] - Incluyendo pre.sh
+[2025-10-27 15:34:36] - Script running
+[2025-10-27 15:34:36] - Initialazing...
+[2025-10-27 15:34:36] - Check mandatory files...
+[2025-10-27 15:34:36] - Mandatory files: Ok
+[2025-10-27 15:34:36] - Check mandatory OS...
+[2025-10-27 15:34:36] - OS: Ok
+[2025-10-27 15:34:36] - Init complete: Ok
+[2025-10-27 15:34:39] - Ejecutando pre.sh
+[2025-10-27 15:34:39] - Instalando pre requisitos
+[2025-10-27 15:39:39] - Incluyendo pre.sh
+[2025-10-27 15:39:39] - Script running
+[2025-10-27 15:39:39] - Initialazing...
+[2025-10-27 15:39:39] - Check mandatory files...
+[2025-10-27 15:39:39] - Mandatory files: Ok
+[2025-10-27 15:39:39] - Check mandatory OS...
+[2025-10-27 15:39:39] - OS: Ok
+[2025-10-27 15:39:39] - Init complete: Ok
+[2025-10-27 15:39:41] - Ejecutando pre.sh
+[2025-10-27 15:39:41] - Instalando pre requisitos
+[2025-10-27 15:39:41] - La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+[2025-10-27 15:39:41] - 1/4.  Configurar Keyring para los repositorios FRED
+[2025-10-27 15:39:41] - 2/4.  Agregar repositorios apt
+[2025-10-27 15:39:41] - 3/4.  Configurar archivo pin para descargar los paquetes correctos 
+[2025-10-27 15:39:41] - 4/5.  Actualizar repos FRED
+[2025-10-27 15:39:41] - 5/5.  Instalar paquetes necesarios
+[2025-10-27 15:41:35] - Incluyendo pre.sh
+[2025-10-27 15:41:35] - Script running
+[2025-10-27 15:41:35] - Initialazing...
+[2025-10-27 15:41:35] - Check mandatory files...
+[2025-10-27 15:41:35] - Mandatory files: Ok
+[2025-10-27 15:41:35] - Check mandatory OS...
+[2025-10-27 15:41:35] - OS: Ok
+[2025-10-27 15:41:35] - Init complete: Ok
+[2025-10-27 15:41:36] - Ejecutando pre.sh
+[2025-10-27 15:41:36] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/4.  Configurar Keyring para los repositorios FRED
+2/4.  Agregar repositorios apt
+3/4.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios
+[2025-10-27 15:41:45] - Incluyendo pre.sh
+[2025-10-27 15:41:45] - Script running
+[2025-10-27 15:41:45] - Initialazing...
+[2025-10-27 15:41:45] - Check mandatory files...
+[2025-10-27 15:41:45] - Mandatory files: Ok
+[2025-10-27 15:41:45] - Check mandatory OS...
+[2025-10-27 15:41:45] - OS: Ok
+[2025-10-27 15:41:45] - Init complete: Ok
+[2025-10-27 15:41:48] - Ejecutando pre.sh
+[2025-10-27 15:41:48] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/4.  Configurar Keyring para los repositorios FRED
+2/4.  Agregar repositorios apt
+3/4.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios
+[2025-10-27 15:44:44] - Incluyendo pre.sh
+[2025-10-27 15:44:44] - Script running
+[2025-10-27 15:44:44] - Initialazing...
+[2025-10-27 15:44:44] - Check mandatory files...
+[2025-10-27 15:44:44] - Mandatory files: Ok
+[2025-10-27 15:44:44] - Check mandatory OS...
+[2025-10-27 15:44:44] - OS: Ok
+[2025-10-27 15:44:44] - Init complete: Ok
+[2025-10-27 15:44:56] - Ejecutando pre.sh
+[2025-10-27 15:44:56] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/4.  Configurar Keyring para los repositorios FRED
+2/4.  Agregar repositorios apt
+3/4.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios
+[2025-10-27 15:45:19] - Incluyendo pre.sh
+[2025-10-27 15:45:19] - Script running
+[2025-10-27 15:45:19] - Initialazing...
+[2025-10-27 15:45:19] - Check mandatory files...
+[2025-10-27 15:45:19] - Mandatory files: Ok
+[2025-10-27 15:45:19] - Check mandatory OS...
+[2025-10-27 15:45:19] - OS: Ok
+[2025-10-27 15:45:19] - Init complete: Ok
+[2025-10-27 15:45:22] - Ejecutando pre.sh
+[2025-10-27 15:45:22] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/4.  Configurar Keyring para los repositorios FRED
+2/4.  Agregar repositorios apt
+3/4.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios
+[2025-10-27 15:46:18] - Incluyendo pre.sh
+[2025-10-27 15:46:19] - Script running
+[2025-10-27 15:46:19] - Initialazing...
+[2025-10-27 15:46:19] - Check mandatory files...
+[2025-10-27 15:46:19] - Mandatory files: Ok
+[2025-10-27 15:46:19] - Check mandatory OS...
+[2025-10-27 15:46:19] - OS: Ok
+[2025-10-27 15:46:19] - Init complete: Ok
+[2025-10-27 15:46:21] - Ejecutando pre.sh
+[2025-10-27 15:46:21] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/4.  Configurar Keyring para los repositorios FRED
+2/4.  Agregar repositorios apt
+3/4.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios
+[2025-10-27 15:46:46] - Incluyendo pre.sh
+[2025-10-27 15:46:46] - Script running
+[2025-10-27 15:46:46] - Initialazing...
+[2025-10-27 15:46:46] - Check mandatory files...
+[2025-10-27 15:46:46] - Mandatory files: Ok
+[2025-10-27 15:46:46] - Check mandatory OS...
+[2025-10-27 15:46:46] - OS: Ok
+[2025-10-27 15:46:46] - Init complete: Ok
+[2025-10-27 15:46:49] - Ejecutando pre.sh
+[2025-10-27 15:46:49] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/4.  Configurar Keyring para los repositorios FRED
+2/4.  Agregar repositorios apt
+3/4.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED

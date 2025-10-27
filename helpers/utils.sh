@@ -9,12 +9,52 @@ timestamp() {
  date +"[%Y-%m-%d %H:%M:%S]"
 }
 
+pause(){
+  sleep 1
+  # Pausa hasta que el usuario presione una tecla
+  read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
+  echo
+  #echo "Continuando la ejecución..."
 
-print_message(){
-   local text="$*"
-   echo "$(timestamp) - $text" | tee -a "$log_file"
 }
 
+print_message(){
+   local show=true
+   local text="$*"
+   #echo "$(timestamp) - $text" | tee -a "$log_file"
+   # Si el primer parámetro es "--quiet", no mostrar en pantalla
+    if [[ "$1" == "--quiet" ]]; then
+        show=false
+        shift  # remueve --quiet, de modo que el primer parametro sera el texto
+    fi
+    text="$*"
+    if $show; then
+        # Muestra en pantalla y guarda en log
+        echo "$(timestamp) - $text" | tee -a "$log_file"
+    else
+        # Solo guarda en log
+        echo "$(timestamp) - $text" >> "$log_file"
+    fi
+}
+
+print_notime(){
+   local show=true
+   local text="$*"
+   #echo "$(timestamp) - $text" | tee -a "$log_file"
+   # Si el primer parámetro es "--quiet", no mostrar en pantalla
+    if [[ "$1" == "--quiet" ]]; then
+        show=false
+        shift  # remueve --quiet, de modo que el primer parametro sera el texto
+    fi
+    text="$*"
+    if $show; then
+        # Muestra en pantalla y guarda en log
+        echo "$text" | tee -a "$log_file"
+    else
+        # Solo guarda en log
+        echo "$text" >> "$log_file"
+    fi
+}
 
 print_step() {
   local titulo="$1"

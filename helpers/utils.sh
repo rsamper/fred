@@ -1,0 +1,151 @@
+#!/bin/bash
+# Script: util.sh
+# Description: Funciones generales utiles
+# Author: Ricardo Samper rsamper@nic.cr
+# Date: 2025-10-10
+
+# Timestamp para logs
+timestamp() {
+ date +"[%Y-%m-%d %H:%M:%S]"
+}
+
+
+print_message(){
+   local text="$*"
+   echo "$(timestamp) - $text" | tee -a "$log_file"
+}
+
+
+print_step() {
+  local titulo="$1"
+  local longitud=${#titulo}
+  echo -e "\033[1;36m$titulo\033[0m"
+  printf '\033[1;36m%*s\033[0m\n' "$longitud" '' | tr ' ' '='
+}
+
+print_title(){
+  local text="$*"
+   width=$(tput cols)
+   padding=$(( (width - ${#text}) / 2 ))
+   printf "%${padding}s%s%${padding}s\n" "" "$text" ""
+}
+
+check_file(){
+  if [ ! -f "$*" ]; then
+    print_message "❌ El archivo $* no existe"
+    print_message "End exit code 1"
+    exit 1
+fi
+}
+
+check_root(){
+  if [ "$EUID" -ne 0 ]
+   then print_message "❌ Please run installation as root."
+   exit 1
+  fi
+  print_message "✅ Root user OK."
+}
+
+# --- Verificar versión del sistema operativo ---
+check_os() {
+  print_message "Verificando versión del sistema operativo..."
+
+  if [ -f /etc/os-release ]; then
+    # Cargar variables del archivo /etc/os-release
+    . /etc/os-release
+
+    OS_ID="${ID:-unknown}"
+    OS_VERSION="${VERSION_ID:-unknown}"
+
+    if { [ "$OS_ID" = "ubuntu" ] && [ "$OS_VERSION" = "20.04" ]; } || \
+       { [ "$OS_ID" = "debian" ] && [ "$OS_VERSION" = "10" ]; }; then
+      print_message "✅ Sistema operativo compatible: $PRETTY_NAME"
+    else
+      print_message "❌ Sistema operativo no compatible: $PRETTY_NAME"
+      print_message "Solo se admite Ubuntu 20.04 o Debian 10."
+      exit 1
+    fi
+  else
+    print_message "❌ No se pudo determinar el sistema operativo (no existe /etc/os-release)."
+    exit 1
+  fi
+}
+
+
+install() {
+  # Inicializamos los contadores como variables locales para que se reinicien en cada llamada
+  local ok=0
+  local fail=0
+  local ya_instalado=0
+
+  # Arrays para gestionar los paquetes
+  local paquetes_solicitados=("$@")
+  local paquetes_a_instalar=()
+  local default_paquetes=("htop" "curl" "wget")
+  
+  # Si no se pasan argumentos, usar la lista por defecto
+  if [ ${#paquetes_solicitados[@]} -eq 0 ]; then
+    paquetes_solicitados=("${default_paquetes[@]}")
+    print_message "ℹ️ No se especificaron paquetes. Usando la lista por defecto: ${paquetes_solicitados[*]}"
+    exit 1
+  fi
+
+  print_message "Verificando paquetes: ${paquetes_solicitados[*]}"
+  print_message "🔍 Verificando estado de los paquetes solicitados..." | tee -a "$log_file"
+
+  # 1. PRIMER BUCLE: VERIFICAR QUÉ NECESITA SER INSTALADO
+  for paquete in "${paquetes_solicitados[@]}"; do
+    if dpkg -s "$paquete" >/dev/null 2>&1; then
+      print_message "✅ El paquete '$paquete' ya está instalado." | tee -a "$log_file"
+      ((ya_instalado++))
+    else
+      print_message "📝 El paquete '$paquete' se instalará." | tee -a "$log_file"
+      paquetes_a_instalar+=("$paquete")
+    fi
+  done
+ 
+  # 2. INSTALACIÓN EN LOTE (SI ES NECESARIO)
+  if [ ${#paquetes_a_instalar[@]} -gt 0 ]; then
+    print_message "📦 Iniciando instalación de: ${paquetes_a_instalar[*]}" | tee -a "$log_file"
+    # La redirección correcta para capturar salida y error es "2>&1"
+    if salida=$(sudo apt install -y "${paquetes_a_instalar[@]}" 2>&1); then
+      print_message "✅ Todos los paquetes nuevos fueron instalados correctamente." | tee -a "$log_file"
+      ok=${#paquetes_a_instalar[@]} # Todos los que intentamos, se instalaron
+    else
+      print_message "❌ Ocurrió un error durante la instalación." | tee -a "$log_file"
+      # Guardamos el log del error
+      echo "$salida" | sed "s/^/$(timestamp) ERROR: /" | tee -a "$log_file"
+      print_message  "Fin con error .....$salida" 
+     exit 1
+ 
+      # Esta parte es una estimación. APT falla como un todo, por lo que marcamos todos como fallidos.
+      fail=${#paquetes_a_instalar[@]} 
+    fi
+  else
+    print_message "👍 No hay paquetes nuevos para instalar." | tee -a "$log_file"
+  fi
+
+  # 3. RESUMEN FINAL
+  print_message "----------------------------------------------------"
+  print_message "📊 Resumen final:" | tee -a "$log_file"
+  print_message "✅ Instalados en esta ejecución: $ok" | tee -a "$log_file"
+  print_message "❌ Fallidos: $fail" | tee -a "$log_file"
+  print_message "ℹ️ Ya estaban instalados: $ya_instalado" | tee -a "$log_file"
+  print_message "📝 Revisa '$log_file' para más detalles." | tee -a "$log_file"
+  sleep 2
+}
+
+
+exec_command() {
+    local cmd="$*"
+    # Ejecuta el comando y captura salida y código de error
+    print_message "Ejecutando $cmd"
+    output=$(eval "$cmd" 2>&1)
+    local status=$?
+    if [ $status -ne 0 ]; then
+        print_message "❌ ERROR: Falló el comando: $cmd  - error: $output"
+        exit 1
+    fi
+    print_message "✅ OK: El comando se ejecutó correctamente: $cmd"
+    
+}

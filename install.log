@@ -1,0 +1,54 @@
+[2025-10-15 17:19:46] - Incluyendo pre.sh
+[2025-10-15 17:19:46] - Script running
+[2025-10-15 17:19:46] - Verificando versión del sistema operativo...
+[2025-10-15 17:19:46] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2025-10-15 17:19:46] - ✅ Root user OK.
+[2025-10-15 17:19:46] - Ejecutando pre.sh
+[2025-10-15 17:19:46] - Instalando pre requisitos
+[2025-10-15 17:19:46] - 1.Setting CZ Keyring
+[2025-10-15 17:19:46] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-15 17:19:46] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-15 17:19:46] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-15 17:19:47] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-15 17:19:47] - ✅ OK: 1.Setting CZ Keyring
+[2025-10-15 17:19:47] - 2.Adding CZ Source list
+[2025-10-15 17:19:47] - ✅ Fuente agregada correctamente.
+[2025-10-15 17:19:47] - ✅ OK: 2.Adding CZ Source list
+[2025-10-15 17:19:47] - 3.Setting CZ PIN file
+[2025-10-15 17:19:47] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-15 17:19:48] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-15 17:19:48] - ✅ OK: 3.Setting CZ PIN file
+[2025-10-15 17:19:48] - 4.Update souces
+[2025-10-15 17:19:48] - Ejecutando apt update
+[2025-10-15 17:19:50] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2025-10-15 17:19:50] - ✅ OK: 4.Update sources
+[2025-10-15 17:19:50] - Instalando ca-certificates  curl  gnupg  lsb-release postfix
+[2025-10-15 17:19:50] - Verificando paquetes: ca-certificates curl gnupg lsb-release postfix
+[2025-10-15 17:19:50] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-15 17:19:50] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-15 17:19:50] - ✅ El paquete 'ca-certificates' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'ca-certificates' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'curl' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'curl' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'gnupg' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'gnupg' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'lsb-release' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'lsb-release' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-15 17:19:50] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-15 17:19:50] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-15 17:19:50] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-15 17:19:50] - ----------------------------------------------------
+[2025-10-15 17:19:50] - 📊 Resumen final:
+[2025-10-15 17:19:50] - 📊 Resumen final:
+[2025-10-15 17:19:50] - ✅ Instalados en esta ejecución: 0
+[2025-10-15 17:19:50] - ✅ Instalados en esta ejecución: 0
+[2025-10-15 17:19:50] - ❌ Fallidos: 0
+[2025-10-15 17:19:50] - ❌ Fallidos: 0
+[2025-10-15 17:19:50] - ℹ️ Ya estaban instalados: 5
+[2025-10-15 17:19:50] - ℹ️ Ya estaban instalados: 5
+[2025-10-15 17:19:50] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-15 17:19:50] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-15 17:19:52] - ✅ OK: PRE Requisitos instalados exitosamente
+[2025-10-15 17:19:52] - ✅ OK: Requisitos instalados exitosamente
+[2025-10-15 17:19:52] - Instalando base de datos

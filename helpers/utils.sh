@@ -18,42 +18,30 @@ pause(){
 
 }
 
-print_message(){
-   local show=true
+print_log_message(){
    local text="$*"
-   #echo "$(timestamp) - $text" | tee -a "$log_file"
    # Si el primer parámetro es "--quiet", no mostrar en pantalla
-    if [[ "$1" == "--quiet" ]]; then
-        show=false
-        shift  # remueve --quiet, de modo que el primer parametro sera el texto
-    fi
-    text="$*"
-    if $show; then
-        # Muestra en pantalla y guarda en log
-        echo "$(timestamp) - $text" | tee -a "$log_file"
-    else
+   if $QUIET_MODE; then
         # Solo guarda en log
         echo "$(timestamp) - $text" >> "$log_file"
+        
+    else
+        # Muestra en pantalla y guarda en log
+        echo "$(timestamp) - $text" | tee -a "$log_file"
     fi
 }
 
-print_notime(){
-   local show=true
+print_message(){
    local text="$*"
-   #echo "$(timestamp) - $text" | tee -a "$log_file"
-   # Si el primer parámetro es "--quiet", no mostrar en pantalla
-    if [[ "$1" == "--quiet" ]]; then
-        show=false
-        shift  # remueve --quiet, de modo que el primer parametro sera el texto
-    fi
-    text="$*"
-    if $show; then
-        # Muestra en pantalla y guarda en log
-        echo "$text" | tee -a "$log_file"
-    else
-        # Solo guarda en log
-        echo "$text" >> "$log_file"
-    fi
+    # Muestra en pantalla y guarda en log
+    echo "$(timestamp) - $text" | tee -a "$log_file"
+}
+
+print_notime(){
+  local text="$*"
+  # Si el primer parámetro es "--quiet", no mostrar en pantalla
+  # Muestra en pantalla y guarda en log
+  echo "$text" | tee -a "$log_file"
 }
 
 print_step() {
@@ -72,23 +60,23 @@ print_title(){
 
 check_file(){
   if [ ! -f "$*" ]; then
-    print_message "❌ El archivo $* no existe"
-    print_message "End exit code 1"
+    print_log_message "❌ El archivo $* no existe"
+    print_log_message "End exit code 1"
     exit 1
 fi
 }
 
 check_root(){
   if [ "$EUID" -ne 0 ]
-   then print_message "❌ Please run installation as root."
+   then print_log_message "❌ Please run installation as root."
    exit 1
   fi
-  print_message "✅ Root user OK."
+  print_log_message "✅ Root user OK."
 }
 
 # --- Verificar versión del sistema operativo ---
 check_os() {
-  print_message "Verificando versión del sistema operativo..."
+  print_log_message "Verificando versión del sistema operativo..."
 
   if [ -f /etc/os-release ]; then
     # Cargar variables del archivo /etc/os-release
@@ -99,14 +87,14 @@ check_os() {
 
     if { [ "$OS_ID" = "ubuntu" ] && [ "$OS_VERSION" = "20.04" ]; } || \
        { [ "$OS_ID" = "debian" ] && [ "$OS_VERSION" = "10" ]; }; then
-      print_message "✅ Sistema operativo compatible: $PRETTY_NAME"
+      print_log_message "✅ Sistema operativo compatible: $PRETTY_NAME"
     else
-      print_message "❌ Sistema operativo no compatible: $PRETTY_NAME"
-      print_message "Solo se admite Ubuntu 20.04 o Debian 10."
+      print_log_message "❌ Sistema operativo no compatible: $PRETTY_NAME"
+      print_log_message "Solo se admite Ubuntu 20.04 o Debian 10."
       exit 1
     fi
   else
-    print_message "❌ No se pudo determinar el sistema operativo (no existe /etc/os-release)."
+    print_log_message "❌ No se pudo determinar el sistema operativo (no existe /etc/os-release)."
     exit 1
   fi
 }
@@ -126,52 +114,52 @@ install() {
   # Si no se pasan argumentos, usar la lista por defecto
   if [ ${#paquetes_solicitados[@]} -eq 0 ]; then
     paquetes_solicitados=("${default_paquetes[@]}")
-    print_message "ℹ️ No se especificaron paquetes. Usando la lista por defecto: ${paquetes_solicitados[*]}"
+    print_log_message "ℹ️ No se especificaron paquetes. Usando la lista por defecto: ${paquetes_solicitados[*]}"
     exit 1
   fi
 
-  print_message "Verificando paquetes: ${paquetes_solicitados[*]}"
-  print_message "🔍 Verificando estado de los paquetes solicitados..." | tee -a "$log_file"
+  print_log_message "Verificando paquetes: ${paquetes_solicitados[*]}"
+  print_log_message "🔍 Verificando estado de los paquetes solicitados..." | tee -a "$log_file"
 
   # 1. PRIMER BUCLE: VERIFICAR QUÉ NECESITA SER INSTALADO
   for paquete in "${paquetes_solicitados[@]}"; do
     if dpkg -s "$paquete" >/dev/null 2>&1; then
-      print_message "✅ El paquete '$paquete' ya está instalado." | tee -a "$log_file"
+      print_log_message "✅ El paquete '$paquete' ya está instalado." | tee -a "$log_file"
       ((ya_instalado++))
     else
-      print_message "📝 El paquete '$paquete' se instalará." | tee -a "$log_file"
+      print_log_message "📝 El paquete '$paquete' se instalará." | tee -a "$log_file"
       paquetes_a_instalar+=("$paquete")
     fi
   done
  
   # 2. INSTALACIÓN EN LOTE (SI ES NECESARIO)
   if [ ${#paquetes_a_instalar[@]} -gt 0 ]; then
-    print_message "📦 Iniciando instalación de: ${paquetes_a_instalar[*]}" | tee -a "$log_file"
+    print_log_message "📦 Iniciando instalación de: ${paquetes_a_instalar[*]}" | tee -a "$log_file"
     # La redirección correcta para capturar salida y error es "2>&1"
     if salida=$(sudo apt install -y "${paquetes_a_instalar[@]}" 2>&1); then
-      print_message "✅ Todos los paquetes nuevos fueron instalados correctamente." | tee -a "$log_file"
+      print_log_message "✅ Todos los paquetes nuevos fueron instalados correctamente." | tee -a "$log_file"
       ok=${#paquetes_a_instalar[@]} # Todos los que intentamos, se instalaron
     else
-      print_message "❌ Ocurrió un error durante la instalación." | tee -a "$log_file"
+      print_log_message "❌ Ocurrió un error durante la instalación." | tee -a "$log_file"
       # Guardamos el log del error
       echo "$salida" | sed "s/^/$(timestamp) ERROR: /" | tee -a "$log_file"
-      print_message  "Fin con error .....$salida" 
+      print_log_message  "Fin con error .....$salida" 
      exit 1
  
       # Esta parte es una estimación. APT falla como un todo, por lo que marcamos todos como fallidos.
       fail=${#paquetes_a_instalar[@]} 
     fi
   else
-    print_message "👍 No hay paquetes nuevos para instalar." | tee -a "$log_file"
+    print_log_message "👍 No hay paquetes nuevos para instalar." | tee -a "$log_file"
   fi
 
   # 3. RESUMEN FINAL
-  print_message "----------------------------------------------------"
-  print_message "📊 Resumen final:" | tee -a "$log_file"
-  print_message "✅ Instalados en esta ejecución: $ok" | tee -a "$log_file"
-  print_message "❌ Fallidos: $fail" | tee -a "$log_file"
-  print_message "ℹ️ Ya estaban instalados: $ya_instalado" | tee -a "$log_file"
-  print_message "📝 Revisa '$log_file' para más detalles." | tee -a "$log_file"
+  print_log_message "----------------------------------------------------"
+  print_log_message "📊 Resumen final:" | tee -a "$log_file"
+  print_log_message "✅ Instalados en esta ejecución: $ok" | tee -a "$log_file"
+  print_log_message "❌ Fallidos: $fail" | tee -a "$log_file"
+  print_log_message "ℹ️ Ya estaban instalados: $ya_instalado" | tee -a "$log_file"
+  print_log_message "📝 Revisa '$log_file' para más detalles." | tee -a "$log_file"
   sleep 2
 }
 
@@ -179,13 +167,38 @@ install() {
 exec_command() {
     local cmd="$*"
     # Ejecuta el comando y captura salida y código de error
-    print_message "Ejecutando $cmd"
+    print_log_message "Ejecutando $cmd"
     output=$(eval "$cmd" 2>&1)
     local status=$?
     if [ $status -ne 0 ]; then
-        print_message "❌ ERROR: Falló el comando: $cmd  - error: $output"
+        QUIET_MODE=false
+        print_log_message "❌ ERROR: Falló el comando: $cmd  - error: $output"
         exit 1
     fi
-    print_message "✅ OK: El comando se ejecutó correctamente: $cmd"
+    print_log_message "✅ OK: El comando se ejecutó correctamente: $cmd"
     
 }
+
+
+
+
+################################33
+
+#print_log_message(){
+#   local show=true
+#   local text="$*"
+#   #echo "$(timestamp) - $text" | tee -a "$log_file"
+#   # Si el primer parámetro es "--quiet", no mostrar en pantalla
+#    if [[ "$1" == "--quiet" ]]; then
+#        show=false
+#        shift  # remueve --quiet, de modo que el primer parametro sera el texto
+#    fi
+#    text="$*"
+#    if $show; then
+#        # Muestra en pantalla y guarda en log
+#        echo "$(timestamp) - $text" | tee -a "$log_file"
+#    else
+#        # Solo guarda en log
+#        echo "$(timestamp) - $text" >> "$log_file"
+#    fi
+#}

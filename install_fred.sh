@@ -9,14 +9,25 @@
 
 # recupera la ruta desde donde se ejecuta el script
 SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+QUIET_MODE=false
 
-# Valida entrada ya que debe traer parametros
+while [[ "$1" == "--quiet" ]]; do
+    QUIET_MODE=true
+    shift # Remueve el primer parámetro (que es "--quiet")
+done
+
+# 2. Validar Parámetros Posicionales (obligatorios)
+
+# Ahora, $# contiene la cuenta SÓLO de los parámetros posicionales restantes.
 if [ "$#" -lt 1 ]; then
-    echo "Error: Debe proporcionar al menos un parámetro" >&2 # Mostrar el error en stderr
-    echo "Para metros validos: db core client omni" >&2 # Mostrar el error en stderr
-    echo "Ejemplo instalar base de datos:  bash instalar_fred db" >&2 # Mostrar el error en stderr
-    exit 1 # Salir con un código de error
+    echo "Error: Debe proporcionar al menos un parámetro." >&2
+    echo "Parámetros válidos: db, core, client, omni" >&2
+    echo "Ejemplo: bash instalar_fred.sh db" >&2
+    echo "Ejemplo silencioso: bash instalar_fred.sh --quiet db" >&2
+    exit 1
 fi
+
+
 # Si se llega a esta parte, significa que se pasó al menos un parámetro.
 
 ############# root
@@ -145,3 +156,21 @@ main "$@"
 #    echo "End exit code 1"
 #    exit 1
 #fi
+
+
+
+
+# Valida entrada ya que debe traer parametros
+#if [ "$#" -lt 1 ]; then
+#    echo "Error: Debe proporcionar al menos un parámetro" >&2 # Mostrar el error en stderr
+#    echo "Para metros validos: db core client omni" >&2 # Mostrar el error en stderr
+#    echo "Ejemplo instalar base de datos:  bash instalar_fred db" >&2 # Mostrar el error en stderr
+#    exit 1 # Salir con un código de error
+#fi
+
+#for arg in "$@"; do
+#    if [[ "$arg" == "--quiet" ]]; then
+#        QUIET_MODE=true
+#        break # No necesitamos seguir revisando
+#    fi
+#done

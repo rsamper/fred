@@ -30,9 +30,11 @@ deb [signed-by=/usr/share/keyrings/cznic-archive-keyring.gpg] http://archive.nic
 EOT
 fi
 if grep -q "http://archive.nic.cz/public" /etc/apt/sources.list.d/fred.list; then
-  print_message "✅ Fuente agregada correctamente."
+  print_log_message "✅ Fuente agregada correctamente."
 else
-  print_message "❌ No se encontró la línea en fred.list."
+  QUIET_MODE=false
+  print_log_message "❌ No se encontró la línea en fred.list."
+  exit 1
 fi
 print_message "✅ OK: 2/5.Adding CZ Source list"
 }
@@ -49,7 +51,7 @@ set_pin(){
 apt_update(){
  # Setp 4
  # Update sources
-  print_message "4-%.Update souces"
+  print_message "4/5. Update sources"
   exec_command  apt update
   print_message "✅ OK: 4/5.Update sources"
 }
@@ -59,18 +61,19 @@ set_postfix(){
   debconf-set-selections <<< "postfix postfix/main_mailer_type string Internet Site"
 }
 install_packages(){
-  print_message "5/5. Instalando ${packages[@]}" 
+  
   mapfile -t packages < <(grep -v '^#' "$*" | grep -v '^$')
-  install ${packages[@]}
+  print_message "5/5. Instalando: ${packages[@]}" 
+  #install ${packages[@]}
   print_message "✅ OK: 5/5 Pre Requisitos  ${packages[@]} instalados exitosamente"  
 }
 
 print_info_pre(){
   clear
   print_notime "La instalacion de pre requisitos FRED se ejecuta en 5 pasos"  
-  print_notime "1/4.  Configurar Keyring para los repositorios FRED"  
-  print_notime "2/4.  Agregar repositorios apt"  
-  print_notime "3/4.  Configurar archivo pin para descargar los paquetes correctos "  
+  print_notime "1/5.  Configurar Keyring para los repositorios FRED"  
+  print_notime "2/5.  Agregar repositorios apt"  
+  print_notime "3/5.  Configurar archivo pin para descargar los paquetes correctos "  
   print_notime "4/5.  Actualizar repos FRED"  
   print_notime "5/5.  Instalar paquetes necesarios FRED"
   pause
@@ -80,14 +83,14 @@ install_pre(){
   print_message "Instalando pre requisitos" 
   print_info_pre
  
-  exit 0
   set_keyring
   add_source_list
   set_pin
-  set_postfix
+  set_postfix  
   apt_update
   install_packages $PRE_PACKAGES_FILE
-  print_message "✅ OK: Requisitos instalados exitosamente"  
+  print_message "✅ OK: Requisitos instalados exitosamente" 
+  pause 
 }
 
 

@@ -1,140 +1,459 @@
-[2025-10-28 20:53:01] - Incluyendo pre.sh
-[2025-10-28 20:53:02] - Script running
-[2025-10-28 20:53:02] - Initialazing...
-[2025-10-28 20:53:02] - Check mandatory files...
-[2025-10-28 20:53:02] - Mandatory files: Ok
-[2025-10-28 20:53:02] - Check mandatory OS...
-[2025-10-28 20:53:02] - OS: Ok
-[2025-10-28 20:53:02] - Init complete: Ok
-[2025-10-28 20:53:04] - Ejecutando pre.sh
-[2025-10-28 20:53:04] - Instalando pre requisitos
+[2025-10-31 00:15:25] - Incluyendo pre.sh
+[2025-10-31 00:15:25] - Script running
+[2025-10-31 00:15:25] - Initialazing...
+[2025-10-31 00:15:25] - Check mandatory files...
+[2025-10-31 00:15:25] - Mandatory files: Ok
+[2025-10-31 00:15:25] - Check mandatory OS...
+[2025-10-31 00:15:25] - OS: Ok
+[2025-10-31 00:15:25] - Init complete: Ok
+[2025-10-31 00:15:28] - Ejecutando pre.sh
+[2025-10-31 00:15:28] - Instalando pre requisitos
 La instalacion de pre requisitos FRED se ejecuta en 5 pasos
 1/5.  Configurar Keyring para los repositorios FRED
 2/5.  Agregar repositorios apt
 3/5.  Configurar archivo pin para descargar los paquetes correctos 
 4/5.  Actualizar repos FRED
 5/5.  Instalar paquetes necesarios FRED
-[2025-10-28 20:53:05] - 1/5.Setting CZ Keyring
-[2025-10-28 20:53:05] - Ejecutando mkdir -p /usr/share/keyrings/
-[2025-10-28 20:53:05] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
-[2025-10-28 20:53:05] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 20:53:09] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 20:53:09] - ✅ OK: 1/5.Setting CZ Keyring
-[2025-10-28 20:53:09] - 2/5.Adding CZ Source list
-[2025-10-28 20:53:09] - ✅ Fuente agregada correctamente.
-[2025-10-28 20:53:09] - ✅ OK: 2/5.Adding CZ Source list
-[2025-10-28 20:53:09] - 3/5.Setting CZ PIN file
-[2025-10-28 20:53:09] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 20:53:12] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 20:53:12] - ✅ OK: 3/5.Setting CZ PIN file
-[2025-10-28 20:53:12] - 4/5. Update sources
-[2025-10-28 20:53:12] - Ejecutando apt update
-[2025-10-28 20:53:24] - ✅ OK: El comando se ejecutó correctamente: apt update
-[2025-10-28 20:53:24] - ✅ OK: 4/5.Update sources
-[2025-10-28 20:58:07] - Incluyendo pre.sh
-[2025-10-28 20:58:07] - Script running
-[2025-10-28 20:58:07] - Initialazing...
-[2025-10-28 20:58:07] - Check mandatory files...
-[2025-10-28 20:58:07] - Mandatory files: Ok
-[2025-10-28 20:58:07] - Check mandatory OS...
-[2025-10-28 20:58:07] - OS: Ok
-[2025-10-28 20:58:07] - Init complete: Ok
-[2025-10-28 20:58:10] - Ejecutando pre.sh
-[2025-10-28 20:58:10] - Instalando pre requisitos
+[2025-10-31 00:15:30] - 1/5.Setting CZ Keyring
+[2025-10-31 00:15:30] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:15:30] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:15:30] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:15:32] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:15:32] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:15:32] - 2/5.Adding CZ Source list
+[2025-10-31 00:15:32] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:15:32] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:15:32] - 3/5.Setting CZ PIN file
+[2025-10-31 00:15:32] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:15:33] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:15:33] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:15:33] - 4/5. Update sources
+[2025-10-31 00:15:33] - Ejecutando apt update
+[2025-10-31 00:15:47] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2025-10-31 00:15:47] - ✅ OK: 4/5.Update sources
+[2025-10-31 00:15:47] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
+[2025-10-31 00:15:47] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
+[2025-10-31 00:15:47] - ✅ OK: Requisitos instalados exitosamente
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+[2025-10-31 00:15:54] - 5/5. Instalando: postfix postgresql  postgresql-contrib fred-db
+[2025-10-31 00:15:54] - Verificando paquetes: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:15:54] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:15:54] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:15:54] - 📝 El paquete 'postfix' se instalará.
+[2025-10-31 00:15:54] - 📝 El paquete 'postfix' se instalará.
+[2025-10-31 00:15:54] - 📝 El paquete 'postgresql' se instalará.
+[2025-10-31 00:15:54] - 📝 El paquete 'postgresql' se instalará.
+[2025-10-31 00:15:54] - 📝 El paquete 'postgresql-contrib' se instalará.
+[2025-10-31 00:15:54] - 📝 El paquete 'postgresql-contrib' se instalará.
+[2025-10-31 00:15:54] - 📝 El paquete 'fred-db' se instalará.
+[2025-10-31 00:15:54] - 📝 El paquete 'fred-db' se instalará.
+[2025-10-31 00:15:54] - 📦 Iniciando instalación de: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:15:54] - 📦 Iniciando instalación de: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:16:48] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2025-10-31 00:16:48] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2025-10-31 00:16:48] - ----------------------------------------------------
+[2025-10-31 00:16:48] - 📊 Resumen final:
+[2025-10-31 00:16:48] - 📊 Resumen final:
+[2025-10-31 00:16:48] - ✅ Instalados en esta ejecución: 4
+[2025-10-31 00:16:48] - ✅ Instalados en esta ejecución: 4
+[2025-10-31 00:16:48] - ❌ Fallidos: 0
+[2025-10-31 00:16:48] - ❌ Fallidos: 0
+[2025-10-31 00:16:48] - ℹ️ Ya estaban instalados: 0
+[2025-10-31 00:16:48] - ℹ️ Ya estaban instalados: 0
+[2025-10-31 00:16:48] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:16:48] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:16:50] - ✅ OK: 3/3 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente
+[2025-10-31 00:16:50] - Creando la base de datos fred-dbmanager install
+[2025-10-31 00:16:50] - Ejecutando su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:17:05] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:17:05] - ✅ OK: Base de datos creada
+[2025-10-31 00:17:05] - ✅ OK: Base de datos instalada y creada correctamente
+[2025-10-31 00:17:05] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2025-10-31 00:17:53] - Incluyendo pre.sh
+[2025-10-31 00:17:53] - Script running
+[2025-10-31 00:17:53] - Initialazing...
+[2025-10-31 00:17:53] - Check mandatory files...
+[2025-10-31 00:17:53] - Mandatory files: Ok
+[2025-10-31 00:17:53] - Check mandatory OS...
+[2025-10-31 00:17:53] - OS: Ok
+[2025-10-31 00:17:53] - Init complete: Ok
+[2025-10-31 00:17:56] - Ejecutando pre.sh
+[2025-10-31 00:17:56] - Instalando pre requisitos
 La instalacion de pre requisitos FRED se ejecuta en 5 pasos
 1/5.  Configurar Keyring para los repositorios FRED
 2/5.  Agregar repositorios apt
 3/5.  Configurar archivo pin para descargar los paquetes correctos 
 4/5.  Actualizar repos FRED
 5/5.  Instalar paquetes necesarios FRED
-[2025-10-28 20:58:12] - 1/5.Setting CZ Keyring
-[2025-10-28 20:58:12] - Ejecutando mkdir -p /usr/share/keyrings/
-[2025-10-28 20:58:12] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
-[2025-10-28 20:58:12] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 20:58:16] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 20:58:16] - ✅ OK: 1/5.Setting CZ Keyring
-[2025-10-28 20:58:16] - 2/5.Adding CZ Source list
-[2025-10-28 20:58:16] - ✅ Fuente agregada correctamente.
-[2025-10-28 20:58:16] - ✅ OK: 2/5.Adding CZ Source list
-[2025-10-28 20:58:16] - 3/5.Setting CZ PIN file
-[2025-10-28 20:58:16] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 20:58:19] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 20:58:19] - ✅ OK: 3/5.Setting CZ PIN file
-[2025-10-28 20:58:19] - 4/5. Update sources
-[2025-10-28 20:58:19] - Ejecutando apt update
-[2025-10-28 20:58:31] - ✅ OK: El comando se ejecutó correctamente: apt update
-[2025-10-28 20:58:31] - ✅ OK: 4/5.Update sources
-[2025-10-28 20:58:31] - 5/5. Instalando ca-certificates  curl  gnupg  lsb-release postfix
-[2025-10-28 20:58:31] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
-[2025-10-28 20:59:47] - Incluyendo pre.sh
-[2025-10-28 20:59:47] - Script running
-[2025-10-28 20:59:47] - Initialazing...
-[2025-10-28 20:59:47] - Check mandatory files...
-[2025-10-28 20:59:47] - Mandatory files: Ok
-[2025-10-28 20:59:47] - Check mandatory OS...
-[2025-10-28 20:59:47] - OS: Ok
-[2025-10-28 20:59:47] - Init complete: Ok
-[2025-10-28 20:59:50] - Ejecutando pre.sh
-[2025-10-28 20:59:50] - Instalando pre requisitos
+[2025-10-31 00:18:05] - 1/5.Setting CZ Keyring
+[2025-10-31 00:18:05] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:18:05] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:18:05] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:18:06] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:18:06] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:18:06] - 2/5.Adding CZ Source list
+[2025-10-31 00:18:06] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:18:06] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:18:06] - 3/5.Setting CZ PIN file
+[2025-10-31 00:18:06] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:18:07] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:18:07] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:18:07] - 4/5. Update sources
+[2025-10-31 00:18:07] - Ejecutando apt update
+[2025-10-31 00:20:53] - Incluyendo pre.sh
+[2025-10-31 00:20:53] - Script running
+[2025-10-31 00:20:53] - Initialazing...
+[2025-10-31 00:20:53] - Check mandatory files...
+[2025-10-31 00:20:53] - Mandatory files: Ok
+[2025-10-31 00:20:53] - Check mandatory OS...
+[2025-10-31 00:20:53] - OS: Ok
+[2025-10-31 00:20:53] - Init complete: Ok
+[2025-10-31 00:20:56] - Ejecutando pre.sh
+[2025-10-31 00:20:56] - Instalando pre requisitos
 La instalacion de pre requisitos FRED se ejecuta en 5 pasos
 1/5.  Configurar Keyring para los repositorios FRED
 2/5.  Agregar repositorios apt
 3/5.  Configurar archivo pin para descargar los paquetes correctos 
 4/5.  Actualizar repos FRED
 5/5.  Instalar paquetes necesarios FRED
-[2025-10-28 20:59:52] - 1/5.Setting CZ Keyring
-[2025-10-28 20:59:52] - Ejecutando mkdir -p /usr/share/keyrings/
-[2025-10-28 20:59:52] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
-[2025-10-28 20:59:52] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 20:59:56] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 20:59:56] - ✅ OK: 1/5.Setting CZ Keyring
-[2025-10-28 20:59:56] - 2/5.Adding CZ Source list
-[2025-10-28 20:59:56] - ✅ Fuente agregada correctamente.
-[2025-10-28 20:59:56] - ✅ OK: 2/5.Adding CZ Source list
-[2025-10-28 20:59:56] - 3/5.Setting CZ PIN file
-[2025-10-28 20:59:56] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 20:59:59] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 20:59:59] - ✅ OK: 3/5.Setting CZ PIN file
-[2025-10-28 20:59:59] - 4/5. Update sources
-[2025-10-28 20:59:59] - Ejecutando apt update
-[2025-10-28 21:00:11] - ✅ OK: El comando se ejecutó correctamente: apt update
-[2025-10-28 21:00:11] - ✅ OK: 4/5.Update sources
-[2025-10-28 21:00:11] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
-[2025-10-28 21:00:11] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
-[2025-10-28 21:00:57] - Incluyendo pre.sh
-[2025-10-28 21:00:57] - Script running
-[2025-10-28 21:00:57] - Initialazing...
-[2025-10-28 21:00:57] - Check mandatory files...
-[2025-10-28 21:00:57] - Mandatory files: Ok
-[2025-10-28 21:00:57] - Check mandatory OS...
-[2025-10-28 21:00:57] - OS: Ok
-[2025-10-28 21:00:57] - Init complete: Ok
-[2025-10-28 21:01:00] - Ejecutando pre.sh
-[2025-10-28 21:01:00] - Instalando pre requisitos
+[2025-10-31 00:20:58] - 1/5.Setting CZ Keyring
+[2025-10-31 00:20:58] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:20:58] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:20:58] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:20:59] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:20:59] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:20:59] - 2/5.Adding CZ Source list
+[2025-10-31 00:20:59] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:20:59] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:20:59] - 3/5.Setting CZ PIN file
+[2025-10-31 00:20:59] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:20:59] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:20:59] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:21:00] - 4/5. Update sources
+[2025-10-31 00:21:00] - Ejecutando apt update
+[2025-10-31 00:21:07] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2025-10-31 00:21:07] - ✅ OK: 4/5.Update sources
+[2025-10-31 00:21:07] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
+[2025-10-31 00:21:07] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
+[2025-10-31 00:21:07] - ✅ OK: Requisitos instalados exitosamente
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+[2025-10-31 00:21:15] - Instalando: postfix postgresql  postgresql-contrib fred-db
+[2025-10-31 00:21:15] - Verificando paquetes: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:21:15] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:21:15] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:21:15] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-31 00:21:15] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-31 00:21:15] - ✅ El paquete 'postgresql' ya está instalado.
+[2025-10-31 00:21:15] - ✅ El paquete 'postgresql' ya está instalado.
+[2025-10-31 00:21:15] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2025-10-31 00:21:15] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2025-10-31 00:21:15] - ✅ El paquete 'fred-db' ya está instalado.
+[2025-10-31 00:21:15] - ✅ El paquete 'fred-db' ya está instalado.
+[2025-10-31 00:21:15] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-31 00:21:15] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-31 00:21:15] - ----------------------------------------------------
+[2025-10-31 00:21:15] - 📊 Resumen final:
+[2025-10-31 00:21:15] - 📊 Resumen final:
+[2025-10-31 00:21:15] - ✅ Instalados en esta ejecución: 0
+[2025-10-31 00:21:15] - ✅ Instalados en esta ejecución: 0
+[2025-10-31 00:21:15] - ❌ Fallidos: 0
+[2025-10-31 00:21:15] - ❌ Fallidos: 0
+[2025-10-31 00:21:15] - ℹ️ Ya estaban instalados: 4
+[2025-10-31 00:21:15] - ℹ️ Ya estaban instalados: 4
+[2025-10-31 00:21:15] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:21:15] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:21:17] - ✅ OK: 3/3 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente
+[2025-10-31 00:21:17] - Creando la base de datos fred-dbmanager install
+[2025-10-31 00:21:17] - Ejecutando su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:21:17] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:21:17] - ✅ OK: Base de datos creada
+[2025-10-31 00:21:17] - ✅ OK: Base de datos instalada y creada correctamente
+[2025-10-31 00:21:17] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2025-10-31 00:21:54] - Incluyendo pre.sh
+[2025-10-31 00:21:54] - Script running
+[2025-10-31 00:21:54] - Initialazing...
+[2025-10-31 00:21:54] - Check mandatory files...
+[2025-10-31 00:21:54] - Mandatory files: Ok
+[2025-10-31 00:21:54] - Check mandatory OS...
+[2025-10-31 00:21:54] - OS: Ok
+[2025-10-31 00:21:54] - Init complete: Ok
+[2025-10-31 00:21:55] - Ejecutando pre.sh
+[2025-10-31 00:21:55] - Instalando pre requisitos
 La instalacion de pre requisitos FRED se ejecuta en 5 pasos
 1/5.  Configurar Keyring para los repositorios FRED
 2/5.  Agregar repositorios apt
 3/5.  Configurar archivo pin para descargar los paquetes correctos 
 4/5.  Actualizar repos FRED
 5/5.  Instalar paquetes necesarios FRED
-[2025-10-28 21:01:01] - 1/5.Setting CZ Keyring
-[2025-10-28 21:01:01] - Ejecutando mkdir -p /usr/share/keyrings/
-[2025-10-28 21:01:01] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
-[2025-10-28 21:01:01] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 21:01:05] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
-[2025-10-28 21:01:05] - ✅ OK: 1/5.Setting CZ Keyring
-[2025-10-28 21:01:05] - 2/5.Adding CZ Source list
-[2025-10-28 21:01:05] - ✅ Fuente agregada correctamente.
-[2025-10-28 21:01:05] - ✅ OK: 2/5.Adding CZ Source list
-[2025-10-28 21:01:05] - 3/5.Setting CZ PIN file
-[2025-10-28 21:01:05] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 21:01:08] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
-[2025-10-28 21:01:08] - ✅ OK: 3/5.Setting CZ PIN file
-[2025-10-28 21:01:09] - 4/5. Update sources
-[2025-10-28 21:01:09] - Ejecutando apt update
-[2025-10-28 21:01:21] - ✅ OK: El comando se ejecutó correctamente: apt update
-[2025-10-28 21:01:21] - ✅ OK: 4/5.Update sources
-[2025-10-28 21:01:21] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
-[2025-10-28 21:01:21] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
-[2025-10-28 21:01:21] - ✅ OK: Requisitos instalados exitosamente
-[2025-10-28 21:01:23] - Instalando base de datos
+[2025-10-31 00:21:57] - 1/5.Setting CZ Keyring
+[2025-10-31 00:21:57] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:21:57] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:21:57] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:21:58] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:21:58] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:21:58] - 2/5.Adding CZ Source list
+[2025-10-31 00:21:58] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:21:58] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:21:58] - 3/5.Setting CZ PIN file
+[2025-10-31 00:21:58] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:21:58] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:21:58] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:21:59] - 4/5. Update sources
+[2025-10-31 00:21:59] - Ejecutando apt update
+[2025-10-31 00:22:08] - Incluyendo pre.sh
+[2025-10-31 00:22:08] - Script running
+[2025-10-31 00:22:08] - Initialazing...
+[2025-10-31 00:22:09] - Check mandatory files...
+[2025-10-31 00:22:09] - Mandatory files: Ok
+[2025-10-31 00:22:09] - Check mandatory OS...
+[2025-10-31 00:22:09] - OS: Ok
+[2025-10-31 00:22:09] - Init complete: Ok
+[2025-10-31 00:22:12] - Ejecutando pre.sh
+[2025-10-31 00:22:12] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+[2025-10-31 00:22:13] - 1/5.Setting CZ Keyring
+[2025-10-31 00:22:13] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:22:13] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:22:13] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:22:14] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:22:14] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:22:14] - 2/5.Adding CZ Source list
+[2025-10-31 00:22:14] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:22:14] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:22:14] - 3/5.Setting CZ PIN file
+[2025-10-31 00:22:14] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:22:15] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:22:15] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:22:15] - 4/5. Update sources
+[2025-10-31 00:22:15] - Ejecutando apt update
+[2025-10-31 00:22:20] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2025-10-31 00:22:20] - ✅ OK: 4/5.Update sources
+[2025-10-31 00:22:20] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
+[2025-10-31 00:22:20] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
+[2025-10-31 00:22:20] - ✅ OK: Requisitos instalados exitosamente
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+[2025-10-31 00:22:30] - Instalando: postfix postgresql  postgresql-contrib fred-db
+[2025-10-31 00:22:30] - Verificando paquetes: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:22:30] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:22:30] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-31 00:22:30] - ✅ El paquete 'postgresql' ya está instalado.
+[2025-10-31 00:22:30] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2025-10-31 00:22:30] - ✅ El paquete 'fred-db' ya está instalado.
+[2025-10-31 00:22:30] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-31 00:22:30] - ----------------------------------------------------
+[2025-10-31 00:22:30] - 📊 Resumen final:
+[2025-10-31 00:22:30] - ✅ Instalados en esta ejecución: 0
+[2025-10-31 00:22:30] - ❌ Fallidos: 0
+[2025-10-31 00:22:30] - ℹ️ Ya estaban instalados: 4
+[2025-10-31 00:22:30] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:22:32] - ✅ OK: 3/3 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente
+[2025-10-31 00:22:32] - Creando la base de datos fred-dbmanager install
+[2025-10-31 00:22:32] - Ejecutando su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:22:32] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:22:32] - ✅ OK: Base de datos creada
+[2025-10-31 00:22:32] - ✅ OK: Base de datos instalada y creada correctamente
+[2025-10-31 00:22:32] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2025-10-31 00:23:23] - Incluyendo pre.sh
+[2025-10-31 00:23:23] - Script running
+[2025-10-31 00:23:23] - Initialazing...
+[2025-10-31 00:23:23] - Check mandatory files...
+[2025-10-31 00:23:23] - Mandatory files: Ok
+[2025-10-31 00:23:23] - Check mandatory OS...
+[2025-10-31 00:23:23] - OS: Ok
+[2025-10-31 00:23:23] - Init complete: Ok
+[2025-10-31 00:23:24] - Ejecutando pre.sh
+[2025-10-31 00:23:24] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+[2025-10-31 00:23:26] - 1/5.Setting CZ Keyring
+[2025-10-31 00:23:26] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:23:26] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:23:26] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:23:27] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:23:27] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:23:27] - 2/5.Adding CZ Source list
+[2025-10-31 00:23:27] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:23:27] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:23:27] - 3/5.Setting CZ PIN file
+[2025-10-31 00:23:27] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:23:28] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:23:28] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:23:28] - 4/5. Update sources
+[2025-10-31 00:23:28] - Ejecutando apt update
+[2025-10-31 00:23:33] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2025-10-31 00:23:33] - ✅ OK: 4/5.Update sources
+[2025-10-31 00:23:33] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
+[2025-10-31 00:23:33] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
+[2025-10-31 00:23:33] - ✅ OK: Requisitos instalados exitosamente
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+[2025-10-31 00:23:41] - Instalando: postfix postgresql  postgresql-contrib fred-db
+[2025-10-31 00:23:41] - Verificando paquetes: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:23:41] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:23:41] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-31 00:23:41] - ✅ El paquete 'postgresql' ya está instalado.
+[2025-10-31 00:23:41] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2025-10-31 00:23:41] - ✅ El paquete 'fred-db' ya está instalado.
+[2025-10-31 00:23:41] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-31 00:23:41] - ----------------------------------------------------
+[2025-10-31 00:23:41] - 📊 Resumen final:
+[2025-10-31 00:23:41] - ✅ Instalados en esta ejecución: 0
+[2025-10-31 00:23:41] - ❌ Fallidos: 0
+[2025-10-31 00:23:41] - ℹ️ Ya estaban instalados: 4
+[2025-10-31 00:23:41] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:23:43] - ✅ OK: 3/3 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente
+[2025-10-31 00:23:43] - Creando la base de datos fred-dbmanager install
+[2025-10-31 00:23:43] - Ejecutando su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:23:43] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:23:44] - ✅ OK: Base de datos creada
+[2025-10-31 00:23:44] - ✅ OK: Base de datos instalada y creada correctamente
+[2025-10-31 00:23:44] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+Bye
+[2025-10-31 00:24:04] - Incluyendo pre.sh
+[2025-10-31 00:24:04] - Script running
+[2025-10-31 00:24:04] - Initialazing...
+[2025-10-31 00:24:04] - Check mandatory files...
+[2025-10-31 00:24:04] - Mandatory files: Ok
+[2025-10-31 00:24:04] - Check mandatory OS...
+[2025-10-31 00:24:04] - OS: Ok
+[2025-10-31 00:24:04] - Init complete: Ok
+[2025-10-31 00:24:06] - Ejecutando pre.sh
+[2025-10-31 00:24:06] - Instalando pre requisitos
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+[2025-10-31 00:24:08] - 1/5.Setting CZ Keyring
+[2025-10-31 00:24:08] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:24:08] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:24:08] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:24:09] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:24:09] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:24:09] - 2/5.Adding CZ Source list
+[2025-10-31 00:24:09] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:24:09] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:24:09] - 3/5.Setting CZ PIN file
+[2025-10-31 00:24:09] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:24:10] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:24:10] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:24:10] - 4/5. Update sources
+[2025-10-31 00:24:10] - Ejecutando apt update
+[2025-10-31 00:24:15] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2025-10-31 00:24:15] - ✅ OK: 4/5.Update sources
+[2025-10-31 00:24:15] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
+[2025-10-31 00:24:15] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
+[2025-10-31 00:24:15] - ✅ OK: Requisitos instalados exitosamente
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+[2025-10-31 00:24:20] - Instalando: postfix postgresql  postgresql-contrib fred-db
+[2025-10-31 00:24:20] - Verificando paquetes: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:24:20] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:24:20] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-31 00:24:20] - ✅ El paquete 'postgresql' ya está instalado.
+[2025-10-31 00:24:20] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2025-10-31 00:24:20] - ✅ El paquete 'fred-db' ya está instalado.
+[2025-10-31 00:24:20] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-31 00:24:20] - ----------------------------------------------------
+[2025-10-31 00:24:20] - 📊 Resumen final:
+[2025-10-31 00:24:20] - ✅ Instalados en esta ejecución: 0
+[2025-10-31 00:24:20] - ❌ Fallidos: 0
+[2025-10-31 00:24:20] - ℹ️ Ya estaban instalados: 4
+[2025-10-31 00:24:20] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:24:22] - ✅ OK: 3/3 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente
+[2025-10-31 00:24:22] - Creando la base de datos fred-dbmanager install
+[2025-10-31 00:24:22] - Ejecutando su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:24:22] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:24:22] - ✅ OK: Base de datos creada
+[2025-10-31 00:24:22] - ✅ OK: Base de datos instalada y creada correctamente
+[2025-10-31 00:24:22] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+Bye
+[2025-10-31 00:29:38] - Incluyendo pre.sh
+[2025-10-31 00:29:38] - Script running
+[2025-10-31 00:29:38] - Initialazing...
+[2025-10-31 00:29:38] - Check mandatory files...
+[2025-10-31 00:29:38] - Mandatory files: Ok
+[2025-10-31 00:29:38] - Check mandatory OS...
+[2025-10-31 00:29:38] - OS: Ok
+[2025-10-31 00:29:38] - Init complete: Ok
+[2025-10-31 00:29:41] - Ejecutando pre.sh
+[2025-10-31 00:29:41] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2025-10-31 00:29:46] - 1/5.Setting CZ Keyring
+[2025-10-31 00:29:46] - Ejecutando mkdir -p /usr/share/keyrings/
+[2025-10-31 00:29:46] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2025-10-31 00:29:46] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:29:47] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2025-10-31 00:29:47] - ✅ OK: 1/5.Setting CZ Keyring
+[2025-10-31 00:29:47] - 2/5.Adding CZ Source list
+[2025-10-31 00:29:47] - ✅ Fuente agregada correctamente.
+[2025-10-31 00:29:47] - ✅ OK: 2/5.Adding CZ Source list
+[2025-10-31 00:29:47] - 3/5.Setting CZ PIN file
+[2025-10-31 00:29:47] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:29:48] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2025-10-31 00:29:48] - ✅ OK: 3/5.Setting CZ PIN file
+[2025-10-31 00:29:48] - 4/5. Update sources
+[2025-10-31 00:29:48] - Ejecutando apt update
+[2025-10-31 00:29:53] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2025-10-31 00:29:53] - ✅ OK: 4/5.Update sources
+[2025-10-31 00:29:53] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix
+[2025-10-31 00:29:53] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix instalados exitosamente
+[2025-10-31 00:29:53] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2025-10-31 00:30:05] - Instalando: postfix postgresql  postgresql-contrib fred-db
+[2025-10-31 00:30:05] - Verificando paquetes: postfix postgresql postgresql-contrib fred-db
+[2025-10-31 00:30:05] - 🔍 Verificando estado de los paquetes solicitados...
+[2025-10-31 00:30:05] - ✅ El paquete 'postfix' ya está instalado.
+[2025-10-31 00:30:05] - ✅ El paquete 'postgresql' ya está instalado.
+[2025-10-31 00:30:05] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2025-10-31 00:30:05] - ✅ El paquete 'fred-db' ya está instalado.
+[2025-10-31 00:30:05] - 👍 No hay paquetes nuevos para instalar.
+[2025-10-31 00:30:05] - ----------------------------------------------------
+[2025-10-31 00:30:05] - 📊 Resumen final:
+[2025-10-31 00:30:05] - ✅ Instalados en esta ejecución: 0
+[2025-10-31 00:30:05] - ❌ Fallidos: 0
+[2025-10-31 00:30:05] - ℹ️ Ya estaban instalados: 4
+[2025-10-31 00:30:05] - 📝 Revisa 'install.log' para más detalles.
+[2025-10-31 00:30:07] - ✅ OK: 3/3 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente
+[2025-10-31 00:30:07] - Creando la base de datos fred-dbmanager install
+[2025-10-31 00:30:07] - Ejecutando su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:30:07] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2025-10-31 00:30:07] - ✅ OK: Base de datos creada
+[2025-10-31 00:30:07] - ✅ OK: Base de datos instalada y creada correctamente
+[2025-10-31 00:30:07] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+Bye

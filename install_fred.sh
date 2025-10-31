@@ -99,7 +99,9 @@ select_package(){
   case $1 in
       db)
           install_pre
-          print_message "Instalando base de datos"
+          install_db
+          print_notime "Bye"
+          exit 0
           ;;
       core )
           install_pre

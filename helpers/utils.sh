@@ -168,7 +168,8 @@ exec_command() {
     local cmd="$*"
     # Ejecuta el comando y captura salida y código de error
     print_log_message "Ejecutando $cmd"
-    output=$(eval "$cmd" 2>&1)
+    #output=$(eval "$cmd" 2>&1)
+    output=$( "$@" 2>&1 )
     local status=$?
     if [ $status -ne 0 ]; then
         QUIET_MODE=false

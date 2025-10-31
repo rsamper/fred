@@ -7,6 +7,7 @@
 
 #set -e  # Exit on any error
 #set -u  # Exit on undefined variables
+echo "Running DB script"
 
 get_packages(){
     local cmd="$*"
@@ -17,35 +18,39 @@ get_packages(){
     print_message "dbbbbbb"
 }
 
-install_packages(){
-  
+install_db_packages(){
   mapfile -t packages < <(grep -v '^#' "$*" | grep -v '^$')
-  print_message "5/5. Instalando: ${packages[@]}" 
-  #install ${packages[@]}
-  print_message "✅ OK: 5/5 Pre Requisitos  ${packages[@]} instalados exitosamente"  
+  if [[ ${#packages[@]} -gt 0 ]]; then
+    print_message "Instalando: ${packages[@]}" 
+    install ${packages[@]}  # Descomenta cuando estés listo para instalar
+    print_message "✅ OK: 3/3 Paquetes FRED DB ${packages[@]} instalados exitosamente"
+  else
+    print_message "ℹ️ INFO: No se encontraron paquetes DB válidos para instalar en el archivo '$*'."
+  fi
 }
 
-print_info_pre(){
+
+create_db(){
+  print_message "Creando la base de datos fred-dbmanager install"
+  exec_command su - postgres -c "/usr/sbin/fred-dbmanager install"
+  print_message "✅ OK: Base de datos creada"
+}
+
+print_info_db(){
   clear
-  print_notime "La instalacion de pre requisitos FRED se ejecuta en 5 pasos"  
-  print_notime "1/5.  Configurar Keyring para los repositorios FRED"  
-  print_notime "2/5.  Agregar repositorios apt"  
-  print_notime "3/5.  Configurar archivo pin para descargar los paquetes correctos "  
-  print_notime "4/5.  Actualizar repos FRED"  
-  print_notime "5/5.  Instalar paquetes necesarios FRED"
+  print_notime "================================================="  
+  print_notime "La instalacion de FRED DB se ejecuta en 3 pasos"  
+  print_notime "1/3.  Instalar PostFix"  
+  print_notime "2/3.  Instalar la base de datos PostgreSQL"  
+  print_notime "3/3.  Instalar el paquete FRED DB"  
+  print_notime "=================================================="  
   pause
 }
-install_pre(){
-  print_message "Ejecutando pre.sh"  
-  print_message "Instalando pre requisitos" 
-  print_info_pre
- 
-  set_keyring
-  add_source_list
-  set_pin
-  set_postfix  
-  apt_update
-  install_packages $DB_PACKAGES_FILE
-  print_message "✅ OK: Requisitos instalados exitosamente" 
-  pause 
+install_db(){
+  clear 
+  print_info_db  
+  install_db_packages $DB_PACKAGES_FILE
+  create_db
+  print_message "✅ OK: Base de datos instalada y creada correctamente" 
+  print_message "Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf" 
 }

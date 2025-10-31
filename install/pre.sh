@@ -70,12 +70,14 @@ install_packages(){
 
 print_info_pre(){
   clear
+  print_notime "============================================================"  
   print_notime "La instalacion de pre requisitos FRED se ejecuta en 5 pasos"  
   print_notime "1/5.  Configurar Keyring para los repositorios FRED"  
   print_notime "2/5.  Agregar repositorios apt"  
   print_notime "3/5.  Configurar archivo pin para descargar los paquetes correctos "  
   print_notime "4/5.  Actualizar repos FRED"  
   print_notime "5/5.  Instalar paquetes necesarios FRED"
+  print_notime "============================================================"  
   pause
 }
 install_pre(){

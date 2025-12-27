@@ -3,3 +3,6 @@ curl
 gnupg 
 lsb-release
 postfix
+cdnskey-scanner
+pgbouncer
+postgresql-client

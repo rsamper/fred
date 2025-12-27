@@ -1,0 +1,17 @@
+python3-dnspython 
+python3-pip 
+uwsgi-plugin-python3  
+omniorb-nameserver 
+omniorb
+apache2
+pyfred-filemanager 
+pyfred-genzone 
+pyfred-test-mailer
+python3-pydantic 
+python3-fred-epplib 
+python3-django-secretary
+fred-backend-logger 
+fred-backend-logger-corba 
+fred-rifd
+libapache2-mod-corba 
+libapache2-mod-eppd 

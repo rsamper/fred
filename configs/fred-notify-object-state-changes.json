@@ -1,0 +1,251 @@
+{
+    "notifications": [
+        {
+            "objects": [
+                "contact"
+            ],
+            "flags": [
+                "deleteCandidate"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "notification-delete-subject.txt",
+                    "mail_template_body": "notification-unused-body.txt",
+                    "mail_type": "notification_unused"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "deleteCandidate"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-register-subject.txt",
+                    "mail_template_body": "expiration-register-owner-body.txt",
+                    "mail_type": "expiration_register_owner"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "deleteCandidate"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-register-subject.txt",
+                    "mail_template_body": "expiration-register-tech-body.txt",
+                    "mail_type": "expiration_register_tech"
+                }
+            },
+            "recipients": [
+                "tech"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "expired"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-notify-subject.txt",
+                    "mail_template_body": "expiration-notify-body.txt",
+                    "mail_type": "expiration_notify"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "notValidated"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-dns-subject.txt",
+                    "mail_template_body": "expiration-dns-tech-body.txt",
+                    "mail_type": "expiration_dns_tech"
+                }
+            },
+            "recipients": [
+                "tech"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "notValidated"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-validation-subject.txt",
+                    "mail_template_body": "expiration-validation-body.txt",
+                    "mail_type": "expiration_validation"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "outzoneUnguarded"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-dns-subject.txt",
+                    "mail_template_body": "expiration-dns-owner-body.txt",
+                    "mail_type": "expiration_dns_owner"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "outzoneUnguarded"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-dns-subject.txt",
+                    "mail_template_body": "expiration-dns-tech-body.txt",
+                    "mail_type": "expiration_dns_tech"
+                }
+            },
+            "recipients": [
+                "tech"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "outzoneUnguardedWarning"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-dns-warning-owner-subject.txt",
+                    "mail_template_body": "expiration-dns-warning-owner-body.txt",
+                    "mail_type": "expiration_dns_warning_owner"
+                }
+            },
+            "recipients": [
+                "generic",
+                "additional"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "deleteWarning"
+            ],
+            "message_type": {
+                "value": "sms",
+                "properties": {
+                    "sms_template_body": "delete-warning-sms.txt",
+                    "sms_type": "delete_warning"
+                }
+            },
+            "recipients": [
+                "additional"
+            ]
+        },
+        {
+            "objects": [
+                "domain"
+            ],
+            "flags": [
+                "validationWarning2"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "expiration-validation-subject.txt",
+                    "mail_template_body": "expiration-validation-before-body.txt",
+                    "mail_type": "expiration_validation_before"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        },
+        {
+            "objects": [
+                "keyset"
+            ],
+            "flags": [
+                "deleteCandidate"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "notification-delete-subject.txt",
+                    "mail_template_body": "notification-unused-body.txt",
+                    "mail_type": "notification_unused"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        },
+        {
+            "objects": [
+                "nsset"
+            ],
+            "flags": [
+                "deleteCandidate"
+            ],
+            "message_type": {
+                "value": "email",
+                "properties": {
+                    "mail_template_subject": "notification-delete-subject.txt",
+                    "mail_template_body": "notification-unused-body.txt",
+                    "mail_type": "notification_unused"
+                }
+            },
+            "recipients": [
+                "admin"
+            ]
+        }
+    ]
+}

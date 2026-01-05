@@ -18,7 +18,26 @@ set_keyring(){
   print_message "✅ OK: 1/5.Setting CZ Keyring"
 }
 
-add_source_list(){
+add_source_list() {
+  print_message "2/5. Adding CZ Source list"
+
+  local FILE="/etc/apt/sources.list.d/fred.list"
+  local LINE="deb [signed-by=/usr/share/keyrings/cznic-archive-keyring.gpg] http://archive.nic.cz/public $(lsb_release -sc) main"
+
+  sudo touch "$FILE"
+
+  if sudo grep -Fxq "$LINE" "$FILE"; then
+    print_log_message "ℹ️ La fuente ya existe, no se agrega nuevamente."
+  else
+    echo "$LINE" | sudo tee -a "$FILE" > /dev/null
+    print_log_message "✅ Fuente agregada correctamente."
+  fi
+
+  print_message "✅ OK: 2/5. Adding CZ Source list"
+}
+
+
+add_source_list_old(){
 # Setp 2
 # FRED Source list
 # Add source list for FRED
@@ -39,12 +58,24 @@ fi
 print_message "✅ OK: 2/5.Adding CZ Source list"
 }
 
+fix_pin() {
+  print_message "3.1/5. Actualizando :( CZ PIN file"
+  PIN_FILE="/etc/apt/preferences.d/fred"
+
+sudo tee -a "$PIN_FILE" > /dev/null << 'EOF'
+Package: python-pyfred
+Pin: version 2.15.1*
+Pin-Priority: 1001
+EOF
+}
+
 set_pin(){
  # Setp 3
  # FRED CZ PIN
  # Create pin file
   print_message "3/5.Setting CZ PIN file"
   exec_command wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+  fix_pin
   print_message "✅ OK: 3/5.Setting CZ PIN file"
 }
 
@@ -80,6 +111,7 @@ print_info_pre(){
   print_notime "============================================================"  
   pause
 }
+
 install_pre(){
   print_message "Ejecutando pre.sh"  
   print_message "Instalando pre requisitos" 

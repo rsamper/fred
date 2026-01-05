@@ -188,6 +188,13 @@ echo "6/16 Creating FRED APT PIN Files to install correct fred packages"
 echo "================================================================="
 
 run_or_fail wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+PIN_FILE="/etc/apt/preferences.d/fred"
+sudo tee -a "$PIN_FILE" > /dev/null << 'EOF'
+Package: python-pyfred
+Pin: version 2.15.1*
+Pin-Priority: 1001
+EOF
+
 run_or_fail apt update
 
 echo "7/16. Installing Ubuntu servers for FRED"

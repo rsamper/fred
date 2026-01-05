@@ -44,12 +44,13 @@ log_file="install.log"
 HELPERS_PATH="helpers"
 INSTALL_PATH="install"
 PACKAGES_PATH="packages"
+CONFIGS_PATH="configs"
 UTILS_FILE="$SCRIPT_DIR/$HELPERS_PATH/utils.sh"
 DB_FILE="$SCRIPT_DIR/$INSTALL_PATH/db.sh"
 PRE_FILE="$SCRIPT_DIR/$INSTALL_PATH/pre.sh"
 OMNI_FILE="$SCRIPT_DIR/$INSTALL_PATH/pre.sh"
 CLIENT_FILE="$SCRIPT_DIR/$INSTALL_PATH/client.sh"
-CORE_FILE="$SCRIPT_DIR/$INSTALL_PATH/core.sh"
+APP_FILE="$SCRIPT_DIR/$INSTALL_PATH/app.sh"
 
 
 
@@ -57,7 +58,9 @@ CORE_FILE="$SCRIPT_DIR/$INSTALL_PATH/core.sh"
 DB_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/db.packages"
 PRE_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/pre.packages"
 #FRED_FILE="$SCRIPT_DIR/freddb.sh"
-#CORE_PACKAGES_FILE="$SCRIPT_DIR/core.packages"
+APP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/app.packages"
+CONFIGS_FILES="$SCRIPT_DIR/$CONFIGS_PATH/"
+
 #CLIENT_PACKAGES_FILE="$SCRIPT_DIR/client.packages"
 #OMNI_PACKAGES_FILE="$SCRIPT_DIR/omni.packages"
 
@@ -90,6 +93,7 @@ init(){
 source "$UTILS_FILE"
 source "$DB_FILE"
 source "$PRE_FILE"
+source "$APP_FILE"
 ###############################################################
 
 #mapfile -t packages < <(grep -v '^#' "$DB_PACKAGES_FILE" | grep -v '^$')
@@ -103,16 +107,17 @@ select_package(){
           print_notime "Bye"
           exit 0
           ;;
-      core )
+      app )
           install_pre
-          echo "FRED CORE"
+          echo "FRED APP"
+          install_app
           ;;
       client )
           install_pre
           echo "FRED CLIENT"
           ;;
       omni )
-          install_pre
+          #install_pre
           echo "OMNI NAMES"
           ;;
       *)

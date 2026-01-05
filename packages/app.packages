@@ -4,7 +4,8 @@ uwsgi-plugin-python3
 omniorb-nameserver 
 omniorb
 apache2
-pyfred-filemanager 
+python-pyfred
+# pyfred-filemanager 
 pyfred-genzone 
 pyfred-test-mailer
 python3-pydantic 

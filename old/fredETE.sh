@@ -5,8 +5,8 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 
-set -euo pipefail
-trap 'echo "❌ Error en la línea $LINENO. Saliendo..."; exit 1' ERR
+#set -euo pipefail
+#trap 'echo "❌ Error en la línea $LINENO. Saliendo..."; exit 1' ERR
 
 ping -c 1 archive.nic.cz >/dev/null 2>&1 || {
   echo "❌ No hay conexión a archive.nic.cz"
@@ -189,6 +189,12 @@ echo "================================================================="
 
 run_or_fail wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
 run_or_fail apt update
+PIN_FILE="/etc/apt/preferences.d/fred"
+sudo tee -a "$PIN_FILE" > /dev/null << 'EOF'
+Package: python-pyfred
+Pin: version 2.15.1*
+Pin-Priority: 1001
+EOF
 
 echo "7/16. Installing Ubuntu servers for FRED"
 echo "========================================="
@@ -199,7 +205,8 @@ apt_install pgbouncer omniorb-nameserver omniorb cdnskey-scanner apache2
 echo "8/16. Installing FRED Python daemonds"
 echo "====================================="
 run_or_fail apt update
-apt_install pyfred-filemanager pyfred-genzone pyfred-test-mailer
+#apt_install pyfred-filemanager pyfred-genzone pyfred-test-mailer
+apt_install pyfred-genzone pyfred-test-mailer
 
 echo "9/16 Installing FRED Python libs"
 echo "================================"

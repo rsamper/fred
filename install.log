@@ -457,3 +457,1386 @@ La instalacion de FRED DB se ejecuta en 3 pasos
 [2025-10-31 00:30:07] - ✅ OK: Base de datos instalada y creada correctamente
 [2025-10-31 00:30:07] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
 Bye
+[2025-12-31 20:22:18] - Incluyendo pre.sh
+[2025-12-31 20:22:18] - Script running
+[2025-12-31 20:22:18] - Initialazing...
+[2025-12-31 20:22:18] - Check mandatory files...
+[2025-12-31 20:22:18] - Mandatory files: Ok
+[2025-12-31 20:22:18] - Check mandatory OS...
+[2025-12-31 20:22:18] - OS: Ok
+[2025-12-31 20:22:18] - Init complete: Ok
+[2025-12-31 20:22:29] - Incluyendo pre.sh
+[2025-12-31 20:22:29] - Script running
+[2025-12-31 20:22:29] - Initialazing...
+[2025-12-31 20:22:29] - Check mandatory files...
+[2025-12-31 20:22:29] - Mandatory files: Ok
+[2025-12-31 20:22:29] - Check mandatory OS...
+[2025-12-31 20:22:29] - OS: Ok
+[2025-12-31 20:22:29] - Init complete: Ok
+[2025-12-31 20:23:32] - Incluyendo pre.sh
+[2025-12-31 20:23:32] - Script running
+[2025-12-31 20:23:32] - Initialazing...
+[2025-12-31 20:23:32] - Check mandatory files...
+[2025-12-31 20:23:32] - Mandatory files: Ok
+[2025-12-31 20:23:32] - Check mandatory OS...
+[2025-12-31 20:23:32] - OS: Ok
+[2025-12-31 20:23:32] - Init complete: Ok
+[2025-12-31 20:24:31] - Incluyendo pre.sh
+[2025-12-31 20:24:31] - Script running
+[2025-12-31 20:24:31] - Initialazing...
+[2025-12-31 20:24:31] - Check mandatory files...
+[2025-12-31 20:24:31] - Mandatory files: Ok
+[2025-12-31 20:24:31] - Check mandatory OS...
+[2025-12-31 20:24:31] - OS: Ok
+[2025-12-31 20:24:31] - Init complete: Ok
+[2025-12-31 20:27:14] - Incluyendo pre.sh
+[2025-12-31 20:27:14] - Script running
+[2025-12-31 20:27:14] - Initialazing...
+[2025-12-31 20:27:14] - Check mandatory files...
+[2025-12-31 20:27:14] - Mandatory files: Ok
+[2025-12-31 20:27:14] - Check mandatory OS...
+[2025-12-31 20:27:14] - OS: Ok
+[2025-12-31 20:27:14] - Init complete: Ok
+[2025-12-31 20:28:13] - Incluyendo pre.sh
+[2025-12-31 20:28:13] - Script running
+[2025-12-31 20:28:13] - Initialazing...
+[2025-12-31 20:28:13] - Check mandatory files...
+[2025-12-31 20:28:13] - Mandatory files: Ok
+[2025-12-31 20:28:13] - Check mandatory OS...
+[2025-12-31 20:28:13] - OS: Ok
+[2025-12-31 20:28:13] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2025-12-31 20:28:36] - Incluyendo pre.sh
+[2025-12-31 20:28:36] - Script running
+[2025-12-31 20:28:36] - Initialazing...
+[2025-12-31 20:28:36] - Check mandatory files...
+[2025-12-31 20:28:36] - Mandatory files: Ok
+[2025-12-31 20:28:36] - Check mandatory OS...
+[2025-12-31 20:28:36] - OS: Ok
+[2025-12-31 20:28:36] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2025-12-31 20:28:39] - 1.Instalando FRED APP Node
+[2025-12-31 20:28:39] - ℹ️ INFO: No se encontraron paquetes DB válidos para instalar en el archivo ''.
+[2025-12-31 20:28:39] - ✅ OK: FRED APP Node
+[2025-12-31 20:28:39] - ✅ OK: FRED CORE instalado
+[2025-12-31 20:28:39] - Recuerda inciar los demonios de FRED
+[2025-12-31 20:29:33] - Incluyendo pre.sh
+[2025-12-31 20:29:33] - Script running
+[2025-12-31 20:29:33] - Initialazing...
+[2025-12-31 20:29:33] - Check mandatory files...
+[2025-12-31 20:29:33] - Mandatory files: Ok
+[2025-12-31 20:29:33] - Check mandatory OS...
+[2025-12-31 20:29:33] - OS: Ok
+[2025-12-31 20:29:33] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2025-12-31 20:29:36] - 1.Instalando FRED APP Node
+[2025-12-31 20:30:59] - Incluyendo pre.sh
+[2025-12-31 20:30:59] - Script running
+[2025-12-31 20:30:59] - Initialazing...
+[2025-12-31 20:30:59] - Check mandatory files...
+[2025-12-31 20:30:59] - Mandatory files: Ok
+[2025-12-31 20:30:59] - Check mandatory OS...
+[2025-12-31 20:30:59] - OS: Ok
+[2025-12-31 20:30:59] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2025-12-31 20:31:03] - 1.Instalando FRED APP Node
+[2025-12-31 20:31:54] - Incluyendo pre.sh
+[2025-12-31 20:31:54] - Script running
+[2025-12-31 20:31:54] - Initialazing...
+[2025-12-31 20:31:54] - Check mandatory files...
+[2025-12-31 20:31:54] - Mandatory files: Ok
+[2025-12-31 20:31:54] - Check mandatory OS...
+[2025-12-31 20:31:54] - OS: Ok
+[2025-12-31 20:31:54] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2025-12-31 20:31:57] - 1.Instalando FRED APP Node
+[2025-12-31 20:32:42] - Incluyendo pre.sh
+[2025-12-31 20:32:42] - Script running
+[2025-12-31 20:32:42] - Initialazing...
+[2025-12-31 20:32:42] - Check mandatory files...
+[2025-12-31 20:32:42] - Mandatory files: Ok
+[2025-12-31 20:32:42] - Check mandatory OS...
+[2025-12-31 20:32:42] - OS: Ok
+[2025-12-31 20:32:42] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2025-12-31 20:32:45] - 1.Instalando FRED APP Node
+[2025-12-31 20:33:02] - Incluyendo pre.sh
+[2025-12-31 20:33:02] - Script running
+[2025-12-31 20:33:02] - Initialazing...
+[2025-12-31 20:33:02] - Check mandatory files...
+[2025-12-31 20:33:02] - Mandatory files: Ok
+[2025-12-31 20:33:02] - Check mandatory OS...
+[2025-12-31 20:33:02] - OS: Ok
+[2025-12-31 20:33:02] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2025-12-31 20:33:05] - 1.Instalando FRED APP Node
+[2025-12-31 20:33:07] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2025-12-31 20:33:07] - ✅ OK: 3/3 Paquetes FRED DB python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente
+[2025-12-31 20:33:07] - ✅ OK: FRED APP Node
+[2025-12-31 20:33:07] - ✅ OK: FRED CORE instalado
+[2025-12-31 20:33:07] - Recuerda inciar los demonios de FRED
+[2026-01-05 19:37:30] - Incluyendo pre.sh
+[2026-01-05 19:37:30] - Script running
+[2026-01-05 19:37:30] - Initialazing...
+[2026-01-05 19:37:30] - Check mandatory files...
+[2026-01-05 19:37:30] - Mandatory files: Ok
+[2026-01-05 19:37:30] - Check mandatory OS...
+[2026-01-05 19:37:30] - OS: Ok
+[2026-01-05 19:37:30] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 19:37:57] - Incluyendo pre.sh
+[2026-01-05 19:37:57] - Script running
+[2026-01-05 19:37:57] - Initialazing...
+[2026-01-05 19:37:57] - Check mandatory files...
+[2026-01-05 19:37:57] - Mandatory files: Ok
+[2026-01-05 19:37:57] - Check mandatory OS...
+[2026-01-05 19:37:57] - OS: Ok
+[2026-01-05 19:37:57] - Init complete: Ok
+[2026-01-05 19:38:00] - Ejecutando pre.sh
+[2026-01-05 19:38:00] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 19:38:06] - 1/5.Setting CZ Keyring
+[2026-01-05 19:38:06] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 19:38:06] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 19:38:06] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:38:08] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:38:08] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 19:38:08] - 2/5.Adding CZ Source list
+[2026-01-05 19:38:08] - ✅ Fuente agregada correctamente.
+[2026-01-05 19:38:08] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 19:38:08] - 3/5.Setting CZ PIN file
+[2026-01-05 19:38:08] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:38:09] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:38:09] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 19:38:10] - 4/5. Update sources
+[2026-01-05 19:38:10] - Ejecutando apt update
+[2026-01-05 19:38:20] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 19:38:20] - ✅ OK: 4/5.Update sources
+[2026-01-05 19:38:20] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 19:38:20] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 19:38:20] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 19:38:26] - 1.Instalando FRED APP Node
+[2026-01-05 19:38:30] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 19:38:30] - ✅ OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente
+[2026-01-05 19:38:30] - ✅ OK: FRED APP Node
+[2026-01-05 19:38:30] - 8. Habilitando apache for EPP
+[2026-01-05 19:38:30] - Ejecutando a2enmod ssl
+[2026-01-05 19:38:30] - ❌ ERROR: Falló el comando: a2enmod ssl  - error: ./helpers/utils.sh: line 172: a2enmod: command not found
+[2026-01-05 19:38:41] - Incluyendo pre.sh
+[2026-01-05 19:38:41] - Script running
+[2026-01-05 19:38:41] - Initialazing...
+[2026-01-05 19:38:41] - Check mandatory files...
+[2026-01-05 19:38:41] - Mandatory files: Ok
+[2026-01-05 19:38:41] - Check mandatory OS...
+[2026-01-05 19:38:41] - OS: Ok
+[2026-01-05 19:38:41] - Init complete: Ok
+[2026-01-05 19:38:48] - Ejecutando pre.sh
+[2026-01-05 19:38:48] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 19:39:00] - 1/5.Setting CZ Keyring
+[2026-01-05 19:39:00] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 19:39:00] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 19:39:00] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:39:01] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:39:01] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 19:39:01] - 2/5.Adding CZ Source list
+[2026-01-05 19:39:01] - ✅ Fuente agregada correctamente.
+[2026-01-05 19:39:01] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 19:39:01] - 3/5.Setting CZ PIN file
+[2026-01-05 19:39:01] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:39:02] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:39:02] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 19:39:02] - 4/5. Update sources
+[2026-01-05 19:39:02] - Ejecutando apt update
+[2026-01-05 19:39:07] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 19:39:07] - ✅ OK: 4/5.Update sources
+[2026-01-05 19:39:07] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 19:39:07] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 19:39:07] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 19:41:12] - Incluyendo pre.sh
+[2026-01-05 19:41:12] - Script running
+[2026-01-05 19:41:12] - Initialazing...
+[2026-01-05 19:41:12] - Check mandatory files...
+[2026-01-05 19:41:12] - Mandatory files: Ok
+[2026-01-05 19:41:12] - Check mandatory OS...
+[2026-01-05 19:41:12] - OS: Ok
+[2026-01-05 19:41:12] - Init complete: Ok
+[2026-01-05 19:41:15] - Ejecutando pre.sh
+[2026-01-05 19:41:15] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 19:41:20] - 1/5.Setting CZ Keyring
+[2026-01-05 19:41:20] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 19:41:20] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 19:41:20] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:41:21] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:41:21] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 19:41:21] - 2/5.Adding CZ Source list
+[2026-01-05 19:41:21] - ✅ Fuente agregada correctamente.
+[2026-01-05 19:41:21] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 19:41:21] - 3/5.Setting CZ PIN file
+[2026-01-05 19:41:21] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:41:22] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:41:22] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 19:41:22] - 4/5. Update sources
+[2026-01-05 19:41:22] - Ejecutando apt update
+[2026-01-05 19:41:28] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 19:41:28] - ✅ OK: 4/5.Update sources
+[2026-01-05 19:41:28] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 19:41:28] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 19:41:28] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 19:41:38] - 1.Instalando FRED APP Node
+[2026-01-05 19:41:41] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 19:41:41] - Verificando paquetes: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:41:41] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:41:41] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:41:41] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:41:41] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:41:41] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:41:42] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:41:42] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:41:42] ERROR: 
+[2026-01-05 19:41:42] ERROR: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[2026-01-05 19:41:42] ERROR: 
+[2026-01-05 19:41:42] ERROR: Reading package lists...
+[2026-01-05 19:41:42] ERROR: Building dependency tree...
+[2026-01-05 19:41:42] ERROR: Reading state information...
+[2026-01-05 19:41:42] ERROR: Some packages could not be installed. This may mean that you have
+[2026-01-05 19:41:42] ERROR: requested an impossible situation or if you are using the unstable
+[2026-01-05 19:41:42] ERROR: distribution that some required packages have not yet been created
+[2026-01-05 19:41:42] ERROR: or been moved out of Incoming.
+[2026-01-05 19:41:42] ERROR: The following information may help to resolve the situation:
+[2026-01-05 19:41:42] ERROR: 
+[2026-01-05 19:41:42] ERROR: The following packages have unmet dependencies:
+[2026-01-05 19:41:42] ERROR:  pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:41:42] ERROR:  pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:41:42] ERROR: E: Unable to correct problems, you have held broken packages.
+[2026-01-05 19:41:42] - Fin con error .....
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+ pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+[2026-01-05 19:47:30] - Incluyendo pre.sh
+[2026-01-05 19:47:30] - Script running
+[2026-01-05 19:47:30] - Initialazing...
+[2026-01-05 19:47:30] - Check mandatory files...
+[2026-01-05 19:47:30] - Mandatory files: Ok
+[2026-01-05 19:47:30] - Check mandatory OS...
+[2026-01-05 19:47:30] - OS: Ok
+[2026-01-05 19:47:30] - Init complete: Ok
+[2026-01-05 19:47:32] - Ejecutando pre.sh
+[2026-01-05 19:47:32] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 19:47:33] - 1/5.Setting CZ Keyring
+[2026-01-05 19:47:33] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 19:47:33] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 19:47:33] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:47:34] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:47:34] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 19:47:34] - 2/5.Adding CZ Source list
+[2026-01-05 19:47:34] - ✅ Fuente agregada correctamente.
+[2026-01-05 19:47:34] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 19:47:35] - 3/5.Setting CZ PIN file
+[2026-01-05 19:47:35] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:47:35] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:47:35] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 19:47:36] - 4/5. Update sources
+[2026-01-05 19:47:36] - Ejecutando apt update
+[2026-01-05 19:47:41] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 19:47:41] - ✅ OK: 4/5.Update sources
+[2026-01-05 19:47:41] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 19:47:41] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 19:47:41] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 19:47:45] - 1.Instalando FRED APP Node
+[2026-01-05 19:47:46] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 19:47:46] - Verificando paquetes: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:47:46] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:47:46] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:47:46] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:47:47] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:47:47] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:47:47] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:47:47] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:47:47] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:47:47] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:47:47] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:47:47] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:47:48] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:47:48] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:47:48] ERROR: 
+[2026-01-05 19:47:48] ERROR: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[2026-01-05 19:47:48] ERROR: 
+[2026-01-05 19:47:48] ERROR: Reading package lists...
+[2026-01-05 19:47:48] ERROR: Building dependency tree...
+[2026-01-05 19:47:48] ERROR: Reading state information...
+[2026-01-05 19:47:48] ERROR: Some packages could not be installed. This may mean that you have
+[2026-01-05 19:47:48] ERROR: requested an impossible situation or if you are using the unstable
+[2026-01-05 19:47:48] ERROR: distribution that some required packages have not yet been created
+[2026-01-05 19:47:48] ERROR: or been moved out of Incoming.
+[2026-01-05 19:47:48] ERROR: The following information may help to resolve the situation:
+[2026-01-05 19:47:48] ERROR: 
+[2026-01-05 19:47:48] ERROR: The following packages have unmet dependencies:
+[2026-01-05 19:47:48] ERROR:  pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:47:48] ERROR:  pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:47:48] ERROR: E: Unable to correct problems, you have held broken packages.
+[2026-01-05 19:47:48] - Fin con error .....
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+ pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+[2026-01-05 19:49:52] - Incluyendo pre.sh
+[2026-01-05 19:49:52] - Script running
+[2026-01-05 19:49:52] - Initialazing...
+[2026-01-05 19:49:52] - Check mandatory files...
+[2026-01-05 19:49:53] - Mandatory files: Ok
+[2026-01-05 19:49:53] - Check mandatory OS...
+[2026-01-05 19:49:53] - OS: Ok
+[2026-01-05 19:49:53] - Init complete: Ok
+[2026-01-05 19:49:55] - Ejecutando pre.sh
+[2026-01-05 19:49:55] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 19:49:57] - 1/5.Setting CZ Keyring
+[2026-01-05 19:49:57] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 19:49:57] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 19:49:57] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:49:58] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:49:58] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 19:49:58] - 2/5.Adding CZ Source list
+[2026-01-05 19:49:58] - ✅ Fuente agregada correctamente.
+[2026-01-05 19:49:58] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 19:49:58] - 3/5.Setting CZ PIN file
+[2026-01-05 19:49:58] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:49:59] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:49:59] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 19:49:59] - 4/5. Update sources
+[2026-01-05 19:49:59] - Ejecutando apt update
+[2026-01-05 19:50:05] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 19:50:05] - ✅ OK: 4/5.Update sources
+[2026-01-05 19:50:05] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 19:50:05] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 19:50:05] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 19:50:07] - 1.Instalando FRED APP Node
+[2026-01-05 19:50:09] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python-pyfred pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 19:50:09] - Verificando paquetes: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:50:09] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:50:09] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:50:09] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:50:10] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:50:10] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:50:10] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:50:11] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:50:11] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:50:11] ERROR: 
+[2026-01-05 19:50:11] ERROR: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[2026-01-05 19:50:11] ERROR: 
+[2026-01-05 19:50:11] ERROR: Reading package lists...
+[2026-01-05 19:50:11] ERROR: Building dependency tree...
+[2026-01-05 19:50:11] ERROR: Reading state information...
+[2026-01-05 19:50:11] ERROR: Some packages could not be installed. This may mean that you have
+[2026-01-05 19:50:11] ERROR: requested an impossible situation or if you are using the unstable
+[2026-01-05 19:50:11] ERROR: distribution that some required packages have not yet been created
+[2026-01-05 19:50:11] ERROR: or been moved out of Incoming.
+[2026-01-05 19:50:11] ERROR: The following information may help to resolve the situation:
+[2026-01-05 19:50:11] ERROR: 
+[2026-01-05 19:50:11] ERROR: The following packages have unmet dependencies:
+[2026-01-05 19:50:11] ERROR:  pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:50:11] ERROR:  pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:50:11] ERROR: E: Unable to correct problems, you have held broken packages.
+[2026-01-05 19:50:11] - Fin con error .....
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+ pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+[2026-01-05 19:52:59] - Incluyendo pre.sh
+[2026-01-05 19:52:59] - Script running
+[2026-01-05 19:52:59] - Initialazing...
+[2026-01-05 19:52:59] - Check mandatory files...
+[2026-01-05 19:52:59] - Mandatory files: Ok
+[2026-01-05 19:52:59] - Check mandatory OS...
+[2026-01-05 19:52:59] - OS: Ok
+[2026-01-05 19:52:59] - Init complete: Ok
+[2026-01-05 19:53:01] - Ejecutando pre.sh
+[2026-01-05 19:53:01] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 19:53:03] - 1/5.Setting CZ Keyring
+[2026-01-05 19:53:03] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 19:53:03] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 19:53:03] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:53:04] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 19:53:04] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 19:53:04] - 2/5.Adding CZ Source list
+[2026-01-05 19:53:04] - ✅ Fuente agregada correctamente.
+[2026-01-05 19:53:04] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 19:53:04] - 3/5.Setting CZ PIN file
+[2026-01-05 19:53:04] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:53:05] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 19:53:05] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 19:53:05] - 4/5. Update sources
+[2026-01-05 19:53:05] - Ejecutando apt update
+[2026-01-05 19:53:10] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 19:53:10] - ✅ OK: 4/5.Update sources
+[2026-01-05 19:53:10] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 19:53:10] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 19:53:10] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/3.  Instalar Depedencias Python
+2/3.  Instalar Corba Servers
+3/3.  Instalar Apache for EPP
+4/3.  Instalar Python Daemons
+5/3.  Instalar FRED Python libs
+6/3.  Instalar FRED Daemonds
+7/3.  Instalar Enable Apache Corba
+8/3.  Instalar Enable Apache EPP
+9/3.  Instalar FRED Client
+10/3.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 19:53:13] - 1.Instalando FRED APP Node
+[2026-01-05 19:53:15] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python-pyfred pyfred-filemanager  pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 19:53:15] - Verificando paquetes: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:53:15] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:53:15] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 19:53:15] - ✅ El paquete 'python-pyfred' ya está instalado.
+[2026-01-05 19:53:15] - ✅ El paquete 'python-pyfred' ya está instalado.
+[2026-01-05 19:53:15] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'pyfred-filemanager' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:53:15] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 19:53:15] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:53:15] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 pyfred-filemanager pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 19:53:16] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:53:16] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 19:53:16] ERROR: 
+[2026-01-05 19:53:16] ERROR: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[2026-01-05 19:53:16] ERROR: 
+[2026-01-05 19:53:16] ERROR: Reading package lists...
+[2026-01-05 19:53:16] ERROR: Building dependency tree...
+[2026-01-05 19:53:16] ERROR: Reading state information...
+[2026-01-05 19:53:16] ERROR: Some packages could not be installed. This may mean that you have
+[2026-01-05 19:53:16] ERROR: requested an impossible situation or if you are using the unstable
+[2026-01-05 19:53:16] ERROR: distribution that some required packages have not yet been created
+[2026-01-05 19:53:16] ERROR: or been moved out of Incoming.
+[2026-01-05 19:53:16] ERROR: The following information may help to resolve the situation:
+[2026-01-05 19:53:16] ERROR: 
+[2026-01-05 19:53:16] ERROR: The following packages have unmet dependencies:
+[2026-01-05 19:53:16] ERROR:  pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:53:16] ERROR:  pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+[2026-01-05 19:53:16] ERROR: E: Unable to correct problems, you have held broken packages.
+[2026-01-05 19:53:16] - Fin con error .....
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ pyfred-genzone : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+ pyfred-test-mailer : Depends: python-pyfred (= 2.15.1-1~focal+1) but 2.17.0-1~focal+1 is to be installed
+E: Unable to correct problems, you have held broken packages.
+[2026-01-05 21:13:05] - Incluyendo pre.sh
+[2026-01-05 21:13:05] - Script running
+[2026-01-05 21:13:05] - Initialazing...
+[2026-01-05 21:13:05] - Check mandatory files...
+[2026-01-05 21:13:05] - Mandatory files: Ok
+[2026-01-05 21:13:05] - Check mandatory OS...
+[2026-01-05 21:13:05] - OS: Ok
+[2026-01-05 21:13:05] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:13:17] - Incluyendo pre.sh
+[2026-01-05 21:13:17] - Script running
+[2026-01-05 21:13:17] - Initialazing...
+[2026-01-05 21:13:17] - Check mandatory files...
+[2026-01-05 21:13:17] - Mandatory files: Ok
+[2026-01-05 21:13:17] - Check mandatory OS...
+[2026-01-05 21:13:17] - OS: Ok
+[2026-01-05 21:13:17] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:14:19] - Incluyendo pre.sh
+[2026-01-05 21:14:19] - Script running
+[2026-01-05 21:14:20] - Initialazing...
+[2026-01-05 21:14:20] - Check mandatory files...
+[2026-01-05 21:14:20] - Mandatory files: Ok
+[2026-01-05 21:14:20] - Check mandatory OS...
+[2026-01-05 21:14:20] - OS: Ok
+[2026-01-05 21:14:20] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 10 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:14:27] - 1.Instalando FRED APP Node
+[2026-01-05 21:14:30] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python-pyfred pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 21:14:30] - Verificando paquetes: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:14:30] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 21:14:30] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 21:14:30] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 21:14:30] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 21:14:30] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 21:14:30] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 21:14:30] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 21:14:30] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 21:14:31] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 21:14:31] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:14:31] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:14:32] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 21:14:32] - ❌ Ocurrió un error durante la instalación.
+[2026-01-05 21:14:32] ERROR: 
+[2026-01-05 21:14:32] ERROR: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[2026-01-05 21:14:32] ERROR: 
+[2026-01-05 21:14:32] ERROR: Reading package lists...
+[2026-01-05 21:14:32] ERROR: Building dependency tree...
+[2026-01-05 21:14:32] ERROR: Reading state information...
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package python-pyfred
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package pyfred-genzone
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package pyfred-test-mailer
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package python3-fred-epplib
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package python3-django-secretary
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package fred-backend-logger
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package fred-backend-logger-corba
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package fred-rifd
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package libapache2-mod-corba
+[2026-01-05 21:14:32] ERROR: E: Unable to locate package libapache2-mod-eppd
+[2026-01-05 21:14:32] - Fin con error .....
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package python-pyfred
+E: Unable to locate package pyfred-genzone
+E: Unable to locate package pyfred-test-mailer
+E: Unable to locate package python3-fred-epplib
+E: Unable to locate package python3-django-secretary
+E: Unable to locate package fred-backend-logger
+E: Unable to locate package fred-backend-logger-corba
+E: Unable to locate package fred-rifd
+E: Unable to locate package libapache2-mod-corba
+E: Unable to locate package libapache2-mod-eppd
+[2026-01-05 21:15:32] - Incluyendo pre.sh
+[2026-01-05 21:15:32] - Script running
+[2026-01-05 21:15:32] - Initialazing...
+[2026-01-05 21:15:32] - Check mandatory files...
+[2026-01-05 21:15:32] - Mandatory files: Ok
+[2026-01-05 21:15:33] - Check mandatory OS...
+[2026-01-05 21:15:33] - OS: Ok
+[2026-01-05 21:15:33] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 10 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:16:39] - Incluyendo pre.sh
+[2026-01-05 21:16:39] - Script running
+[2026-01-05 21:16:39] - Initialazing...
+[2026-01-05 21:16:39] - Check mandatory files...
+[2026-01-05 21:16:39] - Mandatory files: Ok
+[2026-01-05 21:16:39] - Check mandatory OS...
+[2026-01-05 21:16:39] - OS: Ok
+[2026-01-05 21:16:39] - Init complete: Ok
+[2026-01-05 21:18:10] - Incluyendo pre.sh
+[2026-01-05 21:18:10] - Script running
+[2026-01-05 21:18:10] - Initialazing...
+[2026-01-05 21:18:10] - Check mandatory files...
+[2026-01-05 21:18:10] - Mandatory files: Ok
+[2026-01-05 21:18:10] - Check mandatory OS...
+[2026-01-05 21:18:10] - OS: Ok
+[2026-01-05 21:18:10] - Init complete: Ok
+[2026-01-05 21:19:50] - Incluyendo pre.sh
+[2026-01-05 21:19:50] - Script running
+[2026-01-05 21:19:50] - Initialazing...
+[2026-01-05 21:19:50] - Check mandatory files...
+[2026-01-05 21:19:50] - Mandatory files: Ok
+[2026-01-05 21:19:50] - Check mandatory OS...
+[2026-01-05 21:19:50] - OS: Ok
+[2026-01-05 21:19:50] - Init complete: Ok
+[2026-01-05 21:19:52] - Ejecutando pre.sh
+[2026-01-05 21:19:52] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 21:20:17] - Incluyendo pre.sh
+[2026-01-05 21:20:17] - Script running
+[2026-01-05 21:20:17] - Initialazing...
+[2026-01-05 21:20:17] - Check mandatory files...
+[2026-01-05 21:20:17] - Mandatory files: Ok
+[2026-01-05 21:20:17] - Check mandatory OS...
+[2026-01-05 21:20:17] - OS: Ok
+[2026-01-05 21:20:17] - Init complete: Ok
+[2026-01-05 21:21:14] - Incluyendo pre.sh
+[2026-01-05 21:21:14] - Script running
+[2026-01-05 21:21:14] - Initialazing...
+[2026-01-05 21:21:14] - Check mandatory files...
+[2026-01-05 21:21:14] - Mandatory files: Ok
+[2026-01-05 21:21:14] - Check mandatory OS...
+[2026-01-05 21:21:14] - OS: Ok
+[2026-01-05 21:21:14] - Init complete: Ok
+[2026-01-05 21:21:15] - Ejecutando pre.sh
+[2026-01-05 21:21:15] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 21:21:34] - Incluyendo pre.sh
+[2026-01-05 21:21:34] - Script running
+[2026-01-05 21:21:34] - Initialazing...
+[2026-01-05 21:21:34] - Check mandatory files...
+[2026-01-05 21:21:34] - Mandatory files: Ok
+[2026-01-05 21:21:34] - Check mandatory OS...
+[2026-01-05 21:21:34] - OS: Ok
+[2026-01-05 21:21:34] - Init complete: Ok
+[2026-01-05 21:21:35] - Ejecutando pre.sh
+[2026-01-05 21:21:35] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 21:21:37] - 1/5.Setting CZ Keyring
+[2026-01-05 21:21:37] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 21:21:37] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 21:21:37] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:21:39] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:21:39] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 21:21:39] - 2/5.Adding CZ Source list
+[2026-01-05 21:21:39] - ✅ Fuente agregada correctamente.
+[2026-01-05 21:21:39] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 21:21:39] - 3/5.Setting CZ PIN file
+[2026-01-05 21:21:39] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:21:41] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:21:41] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-05 21:21:41] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 21:21:41] - 4/5. Update sources
+[2026-01-05 21:21:41] - Ejecutando apt update
+[2026-01-05 21:21:51] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 21:21:51] - ✅ OK: 4/5.Update sources
+[2026-01-05 21:21:51] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 21:21:51] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 21:21:51] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 10 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:22:13] - 1.Instalando FRED APP Node
+[2026-01-05 21:22:15] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python-pyfred pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 21:22:15] - Verificando paquetes: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:22:15] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 21:22:15] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 21:22:15] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 21:22:15] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 21:22:16] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 21:22:16] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:22:16] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:27:44] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-05 21:27:44] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-05 21:27:44] - ----------------------------------------------------
+[2026-01-05 21:27:44] - 📊 Resumen final:
+[2026-01-05 21:27:44] - 📊 Resumen final:
+[2026-01-05 21:27:44] - ✅ Instalados en esta ejecución: 17
+[2026-01-05 21:27:44] - ✅ Instalados en esta ejecución: 17
+[2026-01-05 21:27:44] - ❌ Fallidos: 0
+[2026-01-05 21:27:44] - ❌ Fallidos: 0
+[2026-01-05 21:27:44] - ℹ️ Ya estaban instalados: 0
+[2026-01-05 21:27:44] - ℹ️ Ya estaban instalados: 0
+[2026-01-05 21:27:44] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-05 21:27:44] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-05 21:27:46] - ✅ OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python-pyfred pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente
+[2026-01-05 21:27:46] - ✅ OK: FRED APP Node
+[2026-01-05 21:27:46] - 8. Habilitando apache for EPP
+[2026-01-05 21:33:20] - Incluyendo pre.sh
+[2026-01-05 21:33:20] - Script running
+[2026-01-05 21:33:20] - Initialazing...
+[2026-01-05 21:33:20] - Check mandatory files...
+[2026-01-05 21:33:20] - Mandatory files: Ok
+[2026-01-05 21:33:20] - Check mandatory OS...
+[2026-01-05 21:33:20] - OS: Ok
+[2026-01-05 21:33:20] - Init complete: Ok
+[2026-01-05 21:33:22] - Ejecutando pre.sh
+[2026-01-05 21:33:22] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 21:33:24] - 1/5.Setting CZ Keyring
+[2026-01-05 21:33:24] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 21:33:24] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 21:33:24] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:33:25] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:33:25] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 21:33:25] - 2/5.Adding CZ Source list
+[2026-01-05 21:33:25] - ✅ Fuente agregada correctamente.
+[2026-01-05 21:33:25] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 21:33:25] - 3/5.Setting CZ PIN file
+[2026-01-05 21:33:25] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:33:26] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:33:26] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-05 21:33:26] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 21:33:26] - 4/5. Update sources
+[2026-01-05 21:33:26] - Ejecutando apt update
+[2026-01-05 21:33:32] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 21:33:32] - ✅ OK: 4/5.Update sources
+[2026-01-05 21:33:32] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 21:33:32] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 21:33:32] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 10 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:34:30] - Incluyendo pre.sh
+[2026-01-05 21:34:30] - Script running
+[2026-01-05 21:34:30] - Initialazing...
+[2026-01-05 21:34:30] - Check mandatory files...
+[2026-01-05 21:34:30] - Mandatory files: Ok
+[2026-01-05 21:34:30] - Check mandatory OS...
+[2026-01-05 21:34:30] - OS: Ok
+[2026-01-05 21:34:30] - Init complete: Ok
+[2026-01-05 21:34:32] - Ejecutando pre.sh
+[2026-01-05 21:34:32] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 21:34:33] - 1/5.Setting CZ Keyring
+[2026-01-05 21:34:33] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 21:34:33] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 21:34:33] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:34:34] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:34:34] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 21:34:34] - 2/5.Adding CZ Source list
+[2026-01-05 21:34:34] - ✅ Fuente agregada correctamente.
+[2026-01-05 21:34:34] - ✅ OK: 2/5.Adding CZ Source list
+[2026-01-05 21:34:34] - 3/5.Setting CZ PIN file
+[2026-01-05 21:34:34] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:34:35] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:34:35] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-05 21:34:35] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 21:34:35] - 4/5. Update sources
+[2026-01-05 21:34:35] - Ejecutando apt update
+[2026-01-05 21:34:40] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 21:34:40] - ✅ OK: 4/5.Update sources
+[2026-01-05 21:34:40] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 21:34:40] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 21:34:40] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 10 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:34:44] - Copiando archivos de configuracion FRED /etc/fred
+[2026-01-05 21:34:44] - ✅ OK: Archivos de configuracion copiados
+[2026-01-05 21:37:53] - Incluyendo pre.sh
+[2026-01-05 21:37:53] - Script running
+[2026-01-05 21:37:53] - Initialazing...
+[2026-01-05 21:37:53] - Check mandatory files...
+[2026-01-05 21:37:53] - Mandatory files: Ok
+[2026-01-05 21:37:53] - Check mandatory OS...
+[2026-01-05 21:37:53] - OS: Ok
+[2026-01-05 21:37:53] - Init complete: Ok
+[2026-01-05 21:37:56] - Ejecutando pre.sh
+[2026-01-05 21:37:56] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-05 21:37:58] - 1/5.Setting CZ Keyring
+[2026-01-05 21:37:58] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-05 21:37:58] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 21:37:58] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:38:00] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-05 21:38:00] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-05 21:38:00] - 2/5. Adding CZ Source list
+[2026-01-05 21:38:00] - ✅ Fuente agregada correctamente.
+[2026-01-05 21:38:00] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-05 21:38:00] - 3/5.Setting CZ PIN file
+[2026-01-05 21:38:00] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:38:00] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-05 21:38:00] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-05 21:38:00] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-05 21:38:01] - 4/5. Update sources
+[2026-01-05 21:38:01] - Ejecutando apt update
+[2026-01-05 21:38:10] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-05 21:38:10] - ✅ OK: 4/5.Update sources
+[2026-01-05 21:38:10] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-05 21:38:10] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-05 21:38:10] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 10 pasos
+1/10.  Instalar Depedencias Python
+2/10.  Instalar Corba Servers
+3/10.  Instalar Apache for EPP
+4/10.  Instalar Python Daemons
+5/10.  Instalar FRED Python libs
+6/10.  Instalar FRED Daemonds
+7/10.  Instalar Enable Apache Corba
+8/10.  Instalar Enable Apache EPP
+9/10.  Instalar FRED Client
+10/10.  Copiando archvios de configuracion
+==================================================
+[2026-01-05 21:38:26] - 1.Instalando FRED APP Node
+[2026-01-05 21:38:26] - Instalando: python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python-pyfred pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd 
+[2026-01-05 21:38:26] - Verificando paquetes: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:38:26] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 21:38:26] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-05 21:38:26] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 21:38:26] - 📝 El paquete 'python3-dnspython' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-pip' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'omniorb-nameserver' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'omniorb' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'apache2' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python-pyfred' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'pyfred-genzone' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'pyfred-test-mailer' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-pydantic' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-fred-epplib' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'python3-django-secretary' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'fred-backend-logger' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'fred-rifd' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 21:38:27] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-05 21:38:27] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:38:27] - 📦 Iniciando instalación de: python3-dnspython python3-pip uwsgi-plugin-python3 omniorb-nameserver omniorb apache2 python-pyfred pyfred-genzone pyfred-test-mailer python3-pydantic python3-fred-epplib python3-django-secretary fred-backend-logger fred-backend-logger-corba fred-rifd libapache2-mod-corba libapache2-mod-eppd
+[2026-01-05 21:43:56] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-05 21:43:56] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-05 21:43:56] - ----------------------------------------------------
+[2026-01-05 21:43:56] - 📊 Resumen final:
+[2026-01-05 21:43:56] - 📊 Resumen final:
+[2026-01-05 21:43:56] - ✅ Instalados en esta ejecución: 17
+[2026-01-05 21:43:56] - ✅ Instalados en esta ejecución: 17
+[2026-01-05 21:43:56] - ❌ Fallidos: 0
+[2026-01-05 21:43:56] - ❌ Fallidos: 0
+[2026-01-05 21:43:56] - ℹ️ Ya estaban instalados: 0
+[2026-01-05 21:43:56] - ℹ️ Ya estaban instalados: 0
+[2026-01-05 21:43:56] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-05 21:43:56] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-05 21:43:58] - ✅ OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python-pyfred pyfred-genzone  pyfred-test-mailer python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente
+[2026-01-05 21:43:58] - ✅ OK: FRED APP Node
+[2026-01-05 21:43:58] - 8. Habilitando apache for EPP

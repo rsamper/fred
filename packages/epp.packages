@@ -15,7 +15,5 @@ fred-backend-logger
 fred-backend-logger-corba 
 fred-rifd
 fred-pifd
-fred-adifd
-fred-backend-registry
 libapache2-mod-corba 
 libapache2-mod-eppd 

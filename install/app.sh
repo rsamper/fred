@@ -41,18 +41,6 @@ enable_apache_modules(){
   print_message "✅ OK: Apache habilitado."
 }
 
-copy_fred_configs() {
-    print_message "Copiando archivos de configuracion FRED /etc/fred"
-    local SRC_DIR="$(dirname "$0")/configs"
-    local DST_DIR="/etc/fred"
-
-    # Crear el directorio destino si no existe
-    sudo mkdir -p "$DST_DIR"
-
-    # Copiar todos los archivos (sin borrar existentes)
-    sudo cp -av "$CONFIGS_FILES"* "$DST_DIR/"
-    print_message "✅ OK: Archivos de configuracion copiados"
-}
 
 
 install_app_packages(){
@@ -71,17 +59,20 @@ install_app_packages(){
 print_info_app(){
   clear
   print_notime "================================================="  
-  print_notime "La instalacion de FRED CORE se ejecuta en 10 pasos"  
-  print_notime "1/10.  Instalar Depedencias Python"  
-  print_notime "2/10.  Instalar Corba Servers"  
-  print_notime "3/10.  Instalar Apache for EPP"
-  print_notime "4/10.  Instalar Python Daemons"
-  print_notime "5/10.  Instalar FRED Python libs"
-  print_notime "6/10.  Instalar FRED Daemonds"
-  print_notime "7/10.  Instalar Enable Apache Corba"  
-  print_notime "8/10.  Instalar Enable Apache EPP"  
-  print_notime "9/10.  Instalar FRED Client"  
-  print_notime "10/10.  Copiando archvios de configuracion"  
+  print_notime "La instalacion de FRED CORE se ejecuta en 3 pasos"  
+  print_notime "1/10.  Instalar paquetes: Depedencias Python,Corba Servers"  
+  print_notime "-Depedencias Python"
+  print_notime "-Corba Servers"  
+  print_notime "-Apache for EPP"
+  print_notime "-Python Daemons"
+  print_notime "-FRED Python libs"
+  print_notime "-FRED Daemonds"
+  print_notime "-Enable Apache Corba"  
+  print_notime "-Enable Apache EPP"  
+  #print_notime "9/10.  Instalar FRED Client"  
+  print_notime "2/10.  Habilitando Apache Modules"  
+  print_notime "3/10.  Copiar archivos de configuracion"  
+
   print_notime "=================================================="  
   pause 
 }
@@ -93,7 +84,6 @@ install_app(){
   enable_apache_modules
   copy_fred_configs
   print_message "✅ OK: Nodo FRED APP instalado"   
-  echo "Favor dirigirse a /etc/fred"
-  echo "Y modificar/crear archivos de configuracion"
+  echo "Favor dirigirse a /etc/fred, y modificar/crear archivos de configuracion"
   print_message "Recuerda inciar los demonios de FRED" 
 }

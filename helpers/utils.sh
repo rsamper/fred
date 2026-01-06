@@ -118,7 +118,7 @@ install() {
     exit 1
   fi
 
-  print_log_message "Verificando paquetes: ${paquetes_solicitados[*]}"
+  #print_log_message "Verificando paquetes: ${paquetes_solicitados[*]}"
   print_log_message "🔍 Verificando estado de los paquetes solicitados..." | tee -a "$log_file"
 
   # 1. PRIMER BUCLE: VERIFICAR QUÉ NECESITA SER INSTALADO
@@ -134,7 +134,9 @@ install() {
  
   # 2. INSTALACIÓN EN LOTE (SI ES NECESARIO)
   if [ ${#paquetes_a_instalar[@]} -gt 0 ]; then
-    print_log_message "📦 Iniciando instalación de: ${paquetes_a_instalar[*]}" | tee -a "$log_file"
+    #print_log_message "📦 Iniciando instalación de: ${paquetes_a_instalar[*]}" | tee -a "$log_file"
+    print_log_message "📦 Iniciando instalación de paquetes. Por favor espere..." | tee -a "$log_file"
+    
     # La redirección correcta para capturar salida y error es "2>&1"
     if salida=$(sudo apt install -y "${paquetes_a_instalar[@]}" 2>&1); then
       print_log_message "✅ Todos los paquetes nuevos fueron instalados correctamente." | tee -a "$log_file"
@@ -181,6 +183,26 @@ exec_command() {
 }
 
 
+confirm_continue() {
+  echo ""
+  read -rp "¿Desea continuar (y/n)? " RESP
+
+  case "$RESP" in
+    y|Y)
+      return 0
+      ;;
+    *)
+     echo ""
+     print_log_message "Finalizdo. Operación cancelada por el usuario."
+     echo ""
+      exit 1
+      ;;
+  esac
+}
+
+install_whiptail() {
+  apt install whiptail -y
+}
 
 
 ################################33

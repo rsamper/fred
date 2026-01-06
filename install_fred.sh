@@ -46,9 +46,11 @@ INSTALL_PATH="install"
 PACKAGES_PATH="packages"
 CONFIGS_PATH="configs"
 UTILS_FILE="$SCRIPT_DIR/$HELPERS_PATH/utils.sh"
+TUI_FILE="$SCRIPT_DIR/$HELPERS_PATH/whip.sh"
 DB_FILE="$SCRIPT_DIR/$INSTALL_PATH/db.sh"
 PRE_FILE="$SCRIPT_DIR/$INSTALL_PATH/pre.sh"
 OMNI_FILE="$SCRIPT_DIR/$INSTALL_PATH/pre.sh"
+EPP_FILE="$SCRIPT_DIR/$INSTALL_PATH/epp.sh"
 CLIENT_FILE="$SCRIPT_DIR/$INSTALL_PATH/client.sh"
 APP_FILE="$SCRIPT_DIR/$INSTALL_PATH/app.sh"
 
@@ -60,16 +62,17 @@ PRE_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/pre.packages"
 #FRED_FILE="$SCRIPT_DIR/freddb.sh"
 APP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/app.packages"
 CONFIGS_FILES="$SCRIPT_DIR/$CONFIGS_PATH/"
+PRE_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/epp.packages"
 
 #CLIENT_PACKAGES_FILE="$SCRIPT_DIR/client.packages"
 #OMNI_PACKAGES_FILE="$SCRIPT_DIR/omni.packages"
-
 
 #Check mandatory files
 
 init_files(){
   print_message  "Check mandatory files..."
   check_file "$UTILS_FILE"  
+  check_file "$TUI_FILE"  
   check_file "$PRE_FILE"  
   check_file "$DB_FILE" 
   check_file "$PRE_PACKAGES_FILE" 
@@ -90,18 +93,33 @@ init(){
   print_message  "Init complete: Ok"
 }
 
+copy_fred_configs() {
+  print_message "Copiando archivos de configuracion FRED /etc/fred"
+  cp -av ./configs/* /etc/fred
+  print_message "✅ OK: Archivos de configuracion copiados"
+}
+
 source "$UTILS_FILE"
+source "$TUI_FILE"
+
+
 source "$DB_FILE"
 source "$PRE_FILE"
 source "$APP_FILE"
+source "$CLIENT_FILE"
+source "$EPP_FILE"
+source "$TUI_FILE"
+
 ###############################################################
 
 #mapfile -t packages < <(grep -v '^#' "$DB_PACKAGES_FILE" | grep -v '^$')
 #echo ${packages[@]}
 
 select_package(){
+  echo "$1"
+  pause
   case $1 in
-      db)
+      DataBase)
           install_pre
           install_db
           print_notime "Bye"
@@ -114,12 +132,22 @@ select_package(){
           ;;
       client )
           install_pre
+          install_client
           echo "FRED CLIENT"
           ;;
       omni )
           #install_pre
           echo "OMNI NAMES"
           ;;
+      epp )
+          #install_pre
+          echo "EPP Server"
+          ;;
+      config )
+          echo "Copiando archivos de configuracion"
+          copy_fred_configs    
+          ;;
+
       *)
          echo "Parámetro recibido: $1"
           ;;
@@ -128,12 +156,18 @@ select_package(){
 
 # Main function
 main() {
-   clear 
    print_message  "Script running"
    init
-   pause
-   select_package $1
-   #
+   install_whiptail
+   greenting
+   greenting_menu
+   OPTION=$(main_menu)
+   echo "$OPTION"
+   #confirm_continue
+   
+   #pause
+   #select_package $1
+   select_package $OPTION
 }
 
 # Run main function

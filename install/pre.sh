@@ -109,7 +109,7 @@ print_info_pre(){
   print_notime "4/5.  Actualizar repos FRED"  
   print_notime "5/5.  Instalar paquetes necesarios FRED"
   print_notime "============================================================"  
-  pause
+  confirm_continue
 }
 
 install_pre(){

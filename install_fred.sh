@@ -8,7 +8,9 @@
 #set -u  # Exit on undefined variables
 
 # recupera la ruta desde donde se ejecuta el script
+#SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
+
 QUIET_MODE=false
 
 while [[ "$1" == "--quiet" ]]; do
@@ -48,6 +50,7 @@ PACKAGES_PATH="packages"
 CONFIGS_PATH="configs"
 
 UTILS_FILE="$SCRIPT_DIR/$HELPERS_PATH/utils.sh"
+MENU_FILE="$SCRIPT_DIR/$HELPERS_PATH/menu.sh"
 TUI_FILE="$SCRIPT_DIR/$HELPERS_PATH/whip.sh"
 DB_FILE="$SCRIPT_DIR/$INSTALL_PATH/db.sh"
 PRE_FILE="$SCRIPT_DIR/$INSTALL_PATH/pre.sh"
@@ -73,7 +76,8 @@ EPP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/epp.packages"
 
 init_files(){
   print_message  "Check mandatory files..."
-  check_file "$UTILS_FILE"  
+  check_file "$UTILS_FILE"
+  check_file "$MENU_FILE"  
   check_file "$TUI_FILE"  
   check_file "$PRE_FILE"  
   check_file "$DB_FILE" 
@@ -102,6 +106,7 @@ copy_fred_configs() {
 }
 
 source "$UTILS_FILE"
+source "$MENU_FILE"
 source "$TUI_FILE"
 
 
@@ -116,6 +121,8 @@ source "$TUI_FILE"
 
 #mapfile -t packages < <(grep -v '^#' "$DB_PACKAGES_FILE" | grep -v '^$')
 #echo ${packages[@]}
+
+
 
 select_package(){
   echo "$1"
@@ -158,57 +165,16 @@ select_package(){
   esac
 }
 
+
+
 # Main function
 main() {
    print_message  "Script running"
+   print_message $SCRIPT_DIR
    init
-   pause
-   select_package $1
+   main_menu
+   exit 0
 }
 
 # Run main function
 main "$@"
-
-
-
-
-
-
-
-##########################################################################
-
-   #echo "Parámetro recibido: $1"    
-   #get_packages $DB_PACKAGES_FILE
-
-
-#if [ ! -f "$GUM_FILE" ]; then
-#    echo "❌ El archivo $GUM_FILE no existe."
-#    echo "End exit code 1"
-#    exit 1
-#fi
-
-
-#if [ ! -f "$DB_PACKAGES_FILE" ]; then
-#    echo "$(timestamp) ❌ El archivo $DB_PACKAGES_FILE no existe"
-#    echo "End exit code 1"
-#    exit 1
-#fi
-
-
-
-
-# Valida entrada ya que debe traer parametros
-#if [ "$#" -lt 1 ]; then
-#    echo "Error: Debe proporcionar al menos un parámetro" >&2 # Mostrar el error en stderr
-#    echo "Para metros validos: db core client omni" >&2 # Mostrar el error en stderr
-#    echo "Ejemplo instalar base de datos:  bash instalar_fred db" >&2 # Mostrar el error en stderr
-#    exit 1 # Salir con un código de error
-#fi
-
-#for arg in "$@"; do
-#    if [[ "$arg" == "--quiet" ]]; then
-#        QUIET_MODE=true
-#        break # No necesitamos seguir revisando
-#    fi
-#done
-#ete

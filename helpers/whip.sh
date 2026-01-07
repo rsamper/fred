@@ -49,7 +49,7 @@ greenting_menu(){
          --msgbox "Para iniciar debes seleccionar el componente a instalar" 7 60
 }
 
-main_menu(){
+main_menu_whip(){
 ans=$(whiptail --title "MENU" \
                --menu "Elige una opción" 15 80 5 \
                "DataBase" "Instala componentes y crea la base de datos FRED" \

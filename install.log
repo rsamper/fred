@@ -2854,3 +2854,217 @@ La instalacion de FRED CORE se ejecuta en 3 pasos
 [2026-01-07 22:03:58] - ✅ OK: Paquetes FRED APP apache2 libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente
 [2026-01-07 22:03:58] - ✅ OK: FRED APP Node
 [2026-01-07 22:03:58] - 2. Habilitando apache for EPP
+[2026-01-07 16:13:38] - Incluyendo pre.sh
+[2026-01-07 16:13:38] - Script running
+[2026-01-07 16:16:48] - Incluyendo pre.sh
+[2026-01-07 16:16:48] - Script running
+[2026-01-07 16:18:08] - Incluyendo pre.sh
+[2026-01-07 16:18:08] - Script running
+[2026-01-07 16:18:44] - Incluyendo pre.sh
+[2026-01-07 16:18:44] - Script running
+[2026-01-07 16:19:22] - Incluyendo pre.sh
+[2026-01-07 16:19:22] - Script running
+[2026-01-07 16:19:35] - Incluyendo pre.sh
+[2026-01-07 16:19:35] - Script running
+[2026-01-07 16:21:10] - Incluyendo pre.sh
+[2026-01-07 16:21:10] - Script running
+[2026-01-07 16:22:49] - Incluyendo pre.sh
+[2026-01-07 16:22:49] - Script running
+[2026-01-07 16:23:08] - Incluyendo pre.sh
+[2026-01-07 16:23:08] - Script running
+[2026-01-07 16:24:31] - Incluyendo pre.sh
+[2026-01-07 16:24:31] - Script running
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:25:06] - Incluyendo pre.sh
+[2026-01-07 16:25:06] - Script running
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:25:45] - Incluyendo pre.sh
+[2026-01-07 16:25:45] - Script running
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:27:05] - Incluyendo pre.sh
+[2026-01-07 16:27:05] - Script running
+[2026-01-07 16:27:05] - SCRIPT_DIR
+[2026-01-07 16:27:16] - Incluyendo pre.sh
+[2026-01-07 16:27:17] - Script running
+[2026-01-07 16:27:17] - .
+[2026-01-07 16:28:41] - Incluyendo pre.sh
+[2026-01-07 16:28:41] - Script running
+[2026-01-07 16:28:41] - .
+[2026-01-07 16:29:02] - Incluyendo pre.sh
+[2026-01-07 16:29:02] - Script running
+[2026-01-07 16:29:02] - .
+[2026-01-07 16:29:02] - Initialazing...
+[2026-01-07 16:29:02] - Check mandatory files...
+[2026-01-07 16:29:02] - Mandatory files: Ok
+[2026-01-07 16:29:02] - Check mandatory OS...
+[2026-01-07 16:29:02] - OS: Ok
+[2026-01-07 16:29:02] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:30:41] - Incluyendo pre.sh
+[2026-01-07 16:30:41] - Script running
+[2026-01-07 16:30:41] - .
+[2026-01-07 16:30:41] - Initialazing...
+[2026-01-07 16:30:41] - Check mandatory files...
+[2026-01-07 16:30:41] - Mandatory files: Ok
+[2026-01-07 16:30:41] - Check mandatory OS...
+[2026-01-07 16:30:41] - OS: Ok
+[2026-01-07 16:30:41] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:31:04] - Incluyendo pre.sh
+[2026-01-07 16:31:04] - Script running
+[2026-01-07 16:31:04] - .
+[2026-01-07 16:31:04] - Initialazing...
+[2026-01-07 16:31:04] - Check mandatory files...
+[2026-01-07 16:31:04] - Mandatory files: Ok
+[2026-01-07 16:31:04] - Check mandatory OS...
+[2026-01-07 16:31:04] - OS: Ok
+[2026-01-07 16:31:04] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:31:08] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-07 16:31:56] - Incluyendo pre.sh
+[2026-01-07 16:31:57] - Script running
+[2026-01-07 16:31:57] - .
+[2026-01-07 16:31:57] - Initialazing...
+[2026-01-07 16:31:57] - Check mandatory files...
+[2026-01-07 16:31:57] - Mandatory files: Ok
+[2026-01-07 16:31:57] - Check mandatory OS...
+[2026-01-07 16:31:57] - OS: Ok
+[2026-01-07 16:31:57] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:31:59] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-07 16:32:41] - Incluyendo pre.sh
+[2026-01-07 16:32:41] - Script running
+[2026-01-07 16:32:41] - .
+[2026-01-07 16:32:41] - Initialazing...
+[2026-01-07 16:32:41] - Check mandatory files...
+[2026-01-07 16:32:41] - Mandatory files: Ok
+[2026-01-07 16:32:41] - Check mandatory OS...
+[2026-01-07 16:32:41] - OS: Ok
+[2026-01-07 16:32:41] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:32:46] - Finalizdo. Operación cancelada por el usuario.
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:34:22] - Incluyendo pre.sh
+[2026-01-07 16:34:22] - Script running
+[2026-01-07 16:34:22] - .
+[2026-01-07 16:34:22] - Initialazing...
+[2026-01-07 16:34:22] - Check mandatory files...
+[2026-01-07 16:34:22] - Mandatory files: Ok
+[2026-01-07 16:34:22] - Check mandatory OS...
+[2026-01-07 16:34:22] - OS: Ok
+[2026-01-07 16:34:22] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:34:25] - Finalizdo. Operación cancelada por el usuario.
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:34:35] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-07 16:37:03] - Incluyendo pre.sh
+[2026-01-07 16:37:03] - Script running
+[2026-01-07 16:37:03] - .
+[2026-01-07 16:37:03] - Initialazing...
+[2026-01-07 16:37:03] - Check mandatory files...
+[2026-01-07 16:37:03] - Mandatory files: Ok
+[2026-01-07 16:37:03] - Check mandatory OS...
+[2026-01-07 16:37:03] - OS: Ok
+[2026-01-07 16:37:03] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:37:07] - Finalizdo. Operación cancelada por el usuario.
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:37:38] - Incluyendo pre.sh
+[2026-01-07 16:37:38] - Script running
+[2026-01-07 16:37:38] - .
+[2026-01-07 16:37:38] - Initialazing...
+[2026-01-07 16:37:38] - Check mandatory files...
+[2026-01-07 16:37:38] - Mandatory files: Ok
+[2026-01-07 16:37:38] - Check mandatory OS...
+[2026-01-07 16:37:38] - OS: Ok
+[2026-01-07 16:37:38] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================
+[2026-01-07 16:37:41] - Finalizdo. Operación cancelada por el usuario.
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/3.  Instalar PostFix
+2/3.  Instalar la base de datos PostgreSQL
+3/3.  Instalar el paquete FRED DB
+==================================================

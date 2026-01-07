@@ -169,7 +169,8 @@ install() {
 exec_command() {
     local cmd="$*"
     # Ejecuta el comando y captura salida y código de error
-    print_log_message "Ejecutando $cmd"
+    print_log_message "Ejecutando..."
+    #print_log_message "Ejecutando $cmd"
     #output=$(eval "$cmd" 2>&1)
     output=$( "$@" 2>&1 )
     local status=$?
@@ -195,7 +196,8 @@ confirm_continue() {
      echo ""
      print_log_message "Finalizdo. Operación cancelada por el usuario."
      echo ""
-      exit 1
+      #exit 1
+      return 1
       ;;
   esac
 }

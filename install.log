@@ -2452,3 +2452,405 @@ La instalacion de FRED CORE se ejecuta en 3 pasos
 [2026-01-06 20:33:06] - Check mandatory OS...
 [2026-01-06 20:33:06] - OS: Ok
 [2026-01-06 20:33:06] - Init complete: Ok
+[2026-01-07 21:13:50] - Incluyendo pre.sh
+[2026-01-07 21:13:50] - Script running
+[2026-01-07 21:13:50] - Initialazing...
+[2026-01-07 21:13:50] - Check mandatory files...
+[2026-01-07 21:13:50] - Mandatory files: Ok
+[2026-01-07 21:13:50] - Check mandatory OS...
+[2026-01-07 21:13:50] - OS: Ok
+[2026-01-07 21:13:50] - Init complete: Ok
+[2026-01-07 21:14:24] - Incluyendo pre.sh
+[2026-01-07 21:14:24] - Script running
+[2026-01-07 21:14:24] - Initialazing...
+[2026-01-07 21:14:24] - Check mandatory files...
+[2026-01-07 21:14:24] - Mandatory files: Ok
+[2026-01-07 21:14:25] - Check mandatory OS...
+[2026-01-07 21:14:25] - OS: Ok
+[2026-01-07 21:14:25] - Init complete: Ok
+[2026-01-07 21:14:30] - Ejecutando pre.sh
+[2026-01-07 21:14:30] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-07 21:15:22] - Incluyendo pre.sh
+[2026-01-07 21:15:22] - Script running
+[2026-01-07 21:15:29] - Incluyendo pre.sh
+[2026-01-07 21:15:29] - Script running
+[2026-01-07 21:16:03] - Incluyendo pre.sh
+[2026-01-07 21:16:03] - Script running
+[2026-01-07 21:16:03] - Initialazing...
+[2026-01-07 21:16:03] - Check mandatory files...
+[2026-01-07 21:16:03] - Mandatory files: Ok
+[2026-01-07 21:16:03] - Check mandatory OS...
+[2026-01-07 21:16:03] - OS: Ok
+[2026-01-07 21:16:03] - Init complete: Ok
+[2026-01-07 21:17:34] - Incluyendo pre.sh
+[2026-01-07 21:17:34] - Script running
+[2026-01-07 21:17:35] - Initialazing...
+[2026-01-07 21:17:35] - Check mandatory files...
+[2026-01-07 21:17:35] - Mandatory files: Ok
+[2026-01-07 21:17:35] - Check mandatory OS...
+[2026-01-07 21:17:35] - OS: Ok
+[2026-01-07 21:17:35] - Init complete: Ok
+[2026-01-07 21:22:03] - Incluyendo pre.sh
+[2026-01-07 21:22:03] - Script running
+[2026-01-07 21:22:03] - Initialazing...
+[2026-01-07 21:22:03] - Check mandatory files...
+[2026-01-07 21:22:03] - Mandatory files: Ok
+[2026-01-07 21:22:03] - Check mandatory OS...
+[2026-01-07 21:22:03] - OS: Ok
+[2026-01-07 21:22:03] - Init complete: Ok
+[2026-01-07 21:22:31] - Incluyendo pre.sh
+[2026-01-07 21:22:31] - Script running
+[2026-01-07 21:22:31] - Initialazing...
+[2026-01-07 21:22:31] - Check mandatory files...
+[2026-01-07 21:22:31] - Mandatory files: Ok
+[2026-01-07 21:22:31] - Check mandatory OS...
+[2026-01-07 21:22:31] - OS: Ok
+[2026-01-07 21:22:31] - Init complete: Ok
+[2026-01-07 21:25:47] - Incluyendo pre.sh
+[2026-01-07 21:25:47] - Script running
+[2026-01-07 21:25:47] - Initialazing...
+[2026-01-07 21:25:47] - Check mandatory files...
+[2026-01-07 21:25:47] - Mandatory files: Ok
+[2026-01-07 21:25:47] - Check mandatory OS...
+[2026-01-07 21:25:47] - OS: Ok
+[2026-01-07 21:25:47] - Init complete: Ok
+[2026-01-07 21:28:52] - Incluyendo pre.sh
+[2026-01-07 21:28:52] - Script running
+[2026-01-07 21:28:52] - Initialazing...
+[2026-01-07 21:28:52] - Check mandatory files...
+[2026-01-07 21:28:53] - Mandatory files: Ok
+[2026-01-07 21:28:53] - Check mandatory OS...
+[2026-01-07 21:28:53] - OS: Ok
+[2026-01-07 21:28:53] - Init complete: Ok
+[2026-01-07 21:29:30] - Incluyendo pre.sh
+[2026-01-07 21:29:30] - Script running
+[2026-01-07 21:29:30] - Initialazing...
+[2026-01-07 21:29:30] - Check mandatory files...
+[2026-01-07 21:29:30] - Mandatory files: Ok
+[2026-01-07 21:29:30] - Check mandatory OS...
+[2026-01-07 21:29:30] - OS: Ok
+[2026-01-07 21:29:30] - Init complete: Ok
+[2026-01-07 21:30:32] - Incluyendo pre.sh
+[2026-01-07 21:30:32] - Script running
+[2026-01-07 21:30:32] - Initialazing...
+[2026-01-07 21:30:32] - Check mandatory files...
+[2026-01-07 21:30:32] - Mandatory files: Ok
+[2026-01-07 21:30:32] - Check mandatory OS...
+[2026-01-07 21:30:32] - OS: Ok
+[2026-01-07 21:30:32] - Init complete: Ok
+[2026-01-07 21:31:54] - Incluyendo pre.sh
+[2026-01-07 21:31:54] - Script running
+[2026-01-07 21:31:54] - Initialazing...
+[2026-01-07 21:31:54] - Check mandatory files...
+[2026-01-07 21:31:54] - Mandatory files: Ok
+[2026-01-07 21:31:54] - Check mandatory OS...
+[2026-01-07 21:31:54] - OS: Ok
+[2026-01-07 21:31:54] - Init complete: Ok
+[2026-01-07 21:32:42] - Incluyendo pre.sh
+[2026-01-07 21:32:42] - Script running
+[2026-01-07 21:32:42] - Initialazing...
+[2026-01-07 21:32:42] - Check mandatory files...
+[2026-01-07 21:32:42] - Mandatory files: Ok
+[2026-01-07 21:32:42] - Check mandatory OS...
+[2026-01-07 21:32:42] - OS: Ok
+[2026-01-07 21:32:42] - Init complete: Ok
+[2026-01-07 21:33:25] - Incluyendo pre.sh
+[2026-01-07 21:33:25] - Script running
+[2026-01-07 21:33:25] - Initialazing...
+[2026-01-07 21:33:25] - Check mandatory files...
+[2026-01-07 21:33:25] - Mandatory files: Ok
+[2026-01-07 21:33:25] - Check mandatory OS...
+[2026-01-07 21:33:25] - OS: Ok
+[2026-01-07 21:33:25] - Init complete: Ok
+[2026-01-07 21:34:12] - Incluyendo pre.sh
+[2026-01-07 21:34:12] - Script running
+[2026-01-07 21:34:12] - Initialazing...
+[2026-01-07 21:34:12] - Check mandatory files...
+[2026-01-07 21:34:13] - Mandatory files: Ok
+[2026-01-07 21:34:13] - Check mandatory OS...
+[2026-01-07 21:34:13] - OS: Ok
+[2026-01-07 21:34:13] - Init complete: Ok
+[2026-01-07 21:35:17] - Incluyendo pre.sh
+[2026-01-07 21:35:17] - Script running
+[2026-01-07 21:35:17] - Initialazing...
+[2026-01-07 21:35:17] - Check mandatory files...
+[2026-01-07 21:35:17] - Mandatory files: Ok
+[2026-01-07 21:35:17] - Check mandatory OS...
+[2026-01-07 21:35:17] - OS: Ok
+[2026-01-07 21:35:17] - Init complete: Ok
+[2026-01-07 21:36:39] - Incluyendo pre.sh
+[2026-01-07 21:36:39] - Script running
+[2026-01-07 21:36:39] - Initialazing...
+[2026-01-07 21:36:39] - Check mandatory files...
+[2026-01-07 21:36:39] - Mandatory files: Ok
+[2026-01-07 21:36:39] - Check mandatory OS...
+[2026-01-07 21:36:39] - OS: Ok
+[2026-01-07 21:36:39] - Init complete: Ok
+[2026-01-07 21:38:24] - Incluyendo pre.sh
+[2026-01-07 21:38:24] - Script running
+[2026-01-07 21:38:24] - Initialazing...
+[2026-01-07 21:38:24] - Check mandatory files...
+[2026-01-07 21:38:24] - Mandatory files: Ok
+[2026-01-07 21:38:24] - Check mandatory OS...
+[2026-01-07 21:38:24] - OS: Ok
+[2026-01-07 21:38:24] - Init complete: Ok
+[2026-01-07 21:39:59] - Incluyendo pre.sh
+[2026-01-07 21:39:59] - Script running
+[2026-01-07 21:39:59] - Initialazing...
+[2026-01-07 21:39:59] - Check mandatory files...
+[2026-01-07 21:39:59] - Mandatory files: Ok
+[2026-01-07 21:39:59] - Check mandatory OS...
+[2026-01-07 21:39:59] - OS: Ok
+[2026-01-07 21:39:59] - Init complete: Ok
+[2026-01-07 21:40:08] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:41:34] - Incluyendo pre.sh
+[2026-01-07 21:41:34] - Script running
+[2026-01-07 21:41:34] - Initialazing...
+[2026-01-07 21:41:34] - Check mandatory files...
+[2026-01-07 21:41:34] - Mandatory files: Ok
+[2026-01-07 21:41:34] - Check mandatory OS...
+[2026-01-07 21:41:34] - OS: Ok
+[2026-01-07 21:41:34] - Init complete: Ok
+[2026-01-07 21:41:44] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:46:19] - Incluyendo pre.sh
+[2026-01-07 21:46:19] - Script running
+[2026-01-07 21:46:19] - Initialazing...
+[2026-01-07 21:46:19] - Check mandatory files...
+[2026-01-07 21:46:19] - Mandatory files: Ok
+[2026-01-07 21:46:19] - Check mandatory OS...
+[2026-01-07 21:46:19] - OS: Ok
+[2026-01-07 21:46:19] - Init complete: Ok
+[2026-01-07 21:46:23] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:47:16] - Incluyendo pre.sh
+[2026-01-07 21:47:16] - Script running
+[2026-01-07 21:47:16] - Initialazing...
+[2026-01-07 21:47:16] - Check mandatory files...
+[2026-01-07 21:47:16] - Mandatory files: Ok
+[2026-01-07 21:47:16] - Check mandatory OS...
+[2026-01-07 21:47:16] - OS: Ok
+[2026-01-07 21:47:16] - Init complete: Ok
+[2026-01-07 21:47:19] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:47:44] - Incluyendo pre.sh
+[2026-01-07 21:47:44] - Script running
+[2026-01-07 21:47:44] - Initialazing...
+[2026-01-07 21:47:44] - Check mandatory files...
+[2026-01-07 21:47:44] - Mandatory files: Ok
+[2026-01-07 21:47:44] - Check mandatory OS...
+[2026-01-07 21:47:44] - OS: Ok
+[2026-01-07 21:47:44] - Init complete: Ok
+[2026-01-07 21:47:47] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:49:35] - Incluyendo pre.sh
+[2026-01-07 21:49:35] - Script running
+[2026-01-07 21:49:35] - Initialazing...
+[2026-01-07 21:49:35] - Check mandatory files...
+[2026-01-07 21:49:35] - Mandatory files: Ok
+[2026-01-07 21:49:35] - Check mandatory OS...
+[2026-01-07 21:49:35] - OS: Ok
+[2026-01-07 21:49:35] - Init complete: Ok
+[2026-01-07 21:49:39] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:52:32] - Incluyendo pre.sh
+[2026-01-07 21:52:32] - Script running
+[2026-01-07 21:52:32] - Initialazing...
+[2026-01-07 21:52:32] - Check mandatory files...
+[2026-01-07 21:52:32] - Mandatory files: Ok
+[2026-01-07 21:52:32] - Check mandatory OS...
+[2026-01-07 21:52:32] - OS: Ok
+[2026-01-07 21:52:32] - Init complete: Ok
+[2026-01-07 21:52:35] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:54:20] - Incluyendo pre.sh
+[2026-01-07 21:54:20] - Script running
+[2026-01-07 21:54:20] - Initialazing...
+[2026-01-07 21:54:20] - Check mandatory files...
+[2026-01-07 21:54:20] - Mandatory files: Ok
+[2026-01-07 21:54:20] - Check mandatory OS...
+[2026-01-07 21:54:20] - OS: Ok
+[2026-01-07 21:54:20] - Init complete: Ok
+[2026-01-07 21:54:26] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:54:56] - Incluyendo pre.sh
+[2026-01-07 21:54:56] - Script running
+[2026-01-07 21:54:56] - Initialazing...
+[2026-01-07 21:54:56] - Check mandatory files...
+[2026-01-07 21:54:56] - Mandatory files: Ok
+[2026-01-07 21:54:56] - Check mandatory OS...
+[2026-01-07 21:54:56] - OS: Ok
+[2026-01-07 21:54:56] - Init complete: Ok
+[2026-01-07 21:55:02] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:55:25] - Incluyendo pre.sh
+[2026-01-07 21:55:25] - Script running
+[2026-01-07 21:55:25] - Initialazing...
+[2026-01-07 21:55:25] - Check mandatory files...
+[2026-01-07 21:55:25] - Mandatory files: Ok
+[2026-01-07 21:55:25] - Check mandatory OS...
+[2026-01-07 21:55:25] - OS: Ok
+[2026-01-07 21:55:25] - Init complete: Ok
+[2026-01-07 21:55:35] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:58:13] - Incluyendo pre.sh
+[2026-01-07 21:58:13] - Script running
+[2026-01-07 21:58:13] - Initialazing...
+[2026-01-07 21:58:13] - Check mandatory files...
+[2026-01-07 21:58:13] - Mandatory files: Ok
+[2026-01-07 21:58:13] - Check mandatory OS...
+[2026-01-07 21:58:13] - OS: Ok
+[2026-01-07 21:58:13] - Init complete: Ok
+[2026-01-07 21:58:18] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:59:04] - Incluyendo pre.sh
+[2026-01-07 21:59:04] - Script running
+[2026-01-07 21:59:04] - Initialazing...
+[2026-01-07 21:59:04] - Check mandatory files...
+[2026-01-07 21:59:04] - Mandatory files: Ok
+[2026-01-07 21:59:04] - Check mandatory OS...
+[2026-01-07 21:59:04] - OS: Ok
+[2026-01-07 21:59:04] - Init complete: Ok
+[2026-01-07 21:59:07] - ✅ OK: Nodo EPP instalado
+[2026-01-07 21:59:21] - Incluyendo pre.sh
+[2026-01-07 21:59:21] - Script running
+[2026-01-07 21:59:21] - Initialazing...
+[2026-01-07 21:59:21] - Check mandatory files...
+[2026-01-07 21:59:21] - Mandatory files: Ok
+[2026-01-07 21:59:21] - Check mandatory OS...
+[2026-01-07 21:59:21] - OS: Ok
+[2026-01-07 21:59:21] - Init complete: Ok
+[2026-01-07 21:59:24] - ✅ OK: Nodo EPP instalado
+[2026-01-07 22:01:00] - Incluyendo pre.sh
+[2026-01-07 22:01:00] - Script running
+[2026-01-07 22:01:00] - Initialazing...
+[2026-01-07 22:01:00] - Check mandatory files...
+[2026-01-07 22:01:00] - Mandatory files: Ok
+[2026-01-07 22:01:00] - Check mandatory OS...
+[2026-01-07 22:01:00] - OS: Ok
+[2026-01-07 22:01:00] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/2.  Instalar paquetes: Depedencias Python,Corba Servers
+2/2.  Habilitando Apache Modules
+==================================================
+[2026-01-07 22:01:10] - Instalando Nodo EPP instalado
+[2026-01-07 22:01:10] - 1.Instalando FRED EPP Node
+[2026-01-07 22:01:10] - ℹ️ INFO: No se encontraron paquetes DB válidos para instalar en el archivo ''.
+[2026-01-07 22:01:10] - ✅ OK: FRED APP Node
+[2026-01-07 22:01:10] - 2. Habilitando apache for EPP
+[2026-01-07 22:01:10] - Ejecutando a2enmod ssl
+[2026-01-07 22:01:10] - ❌ ERROR: Falló el comando: a2enmod ssl  - error: ./helpers/utils.sh: line 174: a2enmod: command not found
+[2026-01-07 22:01:55] - Incluyendo pre.sh
+[2026-01-07 22:01:55] - Script running
+[2026-01-07 22:01:55] - Initialazing...
+[2026-01-07 22:01:55] - Check mandatory files...
+[2026-01-07 22:01:55] - Mandatory files: Ok
+[2026-01-07 22:01:55] - Check mandatory OS...
+[2026-01-07 22:01:55] - OS: Ok
+[2026-01-07 22:01:55] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/2.  Instalar paquetes: Depedencias Python,Corba Servers
+2/2.  Habilitando Apache Modules
+==================================================
+[2026-01-07 22:02:01] - Instalando Nodo EPP instalado
+[2026-01-07 22:02:01] - 1.Instalando FRED EPP Node
+[2026-01-07 22:02:01] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-07 22:02:01] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-07 22:02:01] - 📝 El paquete 'apache2' se instalará.
+[2026-01-07 22:02:01] - 📝 El paquete 'apache2' se instalará.
+[2026-01-07 22:02:01] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-07 22:02:01] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-07 22:02:01] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-07 22:02:01] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-07 22:02:01] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-07 22:02:01] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-07 22:02:01] - ❌ Ocurrió un error durante la instalación.
+[2026-01-07 22:02:01] - ❌ Ocurrió un error durante la instalación.
+[2026-01-07 22:02:01] ERROR: 
+[2026-01-07 22:02:01] ERROR: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+[2026-01-07 22:02:01] ERROR: 
+[2026-01-07 22:02:01] ERROR: Reading package lists...
+[2026-01-07 22:02:01] ERROR: Building dependency tree...
+[2026-01-07 22:02:01] ERROR: Reading state information...
+[2026-01-07 22:02:01] ERROR: E: Unable to locate package libapache2-mod-corba
+[2026-01-07 22:02:01] ERROR: E: Unable to locate package libapache2-mod-eppd
+[2026-01-07 22:02:01] - Fin con error .....
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+E: Unable to locate package libapache2-mod-corba
+E: Unable to locate package libapache2-mod-eppd
+[2026-01-07 22:02:38] - Incluyendo pre.sh
+[2026-01-07 22:02:38] - Script running
+[2026-01-07 22:02:38] - Initialazing...
+[2026-01-07 22:02:38] - Check mandatory files...
+[2026-01-07 22:02:38] - Mandatory files: Ok
+[2026-01-07 22:02:38] - Check mandatory OS...
+[2026-01-07 22:02:38] - OS: Ok
+[2026-01-07 22:02:38] - Init complete: Ok
+[2026-01-07 22:02:42] - Ejecutando pre.sh
+[2026-01-07 22:02:42] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-07 22:02:50] - 1/5.Setting CZ Keyring
+[2026-01-07 22:02:50] - Ejecutando mkdir -p /usr/share/keyrings/
+[2026-01-07 22:02:50] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-07 22:02:50] - Ejecutando wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-07 22:02:52] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-07 22:02:52] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-07 22:02:52] - 2/5. Adding CZ Source list
+[2026-01-07 22:02:52] - ✅ Fuente agregada correctamente.
+[2026-01-07 22:02:52] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-07 22:02:52] - 3/5.Setting CZ PIN file
+[2026-01-07 22:02:52] - Ejecutando wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-07 22:02:54] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-07 22:02:54] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-07 22:02:54] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-07 22:02:54] - 4/5. Update sources
+[2026-01-07 22:02:54] - Ejecutando apt update
+[2026-01-07 22:03:03] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-07 22:03:03] - ✅ OK: 4/5.Update sources
+[2026-01-07 22:03:03] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-07 22:03:03] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-07 22:03:03] - ✅ OK: Requisitos instalados exitosamente
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/2.  Instalar paquetes: Depedencias Python,Corba Servers
+2/2.  Habilitando Apache Modules
+==================================================
+[2026-01-07 22:03:12] - Instalando Nodo EPP instalado
+[2026-01-07 22:03:12] - 1.Instalando FRED EPP Node
+[2026-01-07 22:03:12] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-07 22:03:12] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-07 22:03:12] - 📝 El paquete 'apache2' se instalará.
+[2026-01-07 22:03:12] - 📝 El paquete 'apache2' se instalará.
+[2026-01-07 22:03:12] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-07 22:03:12] - 📝 El paquete 'libapache2-mod-corba' se instalará.
+[2026-01-07 22:03:12] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-07 22:03:12] - 📝 El paquete 'libapache2-mod-eppd' se instalará.
+[2026-01-07 22:03:12] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-07 22:03:12] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-07 22:03:56] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-07 22:03:56] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-07 22:03:56] - ----------------------------------------------------
+[2026-01-07 22:03:56] - 📊 Resumen final:
+[2026-01-07 22:03:56] - 📊 Resumen final:
+[2026-01-07 22:03:56] - ✅ Instalados en esta ejecución: 3
+[2026-01-07 22:03:56] - ✅ Instalados en esta ejecución: 3
+[2026-01-07 22:03:56] - ❌ Fallidos: 0
+[2026-01-07 22:03:56] - ❌ Fallidos: 0
+[2026-01-07 22:03:56] - ℹ️ Ya estaban instalados: 0
+[2026-01-07 22:03:56] - ℹ️ Ya estaban instalados: 0
+[2026-01-07 22:03:56] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-07 22:03:56] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-07 22:03:58] - ✅ OK: Paquetes FRED APP apache2 libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente
+[2026-01-07 22:03:58] - ✅ OK: FRED APP Node
+[2026-01-07 22:03:58] - 2. Habilitando apache for EPP

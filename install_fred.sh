@@ -38,6 +38,7 @@ fi
 
 
 echo "Ejecutando desde la ruta $SCRIPT_DIR"
+
 log_file="install.log"
 # scrips files 
 #GUM_FILE="$SCRIPT_DIR/install_gum.sh"
@@ -45,6 +46,7 @@ HELPERS_PATH="helpers"
 INSTALL_PATH="install"
 PACKAGES_PATH="packages"
 CONFIGS_PATH="configs"
+
 UTILS_FILE="$SCRIPT_DIR/$HELPERS_PATH/utils.sh"
 TUI_FILE="$SCRIPT_DIR/$HELPERS_PATH/whip.sh"
 DB_FILE="$SCRIPT_DIR/$INSTALL_PATH/db.sh"
@@ -62,7 +64,7 @@ PRE_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/pre.packages"
 #FRED_FILE="$SCRIPT_DIR/freddb.sh"
 APP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/app.packages"
 CONFIGS_FILES="$SCRIPT_DIR/$CONFIGS_PATH/"
-PRE_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/epp.packages"
+EPP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/epp.packages"
 
 #CLIENT_PACKAGES_FILE="$SCRIPT_DIR/client.packages"
 #OMNI_PACKAGES_FILE="$SCRIPT_DIR/omni.packages"
@@ -136,11 +138,13 @@ select_package(){
           echo "FRED CLIENT"
           ;;
       omni )
-          #install_pre
+          install_pre
           echo "OMNI NAMES"
           ;;
       epp )
-          #install_pre
+           echo "epp"
+          install_pre
+          install_epp
           echo "EPP Server"
           ;;
       config )
@@ -158,16 +162,8 @@ select_package(){
 main() {
    print_message  "Script running"
    init
-   install_whiptail
-   greenting
-   greenting_menu
-   OPTION=$(main_menu)
-   echo "$OPTION"
-   #confirm_continue
-   
-   #pause
-   #select_package $1
-   select_package $OPTION
+   pause
+   select_package $1
 }
 
 # Run main function

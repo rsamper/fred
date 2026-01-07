@@ -4,6 +4,38 @@
 # Author: Ricardo Samper rsamper@nic.cr
 # Date: 2025-10-10
 
+progress() {
+  echo "$1"
+}
+
+
+
+run_installer(){
+
+{
+  echo 10
+  sleep 1
+  echo 30
+  sleep 1
+  echo 60
+  sleep 1
+  echo 100
+} | whiptail --gauge "Instalando FRED..." 10 60 0
+
+}
+
+run_installer1() {
+  export -f progress step_db step_core step_epp
+
+  stdbuf -oL bash -c '
+    step_db
+    step_core
+    step_epp
+    progress 100 "Instalación completada"
+  ' | whiptail --title "Instalando FRED" \
+               --gauge "Inicializando..." 10 70 0
+}
+
 
 greenting(){
  whiptail --title "NIC CR FRIENDLY FRED INSTALLER" \

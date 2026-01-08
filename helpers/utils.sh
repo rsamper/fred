@@ -4,12 +4,21 @@
 # Author: Ricardo Samper rsamper@nic.cr
 # Date: 2025-10-10
 
-get_db_packages(){
-    local cmd="$*"
-    echo $cmd
-    mapfile -t packages < <(grep -v '^#' "$*" | grep -v '^$')
-    echo ${packages[@]}
-   
+
+get_db_packages() {
+  local file="$1"
+  local packages=()
+
+  [ -f "$file" ] || return 1
+
+  mapfile -t packages < <(grep -Ev '^\s*#|^\s*$' "$file")
+  printf '%s\n' "${packages[@]}"
+}
+
+
+print_section() {
+  clear
+  echo "$1"
 }
 
 draw_bar() {
@@ -42,16 +51,7 @@ pause(){
 
 print_log_message(){
    local text="$*"
-   # Si el primer parámetro es "--quiet", no mostrar en pantalla
-   if $QUIET_MODE; then
-        # Solo guarda en log
-        printf "\n"
-        echo "$(timestamp) - $text" >> "$log_file"
-        
-    else
-        # Muestra en pantalla y guarda en log
-        echo "$(timestamp) - $text" | tee -a "$log_file"
-    fi
+   echo "$(timestamp) - $text" | tee -a "$log_file"
 }
 
 print_message(){
@@ -83,11 +83,11 @@ print_title(){
 }
 
 check_file(){
-  if [ ! -f "$*" ]; then
-    print_log_message "❌ El archivo $* no existe"
-    print_log_message "End exit code 1"
+  local file="$1"
+  if [ ! -f "$file" ]; then
+    print_log_message "El archivo $file no existe"
     exit 1
-fi
+  fi
 }
 
 check_root(){

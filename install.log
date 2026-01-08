@@ -3582,3 +3582,641 @@ La instalacion de FRED DB se ejecuta en 3 pasos
 2/2  Crear la base de datos FRED DB
 ==================================================
 [2026-01-08 19:04:32] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 19:57:59] - Incluyendo pre.sh
+[2026-01-08 19:57:59] - Script running
+[2026-01-08 19:57:59] - .
+[2026-01-08 19:57:59] - Initialazing...
+[2026-01-08 19:57:59] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 19:57:59] - Ok!!!!!
+[2026-01-08 19:57:59] - Check mandatory OS...
+[2026-01-08 19:57:59] - Verificando versión del sistema operativo...
+[2026-01-08 19:57:59] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 19:57:59] - ✅ Root user OK.
+[2026-01-08 19:57:59] - OS: Ok
+[2026-01-08 19:57:59] - Init complete: Ok
+2/2 Crear la base de datos FRED DB  
+  print_notime  ==================================================
+[2026-01-08 19:59:03] - Incluyendo pre.sh
+[2026-01-08 19:59:04] - Script running
+[2026-01-08 19:59:04] - .
+[2026-01-08 19:59:04] - Initialazing...
+[2026-01-08 19:59:04] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 19:59:04] - Ok!!!!!
+[2026-01-08 19:59:04] - Check mandatory OS...
+[2026-01-08 19:59:04] - Verificando versión del sistema operativo...
+[2026-01-08 19:59:04] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 19:59:04] - ✅ Root user OK.
+[2026-01-08 19:59:04] - OS: Ok
+[2026-01-08 19:59:04] - Init complete: Ok
+[2026-01-08 20:00:09] - Incluyendo pre.sh
+[2026-01-08 20:00:09] - Script running
+[2026-01-08 20:00:09] - .
+[2026-01-08 20:00:09] - Initialazing...
+[2026-01-08 20:00:09] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:00:09] - Ok!!!!!
+[2026-01-08 20:00:09] - Check mandatory OS...
+[2026-01-08 20:00:09] - Verificando versión del sistema operativo...
+[2026-01-08 20:00:09] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:00:09] - ✅ Root user OK.
+[2026-01-08 20:00:09] - OS: Ok
+[2026-01-08 20:00:09] - Init complete: Ok
+[2026-01-08 20:02:12] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:02:14] - Incluyendo pre.sh
+[2026-01-08 20:02:14] - Script running
+[2026-01-08 20:02:14] - .
+[2026-01-08 20:02:14] - Initialazing...
+[2026-01-08 20:02:14] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:02:14] - Ok!!!!!
+[2026-01-08 20:02:14] - Check mandatory OS...
+[2026-01-08 20:02:14] - Verificando versión del sistema operativo...
+[2026-01-08 20:02:14] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:02:14] - ✅ Root user OK.
+[2026-01-08 20:02:14] - OS: Ok
+[2026-01-08 20:02:14] - Init complete: Ok
+[2026-01-08 20:02:22] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:03:01] - Incluyendo pre.sh
+[2026-01-08 20:03:01] - Script running
+[2026-01-08 20:03:01] - .
+[2026-01-08 20:03:01] - Initialazing...
+[2026-01-08 20:03:01] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:03:01] - Ok!!!!!
+[2026-01-08 20:03:01] - Check mandatory OS...
+[2026-01-08 20:03:01] - Verificando versión del sistema operativo...
+[2026-01-08 20:03:01] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:03:01] - ✅ Root user OK.
+[2026-01-08 20:03:01] - OS: Ok
+[2026-01-08 20:03:01] - Init complete: Ok
+[2026-01-08 20:05:24] - Incluyendo pre.sh
+[2026-01-08 20:05:24] - Script running
+[2026-01-08 20:05:24] - .
+[2026-01-08 20:05:24] - Initialazing...
+[2026-01-08 20:05:24] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:05:24] - Ok!!!!!
+[2026-01-08 20:05:24] - Check mandatory OS...
+[2026-01-08 20:05:24] - Verificando versión del sistema operativo...
+[2026-01-08 20:05:24] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:05:24] - ✅ Root user OK.
+[2026-01-08 20:05:24] - OS: Ok
+[2026-01-08 20:05:24] - Init complete: Ok
+[2026-01-08 20:08:37] - Incluyendo pre.sh
+[2026-01-08 20:08:37] - Script running
+[2026-01-08 20:08:37] - .
+[2026-01-08 20:08:37] - Initialazing...
+[2026-01-08 20:08:37] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:08:37] - Ok!!!!!
+[2026-01-08 20:08:37] - Check mandatory OS...
+[2026-01-08 20:08:37] - Verificando versión del sistema operativo...
+[2026-01-08 20:08:37] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:08:37] - ✅ Root user OK.
+[2026-01-08 20:08:37] - OS: Ok
+[2026-01-08 20:08:37] - Init complete: Ok
+[2026-01-08 20:10:05] - Incluyendo pre.sh
+[2026-01-08 20:10:05] - Script running
+[2026-01-08 20:10:05] - .
+[2026-01-08 20:10:05] - Initialazing...
+[2026-01-08 20:10:05] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:10:05] - Ok!!!!!
+[2026-01-08 20:10:05] - Check mandatory OS...
+[2026-01-08 20:10:05] - Verificando versión del sistema operativo...
+[2026-01-08 20:10:05] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:10:05] - ✅ Root user OK.
+[2026-01-08 20:10:05] - OS: Ok
+[2026-01-08 20:10:05] - Init complete: Ok
+[2026-01-08 20:10:51] - Incluyendo pre.sh
+[2026-01-08 20:10:51] - Script running
+[2026-01-08 20:10:51] - .
+[2026-01-08 20:10:51] - Initialazing...
+[2026-01-08 20:10:51] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:10:51] - Ok!!!!!
+[2026-01-08 20:10:51] - Check mandatory OS...
+[2026-01-08 20:10:51] - Verificando versión del sistema operativo...
+[2026-01-08 20:10:51] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:10:51] - ✅ Root user OK.
+[2026-01-08 20:10:51] - OS: Ok
+[2026-01-08 20:10:51] - Init complete: Ok
+[2026-01-08 20:11:19] - Incluyendo pre.sh
+[2026-01-08 20:11:19] - Script running
+[2026-01-08 20:11:19] - .
+[2026-01-08 20:11:19] - Initialazing...
+[2026-01-08 20:11:19] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:11:19] - Ok!!!!!
+[2026-01-08 20:11:19] - Check mandatory OS...
+[2026-01-08 20:11:19] - Verificando versión del sistema operativo...
+[2026-01-08 20:11:19] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:11:19] - ✅ Root user OK.
+[2026-01-08 20:11:19] - OS: Ok
+[2026-01-08 20:11:19] - Init complete: Ok
+[2026-01-08 20:12:48] - Incluyendo pre.sh
+[2026-01-08 20:12:48] - Script running
+[2026-01-08 20:12:48] - .
+[2026-01-08 20:12:48] - Initialazing...
+[2026-01-08 20:12:48] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:12:48] - Ok!!!!!
+[2026-01-08 20:12:48] - Check mandatory OS...
+[2026-01-08 20:12:48] - Verificando versión del sistema operativo...
+[2026-01-08 20:12:48] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:12:48] - ✅ Root user OK.
+[2026-01-08 20:12:48] - OS: Ok
+[2026-01-08 20:12:48] - Init complete: Ok
+[2026-01-08 20:12:52] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:12:56] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:13:06] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:13:40] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:13:46] - Incluyendo pre.sh
+[2026-01-08 20:13:46] - Script running
+[2026-01-08 20:13:47] - .
+[2026-01-08 20:13:47] - Initialazing...
+[2026-01-08 20:13:47] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:13:47] - Ok!!!!!
+[2026-01-08 20:13:47] - Check mandatory OS...
+[2026-01-08 20:13:47] - Verificando versión del sistema operativo...
+[2026-01-08 20:13:47] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:13:47] - ✅ Root user OK.
+[2026-01-08 20:13:47] - OS: Ok
+[2026-01-08 20:13:47] - Init complete: Ok
+[2026-01-08 20:36:50] - Incluyendo pre.sh
+[2026-01-08 20:36:50] - Incluyendo pre.sh
+[2026-01-08 20:38:05] - Incluyendo pre.sh
+[2026-01-08 20:38:05] - Incluyendo pre.sh
+[2026-01-08 20:38:53] - Incluyendo pre.sh
+[2026-01-08 20:38:53] - Incluyendo pre.sh
+[2026-01-08 20:38:53] - Running
+[2026-01-08 20:38:53] - Initialazing...
+[2026-01-08 20:38:53] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:38:53] - Ok!!!!!
+[2026-01-08 20:38:53] - Check mandatory OS...
+[2026-01-08 20:38:53] - Verificando versión del sistema operativo...
+[2026-01-08 20:38:53] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:38:53] - ✅ Root user OK.
+[2026-01-08 20:38:53] - OS: Ok
+[2026-01-08 20:38:53] - Init complete: Ok
+[2026-01-08 20:47:01] - Incluyendo pre.sh
+[2026-01-08 20:47:01] - Running
+[2026-01-08 20:47:01] - Initialazing...
+[2026-01-08 20:47:01] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:47:01] - Ok!!!!!
+[2026-01-08 20:47:01] - Check mandatory OS...
+[2026-01-08 20:47:01] - Verificando versión del sistema operativo...
+[2026-01-08 20:47:01] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:47:01] - ✅ Root user OK.
+[2026-01-08 20:47:01] - OS: Ok
+[2026-01-08 20:47:01] - Init complete: Ok
+[2026-01-08 20:47:03] - Incluyendo pre.sh
+[2026-01-08 20:47:03] - Ejecutando pre.sh
+[2026-01-08 20:47:03] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-08 20:47:05] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:47:05] - 1/5.Setting CZ Keyring
+[2026-01-08 20:47:05] - Ejecutando...
+[2026-01-08 20:47:05] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:47:05] - Ejecutando...
+[2026-01-08 20:47:06] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:47:06] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-08 20:47:06] - 2/5. Adding CZ Source list
+[2026-01-08 20:47:06] - ✅ Fuente agregada correctamente.
+[2026-01-08 20:47:06] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-08 20:47:06] - 3/5.Setting CZ PIN file
+[2026-01-08 20:47:06] - Ejecutando...
+[2026-01-08 20:47:07] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:47:07] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:47:07] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-08 20:47:07] - 4/5. Update sources
+[2026-01-08 20:47:07] - Ejecutando...
+[2026-01-08 20:47:10] - Incluyendo pre.sh
+[2026-01-08 20:47:10] - Running
+[2026-01-08 20:47:10] - Initialazing...
+[2026-01-08 20:47:10] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:47:10] - Ok!!!!!
+[2026-01-08 20:47:10] - Check mandatory OS...
+[2026-01-08 20:47:10] - Verificando versión del sistema operativo...
+[2026-01-08 20:47:10] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:47:10] - ✅ Root user OK.
+[2026-01-08 20:47:10] - OS: Ok
+[2026-01-08 20:47:10] - Init complete: Ok
+[2026-01-08 20:47:12] - Incluyendo pre.sh
+[2026-01-08 20:47:12] - Ejecutando pre.sh
+[2026-01-08 20:47:12] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-08 20:47:13] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:47:13] - 1/5.Setting CZ Keyring
+[2026-01-08 20:47:13] - Ejecutando...
+[2026-01-08 20:47:13] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:47:13] - Ejecutando...
+[2026-01-08 20:47:14] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:47:14] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-08 20:47:14] - 2/5. Adding CZ Source list
+[2026-01-08 20:47:14] - ℹ️ La fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:47:14] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-08 20:47:14] - 3/5.Setting CZ PIN file
+[2026-01-08 20:47:14] - Ejecutando...
+[2026-01-08 20:47:15] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:47:15] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:47:15] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-08 20:47:15] - 4/5. Update sources
+[2026-01-08 20:47:15] - Ejecutando...
+[2026-01-08 20:47:57] - Incluyendo pre.sh
+[2026-01-08 20:47:57] - Running
+[2026-01-08 20:47:57] - Initialazing...
+[2026-01-08 20:47:57] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:47:57] - Ok!!!!!
+[2026-01-08 20:47:57] - Check mandatory OS...
+[2026-01-08 20:47:57] - Verificando versión del sistema operativo...
+[2026-01-08 20:47:57] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:47:57] - ✅ Root user OK.
+[2026-01-08 20:47:57] - OS: Ok
+[2026-01-08 20:47:57] - Init complete: Ok
+[2026-01-08 20:47:58] - Incluyendo pre.sh
+[2026-01-08 20:47:58] - Ejecutando pre.sh
+[2026-01-08 20:47:58] - Instalando pre requisitos
+============================================================
+La instalacion de pre requisitos FRED se ejecuta en 5 pasos
+1/5.  Configurar Keyring para los repositorios FRED
+2/5.  Agregar repositorios apt
+3/5.  Configurar archivo pin para descargar los paquetes correctos 
+4/5.  Actualizar repos FRED
+5/5.  Instalar paquetes necesarios FRED
+============================================================
+[2026-01-08 20:48:02] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:48:02] - 1/5.Setting CZ Keyring
+[2026-01-08 20:48:02] - Ejecutando...
+[2026-01-08 20:48:02] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:48:02] - Ejecutando...
+[2026-01-08 20:48:03] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:48:03] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-08 20:48:03] - 2/5. Adding CZ Source list
+[2026-01-08 20:48:03] - ℹ️ La fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:48:03] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-08 20:48:03] - 3/5.Setting CZ PIN file
+[2026-01-08 20:48:03] - Ejecutando...
+[2026-01-08 20:48:04] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:48:04] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:48:04] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-08 20:48:04] - 4/5. Update sources
+[2026-01-08 20:48:04] - Ejecutando...
+[2026-01-08 20:52:29] - Incluyendo pre.sh
+[2026-01-08 20:52:29] - Incluyendo pre.sh
+[2026-01-08 20:52:29] - Running
+[2026-01-08 20:52:29] - Initialazing...
+[2026-01-08 20:52:29] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:52:29] - Ok!!!!!
+[2026-01-08 20:52:29] - Check mandatory OS...
+[2026-01-08 20:52:29] - Verificando versión del sistema operativo...
+[2026-01-08 20:52:29] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:52:29] - ✅ Root user OK.
+[2026-01-08 20:52:29] - OS: Ok
+[2026-01-08 20:52:29] - Init complete: Ok
+[2026-01-08 20:52:29] - Preparando el entorno pre requisitos
+[2026-01-08 20:52:29] - 1/5.Setting CZ Keyring
+[2026-01-08 20:52:29] - Ejecutando...
+[2026-01-08 20:52:29] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:52:29] - Ejecutando...
+[2026-01-08 20:52:30] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:52:30] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-08 20:52:30] - 2/5. Adding CZ Source list
+[2026-01-08 20:52:31] - ℹ️ La fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:52:31] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-08 20:52:31] - 3/5.Setting CZ PIN file
+[2026-01-08 20:52:31] - Ejecutando...
+[2026-01-08 20:52:32] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:52:32] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:52:32] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-08 20:52:33] - Incluyendo pre.sh
+[2026-01-08 20:52:33] - Incluyendo pre.sh
+[2026-01-08 20:52:33] - Running
+[2026-01-08 20:52:33] - Initialazing...
+[2026-01-08 20:52:33] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:52:33] - Ok!!!!!
+[2026-01-08 20:52:33] - Check mandatory OS...
+[2026-01-08 20:52:33] - Verificando versión del sistema operativo...
+[2026-01-08 20:52:33] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:52:33] - ✅ Root user OK.
+[2026-01-08 20:52:33] - OS: Ok
+[2026-01-08 20:52:33] - Init complete: Ok
+[2026-01-08 20:52:33] - Preparando el entorno pre requisitos
+[2026-01-08 20:52:33] - 1/5.Setting CZ Keyring
+[2026-01-08 20:52:33] - Ejecutando...
+[2026-01-08 20:52:33] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:52:33] - Ejecutando...
+[2026-01-08 20:52:34] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:52:34] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-08 20:52:34] - 2/5. Adding CZ Source list
+[2026-01-08 20:52:34] - ℹ️ La fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:52:34] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-08 20:52:34] - 3/5.Setting CZ PIN file
+[2026-01-08 20:52:34] - Ejecutando...
+[2026-01-08 20:52:35] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:52:35] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:52:35] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-08 20:52:35] - 4/5. Update sources
+[2026-01-08 20:52:35] - Ejecutando...
+[2026-01-08 20:52:44] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-08 20:52:44] - ✅ OK: 4/5.Update sources
+[2026-01-08 20:52:44] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-08 20:52:44] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-08 20:52:45] - OK: Pre requisitos instalados exitosamente
+[2026-01-08 20:52:52] - Incluyendo pre.sh
+[2026-01-08 20:52:52] - Incluyendo pre.sh
+[2026-01-08 20:52:52] - Running
+[2026-01-08 20:52:52] - Initialazing...
+[2026-01-08 20:52:52] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:52:52] - Ok!!!!!
+[2026-01-08 20:52:52] - Check mandatory OS...
+[2026-01-08 20:52:52] - Verificando versión del sistema operativo...
+[2026-01-08 20:52:52] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:52:52] - ✅ Root user OK.
+[2026-01-08 20:52:52] - OS: Ok
+[2026-01-08 20:52:52] - Init complete: Ok
+[2026-01-08 20:52:52] - Preparando el entorno pre requisitos
+[2026-01-08 20:52:52] - 1/5.Setting CZ Keyring
+[2026-01-08 20:52:52] - Ejecutando...
+[2026-01-08 20:52:52] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:52:52] - Ejecutando...
+[2026-01-08 20:52:53] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:52:53] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-08 20:52:53] - 2/5. Adding CZ Source list
+[2026-01-08 20:52:53] - ℹ️ La fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:52:53] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-08 20:52:53] - 3/5.Setting CZ PIN file
+[2026-01-08 20:52:53] - Ejecutando...
+[2026-01-08 20:52:54] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:52:54] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:52:54] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-08 20:52:54] - 4/5. Update sources
+[2026-01-08 20:52:54] - Ejecutando...
+[2026-01-08 20:53:02] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-08 20:53:02] - ✅ OK: 4/5.Update sources
+[2026-01-08 20:53:02] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-08 20:53:02] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-08 20:53:02] - OK: Pre requisitos instalados exitosamente
+[2026-01-08 20:53:06] - Incluyendo pre.sh
+[2026-01-08 20:53:06] - Incluyendo pre.sh
+[2026-01-08 20:53:06] - Running
+[2026-01-08 20:53:06] - Initialazing...
+[2026-01-08 20:53:06] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:53:06] - Ok!!!!!
+[2026-01-08 20:53:06] - Check mandatory OS...
+[2026-01-08 20:53:06] - Verificando versión del sistema operativo...
+[2026-01-08 20:53:06] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:53:06] - ✅ Root user OK.
+[2026-01-08 20:53:06] - OS: Ok
+[2026-01-08 20:53:06] - Init complete: Ok
+[2026-01-08 20:53:06] - Preparando el entorno pre requisitos
+[2026-01-08 20:53:06] - 1/5.Setting CZ Keyring
+[2026-01-08 20:53:06] - Ejecutando...
+[2026-01-08 20:53:06] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:53:06] - Ejecutando...
+[2026-01-08 20:53:07] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:53:07] - ✅ OK: 1/5.Setting CZ Keyring
+[2026-01-08 20:53:07] - 2/5. Adding CZ Source list
+[2026-01-08 20:53:07] - ℹ️ La fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:53:07] - ✅ OK: 2/5. Adding CZ Source list
+[2026-01-08 20:53:07] - 3/5.Setting CZ PIN file
+[2026-01-08 20:53:07] - Ejecutando...
+[2026-01-08 20:53:08] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:53:08] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:53:08] - ✅ OK: 3/5.Setting CZ PIN file
+[2026-01-08 20:53:08] - 4/5. Update sources
+[2026-01-08 20:53:08] - Ejecutando...
+[2026-01-08 20:53:16] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-08 20:53:16] - ✅ OK: 4/5.Update sources
+[2026-01-08 20:53:16] - 5/5. Instalando: ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client
+[2026-01-08 20:53:16] - ✅ OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente
+[2026-01-08 20:53:16] - OK: Pre requisitos instalados exitosamente
+[2026-01-08 20:55:24] - Incluyendo pre.sh
+[2026-01-08 20:55:24] - Incluyendo pre.sh
+[2026-01-08 20:55:24] - Running
+[2026-01-08 20:55:24] - Initialazing...
+[2026-01-08 20:55:24] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:55:24] - Ok!!!!!
+[2026-01-08 20:55:24] - Check mandatory OS...
+[2026-01-08 20:55:24] - Verificando versión del sistema operativo...
+[2026-01-08 20:55:24] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:55:24] - ✅ Root user OK.
+[2026-01-08 20:55:24] - OS: Ok
+[2026-01-08 20:55:24] - Init complete: Ok
+[2026-01-08 20:55:24] - Preparando el entorno pre requisitos
+[2026-01-08 20:55:24] - 1/5.Setting CZ Keyring
+[2026-01-08 20:55:24] - Ejecutando...
+[2026-01-08 20:55:24] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:55:24] - Ejecutando...
+[2026-01-08 20:55:25] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:55:25] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-08 20:55:25] - 2/5. Adding CZ Source list
+[2026-01-08 20:55:25] - ℹLa fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:55:25] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-08 20:55:25] - 3/5.Setting CZ PIN file
+[2026-01-08 20:55:25] - Ejecutando...
+[2026-01-08 20:55:26] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:55:26] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:55:26] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-08 20:55:26] - 4/5. Update sources
+[2026-01-08 20:55:26] - Ejecutando...
+[2026-01-08 20:56:17] - Incluyendo pre.sh
+[2026-01-08 20:56:17] - Incluyendo pre.sh
+[2026-01-08 20:56:17] - Running
+[2026-01-08 20:56:17] - Initialazing...
+[2026-01-08 20:56:17] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:56:17] - Ok!!!!!
+[2026-01-08 20:56:17] - Check mandatory OS...
+[2026-01-08 20:56:17] - Verificando versión del sistema operativo...
+[2026-01-08 20:56:17] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:56:17] - ✅ Root user OK.
+[2026-01-08 20:56:17] - OS: Ok
+[2026-01-08 20:56:17] - Init complete: Ok
+[2026-01-08 20:56:17] - Preparando el entorno pre requisitos
+[2026-01-08 20:56:17] - 1/5.Setting CZ Keyring
+[2026-01-08 20:56:17] - Ejecutando...
+[2026-01-08 20:56:17] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:56:17] - Ejecutando...
+[2026-01-08 20:56:18] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:56:18] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-08 20:56:18] - 2/5. Adding CZ Source list
+[2026-01-08 20:56:18] - ℹLa fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:56:18] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-08 20:56:18] - 3/5.Setting CZ PIN file
+[2026-01-08 20:56:18] - Ejecutando...
+[2026-01-08 20:56:18] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:56:18] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:56:19] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-08 20:56:19] - 4/5. Update sources
+[2026-01-08 20:56:19] - Ejecutando...
+[2026-01-08 20:56:27] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-08 20:56:27] - OK: 4/5.Updated sources !!!
+
+[2026-01-08 20:56:27] - 🔍 Verificando estado de los paquetes solicitados...
+
+[2026-01-08 20:56:27] - ✅ El paquete 'ca-certificates' ya está instalado.
+
+[2026-01-08 20:56:27] - ✅ El paquete 'curl' ya está instalado.
+
+[2026-01-08 20:56:27] - ✅ El paquete 'gnupg' ya está instalado.
+
+[2026-01-08 20:56:27] - ✅ El paquete 'lsb-release' ya está instalado.
+
+[2026-01-08 20:56:27] - 📝 El paquete 'postfix' se instalará.
+
+[2026-01-08 20:56:27] - 📝 El paquete 'cdnskey-scanner' se instalará.
+
+[2026-01-08 20:56:27] - 📝 El paquete 'pgbouncer' se instalará.
+
+[2026-01-08 20:56:27] - 📝 El paquete 'postgresql-client' se instalará.
+
+[2026-01-08 20:56:27] - 📦 Iniciando instalación de paquetes. Por favor espere...
+
+[2026-01-08 20:57:24] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-08 20:57:24] - ----------------------------------------------------
+
+[2026-01-08 20:57:24] - 📊 Resumen final:
+
+[2026-01-08 20:57:24] - ✅ Instalados en esta ejecución: 4
+
+[2026-01-08 20:57:24] - ❌ Fallidos: 0
+
+[2026-01-08 20:57:24] - ℹ️ Ya estaban instalados: 4
+
+[2026-01-08 20:57:24] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-08 20:57:26] - OK: 5/5 Pre Requisitos  ca-certificates  curl  gnupg  lsb-release postfix cdnskey-scanner pgbouncer postgresql-client instalados exitosamente!!!!!
+[2026-01-08 20:57:26] - OK: Pre requisitos instalados exitosamente
+[2026-01-08 20:58:19] - Running
+[2026-01-08 20:58:19] - Initialazing...
+[2026-01-08 20:58:19] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:58:19] - Ok!!!!!
+[2026-01-08 20:58:19] - Check mandatory OS...
+[2026-01-08 20:58:19] - Verificando versión del sistema operativo...
+[2026-01-08 20:58:19] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:58:19] - ✅ Root user OK.
+[2026-01-08 20:58:19] - OS: Ok
+[2026-01-08 20:58:19] - Init complete: Ok
+[2026-01-08 20:58:19] - Preparando el entorno pre requisitos
+[2026-01-08 20:58:19] - 1/5.Setting CZ Keyring
+[2026-01-08 20:58:19] - Ejecutando...
+[2026-01-08 20:58:19] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:58:19] - Ejecutando...
+[2026-01-08 20:58:20] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:58:20] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-08 20:58:20] - 2/5. Adding CZ Source list
+[2026-01-08 20:58:20] - ℹLa fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:58:20] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-08 20:58:20] - 3/5.Setting CZ PIN file
+[2026-01-08 20:58:20] - Ejecutando...
+[2026-01-08 20:58:21] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:58:21] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:58:21] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-08 20:58:21] - 4/5. Update sources
+[2026-01-08 20:58:21] - Ejecutando...
+[2026-01-08 20:58:30] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-08 20:58:30] - OK: 4/5.Updated sources !!!
+[2026-01-08 20:58:30] - 5/5 Instalando paquetes
+
+[2026-01-08 20:58:30] - 🔍 Verificando estado de los paquetes solicitados...
+
+[2026-01-08 20:58:30] - ✅ El paquete 'ca-certificates' ya está instalado.
+[2026-01-08 20:58:30] - ✅ El paquete 'curl' ya está instalado.
+
+
+[2026-01-08 20:58:30] - ✅ El paquete 'gnupg' ya está instalado.
+
+[2026-01-08 20:58:30] - ✅ El paquete 'lsb-release' ya está instalado.
+
+[2026-01-08 20:58:30] - ✅ El paquete 'postfix' ya está instalado.
+
+[2026-01-08 20:58:30] - ✅ El paquete 'cdnskey-scanner' ya está instalado.
+
+[2026-01-08 20:58:30] - ✅ El paquete 'pgbouncer' ya está instalado.
+
+[2026-01-08 20:58:30] - ✅ El paquete 'postgresql-client' ya está instalado.
+
+[2026-01-08 20:58:30] - 👍 No hay paquetes nuevos para instalar.
+[2026-01-08 20:58:30] - ----------------------------------------------------
+
+[2026-01-08 20:58:30] - 📊 Resumen final:
+
+[2026-01-08 20:58:30] - ✅ Instalados en esta ejecución: 0
+
+[2026-01-08 20:58:30] - ❌ Fallidos: 0
+
+[2026-01-08 20:58:30] - ℹ️ Ya estaban instalados: 8
+
+[2026-01-08 20:58:30] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-08 20:58:32] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-08 20:58:32] - OK: Pre requisitos instalados exitosamente
+[2026-01-08 20:58:39] - Running
+[2026-01-08 20:58:39] - Initialazing...
+[2026-01-08 20:58:39] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 20:58:39] - Ok!!!!!
+[2026-01-08 20:58:39] - Check mandatory OS...
+[2026-01-08 20:58:39] - Verificando versión del sistema operativo...
+[2026-01-08 20:58:39] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 20:58:39] - ✅ Root user OK.
+[2026-01-08 20:58:39] - OS: Ok
+[2026-01-08 20:58:39] - Init complete: Ok
+[2026-01-08 20:58:39] - Preparando el entorno pre requisitos
+[2026-01-08 20:58:39] - 1/5.Setting CZ Keyring
+[2026-01-08 20:58:39] - Ejecutando...
+[2026-01-08 20:58:39] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-08 20:58:39] - Ejecutando...
+[2026-01-08 20:58:40] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-08 20:58:40] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-08 20:58:40] - 2/5. Adding CZ Source list
+[2026-01-08 20:58:40] - ℹLa fuente ya existe, no se agrega nuevamente.
+[2026-01-08 20:58:40] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-08 20:58:40] - 3/5.Setting CZ PIN file
+[2026-01-08 20:58:40] - Ejecutando...
+[2026-01-08 20:58:41] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-08 20:58:41] - 3.1/5. Actualizando :( CZ PIN file
+[2026-01-08 20:58:41] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-08 20:58:41] - 4/5. Update sources
+[2026-01-08 20:58:41] - Ejecutando...
+[2026-01-08 20:58:49] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-08 20:58:49] - OK: 4/5.Updated sources !!!
+[2026-01-08 20:58:49] - 5/5 Instalando paquetes
+
+[2026-01-08 20:58:49] - 🔍 Verificando estado de los paquetes solicitados...
+
+[2026-01-08 20:58:49] - ✅ El paquete 'ca-certificates' ya está instalado.
+
+[2026-01-08 20:58:49] - ✅ El paquete 'curl' ya está instalado.
+
+[2026-01-08 20:58:49] - ✅ El paquete 'gnupg' ya está instalado.
+
+[2026-01-08 20:58:49] - ✅ El paquete 'lsb-release' ya está instalado.
+
+[2026-01-08 20:58:49] - ✅ El paquete 'postfix' ya está instalado.
+
+[2026-01-08 20:58:49] - ✅ El paquete 'cdnskey-scanner' ya está instalado.
+
+[2026-01-08 20:58:49] - ✅ El paquete 'pgbouncer' ya está instalado.
+
+[2026-01-08 20:58:49] - ✅ El paquete 'postgresql-client' ya está instalado.
+
+[2026-01-08 20:58:49] - 👍 No hay paquetes nuevos para instalar.
+[2026-01-08 20:58:49] - ----------------------------------------------------
+
+[2026-01-08 20:58:49] - 📊 Resumen final:
+
+[2026-01-08 20:58:49] - ✅ Instalados en esta ejecución: 0
+
+[2026-01-08 20:58:49] - ❌ Fallidos: 0
+
+[2026-01-08 20:58:49] - ℹ️ Ya estaban instalados: 8
+
+[2026-01-08 20:58:49] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-08 20:58:51] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-08 20:58:51] - OK: Pre requisitos instalados exitosamente
+[2026-01-08 20:58:59] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:59:02] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 20:59:06] - Finalizdo. Operación cancelada por el usuario.

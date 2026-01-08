@@ -5,17 +5,14 @@
 # Author: Your Name
 # Date: 2025-10-10
 
-#set -e  # Exit on any error
-#set -u  # Exit on undefined variables
-echo "Running APP script"
 
 
 
 install_fred_client(){
  echo "9. Installing FRED-Clients"
  echo "=============================="
- apt_install fred-client -y
- mv /usr/lib/python3/dist-packages/fred/eppdoc.py mv /usr/lib/python3/dist-packages/fred/eppdoc.py.ori
+ install fred-client -y
+ mv /usr/lib/python3/dist-packages/fred/eppdoc.py  /usr/lib/python3/dist-packages/fred/eppdoc.py.ori
  exec_command wget https://gitlab.nic.cz/fred/client/-/raw/master/fred/eppdoc.py?ref_type=heads -O /usr/lib/python3/dist-packages/fred/eppdoc.py
 
 }
@@ -39,32 +36,34 @@ step1_install_app_packages(){
     install ${packages[@]}  # Descomenta cuando estés listo para instalar
     print_message "OK: Paquetes FRED APP ${packages[@]} instalados exitosamente !!!!!"
   else
-    print_message "ℹ️ INFO: No se encontraron paquetes DB válidos para instalar en el archivo '$*'...."
+    print_message "INFO: No se encontraron paquetes DB válidos para instalar en el archivo '$*'...."
   fi
   print_message "OK: FRED APP Node!!!!!"
   
 }
 print_info_app(){
   clear
-  print_notime "================================================="  
-  print_notime "La instalacion de FRED CORE se ejecuta en 3 pasos"  
-  print_notime "1/10.  Instalar paquetes: Depedencias Python,Corba Servers"  
-  print_notime "-Depedencias Python"
-  print_notime "-Corba Servers"  
-  print_notime "-Apache for EPP"
-  print_notime "-Python Daemons"
-  print_notime "-FRED Python libs"
-  print_notime "-FRED Daemonds"
-  print_notime "-Enable Apache Corba"  
-  print_notime "-Enable Apache EPP"  
-  print_notime "2/10.  Habilitando Apache Modules"  
-  print_notime "3/10.  Copiar archivos de configuracion"  
-
-  print_notime "=================================================="  
-}
+  read -r -d '' section << 'EOF'
+ ================================================================ 
+ La instalacion de FRED CORE se ejecuta en 3 pasos  
+  1/3.  Instalar paquetes: Depedencias Python,Corba Servers 
+  -Depedencias Python
+  -Corba Servers 
+  -Apache for EPP
+  -Python Daemons
+  -FRED Python libs
+  -FRED Daemonds
+  -Enable Apache Corba
+  -Enable Apache EPP  
+  2/3.  Habilitando Apache Modules  
+  3/3.  Copiar archivos de configuracion
+=================================================================
+EOF
+ print_section "$section"
+ }
 install_app(){
   if [ -z "$APP_PACKAGES_FILE" ]; then
-    print_message "Error: DB_PACKAGES_FILE no está definido o está vacío."
+    print_message "Error: APP_PACKAGES_FILE no está definido o está vacío."
     exit 1
   fi
   clear 

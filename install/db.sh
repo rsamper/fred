@@ -5,18 +5,18 @@
 # Author: Your Name
 # Date: 2025-10-10
 
-echo "Running DB script"
+
 
 
 step1_install_db_packages(){
   print_message "1/2 Instalando paquetes necesarios"
   draw_bar 0
   sleep 1
-  return 0
+  
   mapfile -t packages < <(grep -v '^#' "$*" | grep -v '^$')
   if [[ ${#packages[@]} -gt 0 ]]; then
     install ${packages[@]}  # Descomenta cuando estés listo para instalar
-    print_message "OK: 2/2 Paquetes FRED DB ${packages[@]} instalados exitosamente !!!!!"
+    print_message "OK: 1/2 Paquetes FRED DB ${packages[@]} instalados exitosamente !!!!!"
   else
     print_message "INFO: No se encontraron paquetes DB válidos para instalar en el archivo '$*'..."
   fi
@@ -27,20 +27,23 @@ step1_install_db_packages(){
 step2_create_database(){
   draw_bar 50
   sleep 1
-  print_message "2/3 Creando la base de datos fred-dbmanager install"
+  print_message "2/2 Creando la base de datos fred-dbmanager install"
   exec_command su - postgres -c "/usr/sbin/fred-dbmanager install"
   print_message "OK: Base de datos creada exitosamente !!!!!"
 }
 
 print_info_db(){
   clear
-  print_notime "================================================="  
-  print_notime "La instalacion de FRED DB se ejecuta en 3 pasos"  
-  print_notime "1/2  Instalar Paquetes Postgres y FRED DB"  
-  print_notime "2/2  Crear la base de datos FRED DB"  
-  print_notime "=================================================="  
-   
+  read -r -d '' section << 'EOF'
+=================================================
+La instalación de FRED DB se ejecuta en 2 pasos
+1/2  Instalar Paquetes Postgres y FRED DB
+2/2  Crear la base de datos FRED DB
+=================================================
+EOF
+print_section "$section" 
 }
+
 install_db(){
    if [ -z "$DB_PACKAGES_FILE" ]; then
     print_message "Error: DB_PACKAGES_FILE no está definido o está vacío."
@@ -50,7 +53,7 @@ install_db(){
   clear 
   print_info_db  
   confirm_continue || return
-  step1_install_db_packages $DB_PACKAGES_FILE
+  step1_install_db_packages "$DB_PACKAGES_FILE"
   step2_create_database
   draw_bar 100
   sleep 1

@@ -5,9 +5,7 @@
 # Author: Your Name
 # Date: 2025-10-10
 
-#set -e  # Exit on any error
-#set -u  # Exit on undefined variables
-echo "Running APP script"
+
 step2_enable_apache_modules(){
   print_message "2. Habilitando Apache EPP y Corba"
   draw_bar 50
@@ -39,13 +37,18 @@ step1_install_epp_packages(){
 
 print_info_epp(){
   clear
-  print_notime "==============================================================="  
-  print_notime "La instalacion de FRED EPP se ejecuta en 2 pasos"  
-  print_notime "1/2.  Instalar paquetes: Instalar Apache y Modulo EPP y Corba"  
-  print_notime "2/2.  Habilitar Modulos de Apache"  
-  print_notime "==============================================================="  
-  pause 
-}
+
+read -r -d '' section << 'EOF'
+  ===================================================================
+   La instalacion de FRED EPP se ejecuta en 2 pasos  
+   1/2.  Instalar paquetes: Instalar Apache y Modulo EPP y Corba"  
+   2/2.  Habilitar Modulos de Apache
+  ===================================================================
+EOF
+ print_section "$section"
+ 
+  
+  }
 
 
 install_epp(){

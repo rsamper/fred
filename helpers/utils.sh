@@ -4,6 +4,28 @@
 # Author: Ricardo Samper rsamper@nic.cr
 # Date: 2025-10-10
 
+get_db_packages(){
+    local cmd="$*"
+    echo $cmd
+    mapfile -t packages < <(grep -v '^#' "$*" | grep -v '^$')
+    echo ${packages[@]}
+   
+}
+
+draw_bar() {
+  local percent=$1
+  local width=40
+  local filled=$(( percent * width / 100 ))
+  local empty=$(( width - filled ))
+
+  printf "\r["
+  printf "%0.s#" $(seq 1 "$filled")
+  printf "%0.s-" $(seq 1 "$empty")
+  printf "] %3d%%" "$percent"
+}
+
+
+
 # Timestamp para logs
 timestamp() {
  date +"[%Y-%m-%d %H:%M:%S]"
@@ -23,6 +45,7 @@ print_log_message(){
    # Si el primer parámetro es "--quiet", no mostrar en pantalla
    if $QUIET_MODE; then
         # Solo guarda en log
+        printf "\n"
         echo "$(timestamp) - $text" >> "$log_file"
         
     else
@@ -34,6 +57,7 @@ print_log_message(){
 print_message(){
    local text="$*"
     # Muestra en pantalla y guarda en log
+    printf "\n"
     echo "$(timestamp) - $text" | tee -a "$log_file"
 }
 

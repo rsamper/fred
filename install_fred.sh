@@ -11,23 +11,23 @@
 #SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 SCRIPT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 
-QUIET_MODE=false
+#QUIET_MODE=false
 
-while [[ "$1" == "--quiet" ]]; do
-    QUIET_MODE=true
-    shift # Remueve el primer parámetro (que es "--quiet")
-done
+#while [[ "$1" == "--quiet" ]]; do
+#    QUIET_MODE=true
+#    shift # Remueve el primer parámetro (que es "--quiet")
+#done
 
 # 2. Validar Parámetros Posicionales (obligatorios)
 
 # Ahora, $# contiene la cuenta SÓLO de los parámetros posicionales restantes.
-if [ "$#" -lt 1 ]; then
-    echo "Error: Debe proporcionar al menos un parámetro." >&2
-    echo "Parámetros válidos: db, core, client, omni" >&2
-    echo "Ejemplo: bash instalar_fred.sh db" >&2
-    echo "Ejemplo silencioso: bash instalar_fred.sh --quiet db" >&2
-    exit 1
-fi
+#if [ "$#" -lt 1 ]; then
+#    echo "Error: Debe proporcionar al menos un parámetro." >&2
+#    echo "Parámetros válidos: db, core, client, omni" >&2
+#    echo "Ejemplo: bash instalar_fred.sh db" >&2
+#    echo "Ejemplo silencioso: bash instalar_fred.sh --quiet db" >&2
+#    exit 1
+#fi
 
 
 # Si se llega a esta parte, significa que se pasó al menos un parámetro.
@@ -39,7 +39,7 @@ fi
 #fi
 
 
-echo "Ejecutando desde la ruta $SCRIPT_DIR"
+#echo "Ejecutando desde la ruta $SCRIPT_DIR"
 
 log_file="install.log"
 # scrips files 
@@ -75,7 +75,7 @@ EPP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/epp.packages"
 #Check mandatory files
 
 init_files(){
-  print_message  "Check mandatory files..."
+  print_message  "Revisando archivos necesarios/ Checking mandatory files..."
   check_file "$UTILS_FILE"
   check_file "$MENU_FILE"  
   check_file "$TUI_FILE"  
@@ -83,13 +83,59 @@ init_files(){
   check_file "$DB_FILE" 
   check_file "$PRE_PACKAGES_FILE" 
   check_file "$DB_PACKAGES_FILE" 
-  print_message  "Mandatory files: Ok"
+  print_message  "Ok!!!!!"
 }
+
+#mapfile -t packages < <(grep -v '^#' "$DB_PACKAGES_FILE" | grep -v '^$')
+#echo ${packages[@]}
+
+
+
+#select_package(){
+#  echo "$1"
+#  pause
+#  case $1 in
+#      DataBase)
+#          install_pre
+#          install_db
+#          print_notime "Bye"
+#          exit 0
+#          ;;
+#      app )
+#          install_pre
+#          echo "FRED APP"
+#          install_app
+#          ;;
+#      client )
+#          install_pre
+#          install_client
+#          echo "FRED CLIENT"
+#          ;;
+#      omni )
+#          install_pre
+#          echo "OMNI NAMES"
+#          ;;
+#      epp )
+#           echo "epp"
+#          install_pre
+#          install_epp
+#          echo "EPP Server"
+#          ;;
+#      config )
+#          echo "Copiando archivos de configuracion"
+#          copy_fred_configs    
+#          ;;
+
+#      *)
+#         echo "Parámetro recibido: $1"
+#          ;;
+#  esac
+#}
 
 init_os(){
   print_message  "Check mandatory OS..."
-  #check_os
-  #check_root
+  check_os
+  check_root
   print_message  "OS: Ok"
 }
 init(){
@@ -101,8 +147,8 @@ init(){
 
 copy_fred_configs() {
   print_message "Copiando archivos de configuracion FRED /etc/fred"
-  cp -av ./configs/* /etc/fred
-  print_message "✅ OK: Archivos de configuracion copiados"
+  #cp -av ./configs/* /etc/fred
+  print_message "OK: Archivos de configuracion copiados !!!!!"
 }
 
 source "$UTILS_FILE"
@@ -124,46 +170,46 @@ source "$TUI_FILE"
 
 
 
-select_package(){
-  echo "$1"
-  pause
-  case $1 in
-      DataBase)
-          install_pre
-          install_db
-          print_notime "Bye"
-          exit 0
-          ;;
-      app )
-          install_pre
-          echo "FRED APP"
-          install_app
-          ;;
-      client )
-          install_pre
-          install_client
-          echo "FRED CLIENT"
-          ;;
-      omni )
-          install_pre
-          echo "OMNI NAMES"
-          ;;
-      epp )
-           echo "epp"
-          install_pre
-          install_epp
-          echo "EPP Server"
-          ;;
-      config )
-          echo "Copiando archivos de configuracion"
-          copy_fred_configs    
-          ;;
+#select_package(){
+#  echo "$1"
+#  pause
+#  case $1 in
+#      DataBase)
+#          install_pre
+#          install_db
+#          print_notime "Bye"
+#          exit 0
+#          ;;
+#      app )
+#          install_pre
+#          echo "FRED APP"
+#          install_app
+#          ;;
+#      client )
+#          install_pre
+#          install_client
+#          echo "FRED CLIENT"
+#          ;;
+#      omni )
+#          install_pre
+#          echo "OMNI NAMES"
+#          ;;
+#      epp )
+#           echo "epp"
+#          install_pre
+#          install_epp
+#          echo "EPP Server"
+#          ;;
+#      config )
+#          echo "Copiando archivos de configuracion"
+#          copy_fred_configs    
+#          ;;
 
-      *)
-         echo "Parámetro recibido: $1"
-          ;;
-  esac
-}
+#      *)
+#         echo "Parámetro recibido: $1"
+#          ;;
+#  esac
+#}
 
 
 
@@ -173,6 +219,7 @@ main() {
    print_message $SCRIPT_DIR
    init
    main_menu
+   
    exit 0
 }
 

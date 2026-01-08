@@ -3068,3 +3068,517 @@ La instalacion de FRED DB se ejecuta en 3 pasos
 2/3.  Instalar la base de datos PostgreSQL
 3/3.  Instalar el paquete FRED DB
 ==================================================
+[2026-01-08 18:13:57] - Incluyendo pre.sh
+[2026-01-08 18:13:57] - Script running
+[2026-01-08 18:13:57] - .
+[2026-01-08 18:14:27] - Incluyendo pre.sh
+[2026-01-08 18:14:27] - Script running
+[2026-01-08 18:14:27] - .
+[2026-01-08 18:17:51] - Incluyendo pre.sh
+[2026-01-08 18:17:51] - Script running
+[2026-01-08 18:17:51] - .
+[2026-01-08 18:17:51] - Initialazing...
+[2026-01-08 18:17:51] - Check mandatory files...
+[2026-01-08 18:17:51] - Mandatory files: Ok
+[2026-01-08 18:17:51] - Check mandatory OS...
+[2026-01-08 18:17:51] - OS: Ok
+[2026-01-08 18:17:51] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:17:55] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:17:56] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:17:56] - Ejecutando...
+[2026-01-08 18:17:56] - ❌ ERROR: Falló el comando: su - postgres -c /usr/sbin/fred-dbmanager install  - error: su: user postgres does not exist
+[2026-01-08 18:19:05] - Incluyendo pre.sh
+[2026-01-08 18:19:05] - Script running
+[2026-01-08 18:19:05] - .
+[2026-01-08 18:19:05] - Initialazing...
+[2026-01-08 18:19:05] - Check mandatory files...
+[2026-01-08 18:19:05] - Mandatory files: Ok
+[2026-01-08 18:19:05] - Check mandatory OS...
+[2026-01-08 18:19:05] - OS: Ok
+[2026-01-08 18:19:05] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:19:07] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:19:10] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:19:10] - OK: Base de datos creada
+[2026-01-08 18:19:11] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:19:11] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-08 18:19:44] - Incluyendo pre.sh
+[2026-01-08 18:19:44] - Script running
+[2026-01-08 18:19:44] - .
+[2026-01-08 18:19:44] - Initialazing...
+[2026-01-08 18:19:44] - Check mandatory files...
+[2026-01-08 18:19:44] - Mandatory files: Ok
+[2026-01-08 18:19:44] - Check mandatory OS...
+[2026-01-08 18:19:44] - OS: Ok
+[2026-01-08 18:19:44] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:19:48] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:19:50] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:19:50] - OK: Base de datos creada
+[2026-01-08 18:19:51] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:19:51] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:20:35] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:20:37] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:20:37] - OK: Base de datos creada
+[2026-01-08 18:20:38] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:20:38] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-08 18:21:27] - Incluyendo pre.sh
+[2026-01-08 18:21:27] - Script running
+[2026-01-08 18:21:27] - .
+[2026-01-08 18:21:27] - Initialazing...
+[2026-01-08 18:21:27] - Check mandatory files...
+[2026-01-08 18:21:27] - Mandatory files: Ok
+[2026-01-08 18:21:27] - Check mandatory OS...
+[2026-01-08 18:21:27] - OS: Ok
+[2026-01-08 18:21:27] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:21:30] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:21:32] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:21:32] - OK: Base de datos creada
+[2026-01-08 18:21:33] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:21:33] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-08 18:23:34] - Incluyendo pre.sh
+[2026-01-08 18:23:34] - Script running
+[2026-01-08 18:23:34] - .
+[2026-01-08 18:23:34] - Initialazing...
+[2026-01-08 18:23:34] - Check mandatory files...
+[2026-01-08 18:23:34] - Mandatory files: Ok
+[2026-01-08 18:23:34] - Check mandatory OS...
+[2026-01-08 18:23:34] - OS: Ok
+[2026-01-08 18:23:34] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:23:37] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:23:39] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:23:39] - OK: Base de datos creada
+[2026-01-08 18:23:40] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:23:40] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-08 18:24:47] - Incluyendo pre.sh
+[2026-01-08 18:24:47] - Script running
+[2026-01-08 18:24:48] - .
+[2026-01-08 18:24:48] - Initialazing...
+[2026-01-08 18:24:48] - Check mandatory files...
+[2026-01-08 18:24:48] - Mandatory files: Ok
+[2026-01-08 18:24:48] - Check mandatory OS...
+[2026-01-08 18:24:48] - OS: Ok
+[2026-01-08 18:24:48] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:24:50] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:24:52] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:24:52] - OK: Base de datos creada
+[2026-01-08 18:24:53] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:24:53] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-08 18:25:11] - Incluyendo pre.sh
+[2026-01-08 18:25:11] - Script running
+[2026-01-08 18:25:11] - .
+[2026-01-08 18:25:11] - Initialazing...
+[2026-01-08 18:25:11] - Check mandatory files...
+[2026-01-08 18:25:11] - Mandatory files: Ok
+[2026-01-08 18:25:11] - Check mandatory OS...
+[2026-01-08 18:25:11] - OS: Ok
+[2026-01-08 18:25:11] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:25:14] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:25:16] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:25:16] - OK: Base de datos creada
+[2026-01-08 18:25:17] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:25:17] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:25:32] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:25:35] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:25:35] - OK: Base de datos creada
+[2026-01-08 18:25:36] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:25:36] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:26:23] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:26:25] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:26:25] - OK: Base de datos creada
+[2026-01-08 18:26:26] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:26:26] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-08 18:26:50] - Incluyendo pre.sh
+[2026-01-08 18:26:50] - Script running
+[2026-01-08 18:26:50] - .
+[2026-01-08 18:26:50] - Initialazing...
+[2026-01-08 18:26:50] - Check mandatory files...
+[2026-01-08 18:26:50] - Mandatory files: Ok
+[2026-01-08 18:26:50] - Check mandatory OS...
+[2026-01-08 18:26:50] - OS: Ok
+[2026-01-08 18:26:50] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:26:55] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:26:57] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:26:57] - OK: Base de datos creada
+[2026-01-08 18:26:58] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:26:58] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:27:08] - Finalizdo. Operación cancelada por el usuario.
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:27:13] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:27:15] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:27:15] - OK: Base de datos creada
+[2026-01-08 18:27:16] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:27:16] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:27:27] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 18:28:25] - Incluyendo pre.sh
+[2026-01-08 18:28:25] - Script running
+[2026-01-08 18:28:25] - .
+[2026-01-08 18:28:25] - Initialazing...
+[2026-01-08 18:28:25] - Check mandatory files...
+[2026-01-08 18:28:25] - Mandatory files: Ok
+[2026-01-08 18:28:25] - Check mandatory OS...
+[2026-01-08 18:28:25] - OS: Ok
+[2026-01-08 18:28:25] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Pauetes
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:28:40] - 1/2 Instalando paquetes necestarios
+[2026-01-08 18:28:42] - 2/3 Creando la base de datos fred-dbmanager install
+[2026-01-08 18:28:42] - OK: Base de datos creada
+[2026-01-08 18:28:43] - OK: Base de datos instalada y creada correctamente
+[2026-01-08 18:28:43] - Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-08 18:40:50] - Incluyendo pre.sh
+[2026-01-08 18:40:50] - Script running
+[2026-01-08 18:40:50] - .
+[2026-01-08 18:40:50] - Initialazing...
+[2026-01-08 18:40:50] - Check mandatory files...
+[2026-01-08 18:40:50] - Mandatory files: Ok
+[2026-01-08 18:40:50] - Check mandatory OS...
+[2026-01-08 18:40:50] - OS: Ok
+[2026-01-08 18:40:50] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Paquetes Postgres y FRED DB
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:43:42] - Incluyendo pre.sh
+[2026-01-08 18:43:42] - Script running
+[2026-01-08 18:43:42] - .
+[2026-01-08 18:43:42] - Initialazing...
+[2026-01-08 18:43:42] - Check mandatory files...
+[2026-01-08 18:43:42] - Mandatory files: Ok
+[2026-01-08 18:43:42] - Check mandatory OS...
+[2026-01-08 18:43:43] - OS: Ok
+[2026-01-08 18:43:43] - Init complete: Ok
+===============================================================
+La instalacion de FRED EPP se ejecuta en 2 pasos
+1/2.  Instalar paquetes: Instalar Apache y Modulo EPP y Corba
+2/2.  Habilitar Modulos de Apache
+===============================================================
+[2026-01-08 18:43:57] - Instalando Nodo EPP
+[2026-01-08 18:43:58] - 1.Instalando paquetes FRED EPP Node
+[2026-01-08 18:43:58] - OK: Paquetes FRED APP apache2 libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente !!!!
+[2026-01-08 18:43:58] - 1/2 OK: FRED FRED Node!!!!!
+[2026-01-08 18:43:58] - 2. Habilitando Apache EPP y Corba
+[2026-01-08 18:43:59] - 2/2 OK: Apache habilitado !!!!!
+[2026-01-08 18:44:00] - OK: Nodo EPP instalado !!!!!
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Paquetes Postgres y FRED DB
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:44:38] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-08 18:44:40] - Incluyendo pre.sh
+[2026-01-08 18:44:41] - Script running
+[2026-01-08 18:44:41] - .
+[2026-01-08 18:44:41] - Initialazing...
+[2026-01-08 18:44:41] - Check mandatory files...
+[2026-01-08 18:44:41] - Mandatory files: Ok
+[2026-01-08 18:44:41] - Check mandatory OS...
+[2026-01-08 18:44:41] - OS: Ok
+[2026-01-08 18:44:41] - Init complete: Ok
+[2026-01-08 18:45:16] - Incluyendo pre.sh
+[2026-01-08 18:45:16] - Script running
+[2026-01-08 18:45:16] - .
+[2026-01-08 18:45:16] - Initialazing...
+[2026-01-08 18:45:16] - Check mandatory files...
+[2026-01-08 18:45:16] - Mandatory files: Ok
+[2026-01-08 18:45:16] - Check mandatory OS...
+[2026-01-08 18:45:16] - OS: Ok
+[2026-01-08 18:45:16] - Init complete: Ok
+[2026-01-08 18:45:39] - Incluyendo pre.sh
+[2026-01-08 18:45:39] - Script running
+[2026-01-08 18:45:39] - .
+[2026-01-08 18:45:39] - Initialazing...
+[2026-01-08 18:45:39] - Check mandatory files...
+[2026-01-08 18:45:39] - Mandatory files: Ok
+[2026-01-08 18:45:39] - Check mandatory OS...
+[2026-01-08 18:45:39] - OS: Ok
+[2026-01-08 18:45:39] - Init complete: Ok
+[2026-01-08 18:45:57] - Incluyendo pre.sh
+[2026-01-08 18:45:57] - Script running
+[2026-01-08 18:45:57] - .
+[2026-01-08 18:45:57] - Initialazing...
+[2026-01-08 18:45:57] - Check mandatory files...
+[2026-01-08 18:45:57] - Mandatory files: Ok
+[2026-01-08 18:45:57] - Check mandatory OS...
+[2026-01-08 18:45:57] - OS: Ok
+[2026-01-08 18:45:57] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Paquetes Postgres y FRED DB
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 18:46:02] - Incluyendo pre.sh
+[2026-01-08 18:46:02] - Script running
+[2026-01-08 18:46:02] - .
+[2026-01-08 18:46:02] - Initialazing...
+[2026-01-08 18:46:02] - Check mandatory files...
+[2026-01-08 18:46:02] - Mandatory files: Ok
+[2026-01-08 18:46:02] - Check mandatory OS...
+[2026-01-08 18:46:02] - OS: Ok
+[2026-01-08 18:46:02] - Init complete: Ok
+[2026-01-08 18:52:09] - Incluyendo pre.sh
+[2026-01-08 18:52:09] - Script running
+[2026-01-08 18:52:09] - .
+[2026-01-08 18:52:09] - Initialazing...
+[2026-01-08 18:52:09] - Check mandatory files...
+[2026-01-08 18:52:09] - Mandatory files: Ok
+[2026-01-08 18:52:09] - Check mandatory OS...
+[2026-01-08 18:52:09] - OS: Ok
+[2026-01-08 18:52:09] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar paquetes: Depedencias Python,Corba Servers
+-Depedencias Python
+-Corba Servers
+-Apache for EPP
+-Python Daemons
+-FRED Python libs
+-FRED Daemonds
+-Enable Apache Corba
+-Enable Apache EPP
+2/10.  Habilitando Apache Modules
+3/10.  Copiar archivos de configuracion
+==================================================
+[2026-01-08 18:53:19] - Incluyendo pre.sh
+[2026-01-08 18:53:19] - Script running
+[2026-01-08 18:53:19] - .
+[2026-01-08 18:53:19] - Initialazing...
+[2026-01-08 18:53:19] - Check mandatory files...
+[2026-01-08 18:53:19] - Mandatory files: Ok
+[2026-01-08 18:53:19] - Check mandatory OS...
+[2026-01-08 18:53:19] - OS: Ok
+[2026-01-08 18:53:19] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar paquetes: Depedencias Python,Corba Servers
+-Depedencias Python
+-Corba Servers
+-Apache for EPP
+-Python Daemons
+-FRED Python libs
+-FRED Daemonds
+-Enable Apache Corba
+-Enable Apache EPP
+2/10.  Habilitando Apache Modules
+3/10.  Copiar archivos de configuracion
+==================================================
+[2026-01-08 18:54:02] - Incluyendo pre.sh
+[2026-01-08 18:54:02] - Script running
+[2026-01-08 18:54:02] - .
+[2026-01-08 18:54:02] - Initialazing...
+[2026-01-08 18:54:02] - Check mandatory files...
+[2026-01-08 18:54:02] - Mandatory files: Ok
+[2026-01-08 18:54:02] - Check mandatory OS...
+[2026-01-08 18:54:02] - OS: Ok
+[2026-01-08 18:54:02] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar paquetes: Depedencias Python,Corba Servers
+-Depedencias Python
+-Corba Servers
+-Apache for EPP
+-Python Daemons
+-FRED Python libs
+-FRED Daemonds
+-Enable Apache Corba
+-Enable Apache EPP
+2/10.  Habilitando Apache Modules
+3/10.  Copiar archivos de configuracion
+==================================================
+[2026-01-08 18:54:06] - Finalizdo. Operación cancelada por el usuario.
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar paquetes: Depedencias Python,Corba Servers
+-Depedencias Python
+-Corba Servers
+-Apache for EPP
+-Python Daemons
+-FRED Python libs
+-FRED Daemonds
+-Enable Apache Corba
+-Enable Apache EPP
+2/10.  Habilitando Apache Modules
+3/10.  Copiar archivos de configuracion
+==================================================
+[2026-01-08 18:54:10] - 1.Instalando FRED APP Node
+[2026-01-08 18:54:11] - OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd fred-pifd fred-adifd fred-backend-registry libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente !!!!!
+[2026-01-08 18:54:11] - OK: FRED APP Node!!!!!
+[2026-01-08 18:54:12] - OK: Nodo FRED APP instalado
+[2026-01-08 18:54:12] - Recuerda inciar los demonios de FRED
+[2026-01-08 18:54:52] - Incluyendo pre.sh
+[2026-01-08 18:54:52] - Script running
+[2026-01-08 18:54:52] - .
+[2026-01-08 18:54:52] - Initialazing...
+[2026-01-08 18:54:52] - Check mandatory files...
+[2026-01-08 18:54:52] - Mandatory files: Ok
+[2026-01-08 18:54:52] - Check mandatory OS...
+[2026-01-08 18:54:52] - OS: Ok
+[2026-01-08 18:54:52] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar paquetes: Depedencias Python,Corba Servers
+-Depedencias Python
+-Corba Servers
+-Apache for EPP
+-Python Daemons
+-FRED Python libs
+-FRED Daemonds
+-Enable Apache Corba
+-Enable Apache EPP
+2/10.  Habilitando Apache Modules
+3/10.  Copiar archivos de configuracion
+==================================================
+[2026-01-08 18:54:57] - 1.Instalando FRED APP Node
+[2026-01-08 18:54:58] - OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd fred-pifd fred-adifd fred-backend-registry libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente !!!!!
+[2026-01-08 18:54:58] - OK: FRED APP Node!!!!!
+[2026-01-08 18:54:59] - OK: Nodo FRED APP instalado
+[2026-01-08 18:54:59] - Recuerda inciar los demonios de FRED
+[2026-01-08 18:55:44] - Incluyendo pre.sh
+[2026-01-08 18:55:44] - Script running
+[2026-01-08 18:55:44] - .
+[2026-01-08 18:55:44] - Initialazing...
+[2026-01-08 18:55:44] - Check mandatory files...
+[2026-01-08 18:55:44] - Mandatory files: Ok
+[2026-01-08 18:55:44] - Check mandatory OS...
+[2026-01-08 18:55:44] - OS: Ok
+[2026-01-08 18:55:44] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar paquetes: Depedencias Python,Corba Servers
+-Depedencias Python
+-Corba Servers
+-Apache for EPP
+-Python Daemons
+-FRED Python libs
+-FRED Daemonds
+-Enable Apache Corba
+-Enable Apache EPP
+2/10.  Habilitando Apache Modules
+3/10.  Copiar archivos de configuracion
+==================================================
+[2026-01-08 18:55:48] - 1.Instalando FRED APP Node
+[2026-01-08 18:55:49] - OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd fred-pifd fred-adifd fred-backend-registry libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente !!!!!
+[2026-01-08 18:55:49] - OK: FRED APP Node!!!!!
+[2026-01-08 18:55:50] - OK: Nodo FRED APP instalado
+[2026-01-08 18:55:50] - Recuerda inciar los demonios de FRED
+[2026-01-08 18:56:40] - Incluyendo pre.sh
+[2026-01-08 18:56:40] - Script running
+[2026-01-08 18:56:40] - .
+[2026-01-08 18:56:40] - Initialazing...
+[2026-01-08 18:56:40] - Check mandatory files...
+[2026-01-08 18:56:40] - Mandatory files: Ok
+[2026-01-08 18:56:40] - Check mandatory OS...
+[2026-01-08 18:56:40] - OS: Ok
+[2026-01-08 18:56:40] - Init complete: Ok
+=================================================
+La instalacion de FRED CORE se ejecuta en 3 pasos
+1/10.  Instalar paquetes: Depedencias Python,Corba Servers
+-Depedencias Python
+-Corba Servers
+-Apache for EPP
+-Python Daemons
+-FRED Python libs
+-FRED Daemonds
+-Enable Apache Corba
+-Enable Apache EPP
+2/10.  Habilitando Apache Modules
+3/10.  Copiar archivos de configuracion
+==================================================
+[2026-01-08 18:56:43] - 1.Instalando FRED APP Node
+[2026-01-08 18:56:44] - OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb apache2 python3-pydantic  python3-fred-epplib  python3-django-secretary fred-backend-logger  fred-backend-logger-corba  fred-rifd fred-pifd fred-adifd fred-backend-registry libapache2-mod-corba  libapache2-mod-eppd  instalados exitosamente !!!!!
+[2026-01-08 18:56:44] - OK: FRED APP Node!!!!!
+[2026-01-08 18:56:44] - 1.Instalando FRED APP Node
+[2026-01-08 18:56:45] - Copiando archivos de configuracion FRED /etc/fred
+[2026-01-08 18:56:45] - ✅ OK: Archivos de configuracion copiados
+[2026-01-08 18:56:45] - OK: FRED APP Node!!!!!
+[2026-01-08 18:56:47] - OK: Nodo FRED APP instalado
+[2026-01-08 18:56:47] - Recuerda inciar los demonios de FRED
+[2026-01-08 19:04:29] - Incluyendo pre.sh
+[2026-01-08 19:04:29] - Script running
+[2026-01-08 19:04:29] - .
+[2026-01-08 19:04:29] - Initialazing...
+[2026-01-08 19:04:29] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-08 19:04:29] - Ok!!!!!
+[2026-01-08 19:04:29] - Check mandatory OS...
+[2026-01-08 19:04:29] - Verificando versión del sistema operativo...
+[2026-01-08 19:04:29] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-08 19:04:29] - ✅ Root user OK.
+[2026-01-08 19:04:29] - OS: Ok
+[2026-01-08 19:04:29] - Init complete: Ok
+=================================================
+La instalacion de FRED DB se ejecuta en 3 pasos
+1/2  Instalar Paquetes Postgres y FRED DB
+2/2  Crear la base de datos FRED DB
+==================================================
+[2026-01-08 19:04:32] - Finalizdo. Operación cancelada por el usuario.

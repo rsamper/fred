@@ -9,15 +9,6 @@
 #set -u  # Exit on undefined variables
 echo "Running APP script"
 
-get_packages(){
-    local cmd="$*"
-    echo $cmd
-
-    mapfile -t packages < <(grep -v '^#' "$*" | grep -v '^$')
-    echo ${packages[@]}
-    print_message "dbbbbbb"
-}
-
 
 
 install_fred_client(){
@@ -29,31 +20,28 @@ install_fred_client(){
 
 }
 
-enable_apache_modules(){
-  print_message "8. Habilitando apache for EPP"
-  cd /etc/apache2/sites-available/
-  a2ensite 02-fred-mod-eppd-apache.conf
-  exec_command a2enmod ssl
-  exec_command a2enmod corba
-  exec_command a2enmod eppd
-  exec_command systemctl restart apache2
-  exec_command systemctl is-active apache2
-  print_message "✅ OK: Apache habilitado."
+
+step2_copy_fred_configs(){
+  print_message "1.Instalando FRED APP Node"
+  draw_bar 50
+  sleep 1
+  copy_fred_configs
+  print_message "OK: FRED APP Node!!!!!"
+  
 }
 
-
-
-install_app_packages(){
+step1_install_app_packages(){
   print_message "1.Instalando FRED APP Node"
+  draw_bar 0
+  sleep 1
   mapfile -t packages < <(grep -v '^#' "$*" | grep -v '^$')
   if [[ ${#packages[@]} -gt 0 ]]; then
-    #print_message "Instalando: ${packages[@]}" 
     install ${packages[@]}  # Descomenta cuando estés listo para instalar
-    print_message "✅ OK: Paquetes FRED APP ${packages[@]} instalados exitosamente"
+    print_message "OK: Paquetes FRED APP ${packages[@]} instalados exitosamente !!!!!"
   else
-    print_message "ℹ️ INFO: No se encontraron paquetes DB válidos para instalar en el archivo '$*'."
+    print_message "ℹ️ INFO: No se encontraron paquetes DB válidos para instalar en el archivo '$*'...."
   fi
-  print_message "✅ OK: FRED APP Node"
+  print_message "OK: FRED APP Node!!!!!"
   
 }
 print_info_app(){
@@ -69,21 +57,26 @@ print_info_app(){
   print_notime "-FRED Daemonds"
   print_notime "-Enable Apache Corba"  
   print_notime "-Enable Apache EPP"  
-  #print_notime "9/10.  Instalar FRED Client"  
   print_notime "2/10.  Habilitando Apache Modules"  
   print_notime "3/10.  Copiar archivos de configuracion"  
 
   print_notime "=================================================="  
-  pause 
 }
 install_app(){
+  if [ -z "$APP_PACKAGES_FILE" ]; then
+    print_message "Error: DB_PACKAGES_FILE no está definido o está vacío."
+    exit 1
+  fi
   clear 
   print_info_app  
   #install_fred_client
-  install_app_packages $APP_PACKAGES_FILE
-  enable_apache_modules
-  copy_fred_configs
-  print_message "✅ OK: Nodo FRED APP instalado"   
-  echo "Favor dirigirse a /etc/fred, y modificar/crear archivos de configuracion"
-  print_message "Recuerda inciar los demonios de FRED" 
+  confirm_continue || return
+  step1_install_app_packages $APP_PACKAGES_FILE
+  step2_copy_fred_configs
+  draw_bar 100
+  sleep 1
+  print_message "OK: Nodo FRED APP instalado"   
+  echo "Favor dirigirse a /etc/fred, y modificar/crear archivos de configuracion, con la informacion de base de datos y servidor omninames "
+  print_notime "Recuerda inciar los demonios de FRED"
+  pause
 }

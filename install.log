@@ -4220,3 +4220,1026 @@ La instalacion de pre requisitos FRED se ejecuta en 5 pasos
 [2026-01-08 20:58:59] - Finalizdo. Operación cancelada por el usuario.
 [2026-01-08 20:59:02] - Finalizdo. Operación cancelada por el usuario.
 [2026-01-08 20:59:06] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 20:46:24] - Running
+[2026-01-12 20:46:24] - Initialazing...
+[2026-01-12 20:46:24] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 20:46:24] - Ok!!!!!
+[2026-01-12 20:46:24] - Check mandatory OS...
+[2026-01-12 20:46:24] - Verificando versión del sistema operativo...
+[2026-01-12 20:46:24] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 20:46:24] - ✅ Root user OK.
+[2026-01-12 20:46:24] - OS: Ok
+[2026-01-12 20:46:24] - Init complete: Ok
+[2026-01-12 20:46:24] - Preparando el entorno pre requisitos
+[2026-01-12 20:46:24] - 1/5.Setting CZ Keyring
+[2026-01-12 20:46:24] - Ejecutando...
+[2026-01-12 20:46:24] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 20:46:24] - Ejecutando...
+[2026-01-12 20:46:26] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 20:46:26] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 20:46:26] - 2/5. Adding CZ Source list
+[2026-01-12 20:46:26] - Fuente agregada correctamente !!!!!
+[2026-01-12 20:46:26] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 20:46:26] - 3/5.Setting CZ PIN file
+[2026-01-12 20:46:26] - Ejecutando...
+[2026-01-12 20:46:27] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 20:46:28] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 20:46:28] - 4/5. Update sources
+[2026-01-12 20:46:28] - Ejecutando...
+[2026-01-12 20:46:38] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 20:46:38] - OK: 4/5.Updated sources !!!
+[2026-01-12 20:46:38] - 5/5 Instalando paquetes
+[2026-01-12 20:46:38] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:46:38] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:46:38] - ✅ El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 20:46:38] - ✅ El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 20:46:38] - ✅ El paquete 'curl' ya está instalado.
+[2026-01-12 20:46:38] - ✅ El paquete 'curl' ya está instalado.
+[2026-01-12 20:46:38] - ✅ El paquete 'gnupg' ya está instalado.
+[2026-01-12 20:46:38] - ✅ El paquete 'gnupg' ya está instalado.
+[2026-01-12 20:46:38] - ✅ El paquete 'lsb-release' ya está instalado.
+[2026-01-12 20:46:38] - ✅ El paquete 'lsb-release' ya está instalado.
+[2026-01-12 20:46:38] - 📝 El paquete 'postfix' se instalará.
+[2026-01-12 20:46:38] - 📝 El paquete 'postfix' se instalará.
+[2026-01-12 20:46:38] - 📝 El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 20:46:38] - 📝 El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 20:46:38] - 📝 El paquete 'pgbouncer' se instalará.
+[2026-01-12 20:46:38] - 📝 El paquete 'pgbouncer' se instalará.
+[2026-01-12 20:46:38] - 📝 El paquete 'postgresql-client' se instalará.
+[2026-01-12 20:46:38] - 📝 El paquete 'postgresql-client' se instalará.
+[2026-01-12 20:46:38] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:46:38] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:47:17] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:47:17] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:47:17] - ----------------------------------------------------
+[2026-01-12 20:47:17] - 📊 Resumen final:
+[2026-01-12 20:47:17] - 📊 Resumen final:
+[2026-01-12 20:47:17] - ✅ Instalados en esta ejecución: 4
+[2026-01-12 20:47:17] - ✅ Instalados en esta ejecución: 4
+[2026-01-12 20:47:17] - ❌ Fallidos: 0
+[2026-01-12 20:47:17] - ❌ Fallidos: 0
+[2026-01-12 20:47:17] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 20:47:17] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 20:47:17] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:47:17] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:47:19] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 20:47:19] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 20:47:29] - 1/2 Instalando paquetes necesarios
+[2026-01-12 20:47:31] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:47:31] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:47:31] - ✅ El paquete 'postfix' ya está instalado.
+[2026-01-12 20:47:31] - ✅ El paquete 'postfix' ya está instalado.
+[2026-01-12 20:47:31] - 📝 El paquete 'postgresql' se instalará.
+[2026-01-12 20:47:31] - 📝 El paquete 'postgresql' se instalará.
+[2026-01-12 20:47:31] - 📝 El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 20:47:31] - 📝 El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 20:47:31] - 📝 El paquete 'fred-db' se instalará.
+[2026-01-12 20:47:31] - 📝 El paquete 'fred-db' se instalará.
+[2026-01-12 20:47:31] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:47:31] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:48:31] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:48:31] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:48:31] - ----------------------------------------------------
+[2026-01-12 20:48:31] - 📊 Resumen final:
+[2026-01-12 20:48:31] - 📊 Resumen final:
+[2026-01-12 20:48:31] - ✅ Instalados en esta ejecución: 3
+[2026-01-12 20:48:31] - ✅ Instalados en esta ejecución: 3
+[2026-01-12 20:48:31] - ❌ Fallidos: 0
+[2026-01-12 20:48:31] - ❌ Fallidos: 0
+[2026-01-12 20:48:31] - ℹ️ Ya estaban instalados: 1
+[2026-01-12 20:48:31] - ℹ️ Ya estaban instalados: 1
+[2026-01-12 20:48:31] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:48:31] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:48:33] - OK: 1/2 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 20:48:37] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 20:48:37] - Ejecutando...
+[2026-01-12 20:48:51] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 20:48:51] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 20:48:52] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-12 20:52:55] - Running
+[2026-01-12 20:52:55] - Initialazing...
+[2026-01-12 20:52:55] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 20:52:55] - Ok!!!!!
+[2026-01-12 20:52:55] - Check mandatory OS...
+[2026-01-12 20:52:55] - Verificando versión del sistema operativo...
+[2026-01-12 20:52:55] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 20:52:55] - ✅ Root user OK.
+[2026-01-12 20:52:55] - OS: Ok
+[2026-01-12 20:52:55] - Init complete: Ok
+[2026-01-12 20:52:55] - Preparando el entorno pre requisitos
+[2026-01-12 20:52:55] - 1/5.Setting CZ Keyring
+[2026-01-12 20:52:55] - Ejecutando...
+[2026-01-12 20:52:55] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 20:52:55] - Ejecutando...
+[2026-01-12 20:52:56] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 20:52:56] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 20:52:56] - 2/5. Adding CZ Source list
+[2026-01-12 20:52:56] - Fuente agregada correctamente !!!!!
+[2026-01-12 20:52:56] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 20:52:56] - 3/5.Setting CZ PIN file
+[2026-01-12 20:52:56] - Ejecutando...
+[2026-01-12 20:52:57] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 20:52:57] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 20:52:57] - 4/5. Update sources
+[2026-01-12 20:52:57] - Ejecutando...
+[2026-01-12 20:53:07] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 20:53:07] - OK: 4/5.Updated sources !!!
+[2026-01-12 20:53:07] - 5/5 Instalando paquetes
+[2026-01-12 20:53:07] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:53:07] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:53:07] - ✅ El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 20:53:07] - ✅ El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 20:53:07] - ✅ El paquete 'curl' ya está instalado.
+[2026-01-12 20:53:07] - ✅ El paquete 'curl' ya está instalado.
+[2026-01-12 20:53:07] - ✅ El paquete 'gnupg' ya está instalado.
+[2026-01-12 20:53:07] - ✅ El paquete 'gnupg' ya está instalado.
+[2026-01-12 20:53:07] - ✅ El paquete 'lsb-release' ya está instalado.
+[2026-01-12 20:53:07] - ✅ El paquete 'lsb-release' ya está instalado.
+[2026-01-12 20:53:07] - 📝 El paquete 'postfix' se instalará.
+[2026-01-12 20:53:07] - 📝 El paquete 'postfix' se instalará.
+[2026-01-12 20:53:07] - 📝 El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 20:53:07] - 📝 El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 20:53:07] - 📝 El paquete 'pgbouncer' se instalará.
+[2026-01-12 20:53:07] - 📝 El paquete 'pgbouncer' se instalará.
+[2026-01-12 20:53:07] - 📝 El paquete 'postgresql-client' se instalará.
+[2026-01-12 20:53:07] - 📝 El paquete 'postgresql-client' se instalará.
+[2026-01-12 20:53:07] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:53:07] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:53:45] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:53:45] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:53:45] - ----------------------------------------------------
+[2026-01-12 20:53:45] - 📊 Resumen final:
+[2026-01-12 20:53:45] - 📊 Resumen final:
+[2026-01-12 20:53:45] - ✅ Instalados en esta ejecución: 4
+[2026-01-12 20:53:45] - ✅ Instalados en esta ejecución: 4
+[2026-01-12 20:53:45] - ❌ Fallidos: 0
+[2026-01-12 20:53:45] - ❌ Fallidos: 0
+[2026-01-12 20:53:45] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 20:53:45] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 20:53:45] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:53:45] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:53:48] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 20:53:48] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 20:55:05] - 1/2 Instalando paquetes necesarios
+[2026-01-12 20:55:06] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:55:06] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:55:06] - ✅ El paquete 'postfix' ya está instalado.
+[2026-01-12 20:55:06] - ✅ El paquete 'postfix' ya está instalado.
+[2026-01-12 20:55:06] - 📝 El paquete 'postgresql' se instalará.
+[2026-01-12 20:55:06] - 📝 El paquete 'postgresql' se instalará.
+[2026-01-12 20:55:06] - 📝 El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 20:55:06] - 📝 El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 20:55:06] - 📝 El paquete 'fred-db' se instalará.
+[2026-01-12 20:55:06] - 📝 El paquete 'fred-db' se instalará.
+[2026-01-12 20:55:06] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:55:06] - 📦 Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 20:55:54] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:55:54] - ✅ Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 20:55:54] - ----------------------------------------------------
+[2026-01-12 20:55:54] - 📊 Resumen final:
+[2026-01-12 20:55:54] - 📊 Resumen final:
+[2026-01-12 20:55:54] - ✅ Instalados en esta ejecución: 3
+[2026-01-12 20:55:54] - ✅ Instalados en esta ejecución: 3
+[2026-01-12 20:55:54] - ❌ Fallidos: 0
+[2026-01-12 20:55:54] - ❌ Fallidos: 0
+[2026-01-12 20:55:54] - ℹ️ Ya estaban instalados: 1
+[2026-01-12 20:55:54] - ℹ️ Ya estaban instalados: 1
+[2026-01-12 20:55:54] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:55:54] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:55:56] - OK: 1/2 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 20:55:59] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 20:55:59] - Ejecutando...
+[2026-01-12 20:56:14] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 20:56:14] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 20:56:15] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-12 20:56:40] - 1/2 Instalando paquetes necesarios
+[2026-01-12 20:56:41] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:56:41] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 20:56:41] - ✅ El paquete 'postfix' ya está instalado.
+[2026-01-12 20:56:41] - ✅ El paquete 'postfix' ya está instalado.
+[2026-01-12 20:56:41] - ✅ El paquete 'postgresql' ya está instalado.
+[2026-01-12 20:56:41] - ✅ El paquete 'postgresql' ya está instalado.
+[2026-01-12 20:56:41] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2026-01-12 20:56:41] - ✅ El paquete 'postgresql-contrib' ya está instalado.
+[2026-01-12 20:56:41] - ✅ El paquete 'fred-db' ya está instalado.
+[2026-01-12 20:56:41] - ✅ El paquete 'fred-db' ya está instalado.
+[2026-01-12 20:56:41] - 👍 No hay paquetes nuevos para instalar.
+[2026-01-12 20:56:41] - 👍 No hay paquetes nuevos para instalar.
+[2026-01-12 20:56:41] - ----------------------------------------------------
+[2026-01-12 20:56:41] - 📊 Resumen final:
+[2026-01-12 20:56:41] - 📊 Resumen final:
+[2026-01-12 20:56:41] - ✅ Instalados en esta ejecución: 0
+[2026-01-12 20:56:41] - ✅ Instalados en esta ejecución: 0
+[2026-01-12 20:56:41] - ❌ Fallidos: 0
+[2026-01-12 20:56:41] - ❌ Fallidos: 0
+[2026-01-12 20:56:41] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 20:56:41] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 20:56:41] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:56:41] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 20:56:43] - OK: 1/2 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 20:56:46] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 20:56:46] - Ejecutando...
+[2026-01-12 20:56:46] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 20:56:46] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 20:56:47] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-12 21:45:27] - Running
+[2026-01-12 21:45:27] - Initialazing...
+[2026-01-12 21:45:27] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 21:45:27] - Ok!!!!!
+[2026-01-12 21:45:27] - Check mandatory OS...
+[2026-01-12 21:45:27] - Verificando versión del sistema operativo...
+[2026-01-12 21:45:27] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 21:45:27] - ✅ Root user OK.
+[2026-01-12 21:45:27] - OS: Ok
+[2026-01-12 21:45:27] - Init complete: Ok
+[2026-01-12 21:45:27] - Preparando el entorno pre requisitos
+[2026-01-12 21:45:27] - 1/5.Setting CZ Keyring
+[2026-01-12 21:45:27] - Ejecutando...
+[2026-01-12 21:45:27] - ✅ OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 21:45:27] - Ejecutando...
+[2026-01-12 21:45:29] - ✅ OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 21:45:29] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 21:45:29] - 2/5. Adding CZ Source list
+[2026-01-12 21:45:29] - Fuente agregada correctamente !!!!!
+[2026-01-12 21:45:29] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 21:45:29] - 3/5.Setting CZ PIN file
+[2026-01-12 21:45:29] - Ejecutando...
+[2026-01-12 21:45:30] - ✅ OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 21:45:30] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 21:45:31] - 4/5. Update sources
+[2026-01-12 21:45:31] - Ejecutando...
+[2026-01-12 21:45:40] - ✅ OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 21:45:40] - OK: 4/5.Updated sources !!!
+[2026-01-12 21:45:40] - 5/5 Instalando paquetes
+[2026-01-12 21:45:40] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 21:45:40] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 21:45:40] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:45:40] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:45:40] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:45:40] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:45:40] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:45:40] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:45:41] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:45:41] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:45:41] - El paquete 'postfix' se instalará.
+[2026-01-12 21:45:41] - El paquete 'postfix' se instalará.
+[2026-01-12 21:45:41] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 21:45:41] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 21:45:41] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 21:45:41] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 21:45:41] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 21:45:41] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 21:45:41] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:45:41] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:46:44] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:46:44] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:46:44] - ----------------------------------------------------
+[2026-01-12 21:46:44] - 📊 Resumen final:
+[2026-01-12 21:46:44] - 📊 Resumen final:
+[2026-01-12 21:46:44] - ✅ Instalados en esta ejecución: 4
+[2026-01-12 21:46:44] - ✅ Instalados en esta ejecución: 4
+[2026-01-12 21:46:44] - ❌ Fallidos: 0
+[2026-01-12 21:46:44] - ❌ Fallidos: 0
+[2026-01-12 21:46:44] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 21:46:44] - ℹ️ Ya estaban instalados: 4
+[2026-01-12 21:46:44] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 21:46:44] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 21:46:46] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 21:46:46] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 21:47:12] - 1/2 Instalando paquetes necesarios
+[2026-01-12 21:47:13] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 21:47:13] - 🔍 Verificando estado de los paquetes solicitados...
+[2026-01-12 21:47:13] - El paquete 'postfix' ya está instalado.
+[2026-01-12 21:47:13] - El paquete 'postfix' ya está instalado.
+[2026-01-12 21:47:13] - El paquete 'postgresql' se instalará.
+[2026-01-12 21:47:13] - El paquete 'postgresql' se instalará.
+[2026-01-12 21:47:14] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 21:47:14] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 21:47:14] - El paquete 'fred-db' se instalará.
+[2026-01-12 21:47:14] - El paquete 'fred-db' se instalará.
+[2026-01-12 21:47:14] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:47:14] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:48:17] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:48:17] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:48:17] - ----------------------------------------------------
+[2026-01-12 21:48:17] - 📊 Resumen final:
+[2026-01-12 21:48:17] - 📊 Resumen final:
+[2026-01-12 21:48:17] - ✅ Instalados en esta ejecución: 3
+[2026-01-12 21:48:17] - ✅ Instalados en esta ejecución: 3
+[2026-01-12 21:48:17] - ❌ Fallidos: 0
+[2026-01-12 21:48:17] - ❌ Fallidos: 0
+[2026-01-12 21:48:17] - ℹ️ Ya estaban instalados: 1
+[2026-01-12 21:48:17] - ℹ️ Ya estaban instalados: 1
+[2026-01-12 21:48:17] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 21:48:17] - 📝 Revisa 'install.log' para más detalles.
+[2026-01-12 21:48:19] - OK: 1/2 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 21:48:22] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 21:48:22] - Ejecutando...
+[2026-01-12 21:48:37] - ✅ OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 21:48:37] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 21:48:38] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-05 19:36:56] - Running
+[2026-01-05 19:36:56] - Initialazing...
+[2026-01-05 19:36:56] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-05 19:36:56] - Ok!!!!!
+[2026-01-05 19:36:56] - Check mandatory OS...
+[2026-01-05 19:36:56] - Verificando versión del sistema operativo...
+[2026-01-05 19:36:56] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-05 19:36:56] - ✅ Root user OK.
+[2026-01-05 19:36:56] - OS: Ok
+[2026-01-05 19:36:56] - Init complete: Ok
+[2026-01-05 19:36:56] - Preparando el entorno pre requisitos
+[2026-01-05 19:36:56] - 1/5.Setting CZ Keyring
+[2026-01-05 19:36:56] - Ejecutando...
+[2026-01-05 19:36:56] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-05 19:36:56] - Ejecutando...
+[2026-01-05 19:36:56] - ERROR: Falló el comando: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg  - error: --2026-01-05 19:36:56--  https://archive.nic.cz/dists/cznic-archive-keyring.gpg
+Resolving archive.nic.cz (archive.nic.cz)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address ‘archive.nic.cz’
+[2026-01-12 21:51:06] - Running
+[2026-01-12 21:51:06] - Initialazing...
+[2026-01-12 21:51:06] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 21:51:06] - Ok!!!!!
+[2026-01-12 21:51:06] - Check mandatory OS...
+[2026-01-12 21:51:06] - Verificando versión del sistema operativo...
+[2026-01-12 21:51:06] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 21:51:06] - ✅ Root user OK.
+[2026-01-12 21:51:06] - OS: Ok
+[2026-01-12 21:51:06] - Init complete: Ok
+[2026-01-12 21:51:06] - Preparando el entorno pre requisitos
+[2026-01-12 21:51:06] - 1/5.Setting CZ Keyring
+[2026-01-12 21:51:06] - Ejecutando...
+[2026-01-12 21:51:06] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 21:51:06] - Ejecutando...
+[2026-01-12 21:51:07] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 21:51:07] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 21:51:07] - 2/5. Adding CZ Source list
+[2026-01-12 21:51:07] - Fuente agregada correctamente !!!!!
+[2026-01-12 21:51:07] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 21:51:07] - 3/5.Setting CZ PIN file
+[2026-01-12 21:51:07] - Ejecutando...
+[2026-01-12 21:51:08] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 21:51:08] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 21:51:08] - 4/5. Update sources
+[2026-01-12 21:51:08] - Ejecutando...
+[2026-01-12 21:51:18] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 21:51:18] - OK: 4/5.Updated sources !!!
+[2026-01-12 21:51:18] - 5/5 Instalando paquetes
+[2026-01-12 21:51:18] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:51:18] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:51:18] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:51:18] - El paquete 'postfix' se instalará.
+[2026-01-12 21:51:18] - El paquete 'postfix' se instalará.
+[2026-01-12 21:51:18] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 21:51:18] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 21:51:18] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 21:51:18] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 21:51:18] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 21:51:18] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 21:51:18] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:51:18] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:51:55] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:51:55] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:51:55] - ----------------------------------------------------
+[2026-01-12 21:51:55] - Resumen final:
+[2026-01-12 21:51:55] - Resumen final:
+[2026-01-12 21:51:55] - Instalados en esta ejecución: 4
+[2026-01-12 21:51:55] - Instalados en esta ejecución: 4
+[2026-01-12 21:51:55] - Fallidos: 0
+[2026-01-12 21:51:55] - Fallidos: 0
+[2026-01-12 21:51:55] - ℹYa estaban instalados: 4
+[2026-01-12 21:51:55] - ℹYa estaban instalados: 4
+[2026-01-12 21:51:55] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:51:55] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:51:57] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 21:51:57] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 21:53:40] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:53:47] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:53:53] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:54:00] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:54:03] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:54:06] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:54:11] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:54:19] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:55:17] - 1/2 Instalando paquetes necesarios
+[2026-01-12 21:55:18] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:55:18] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:55:18] - El paquete 'postfix' ya está instalado.
+[2026-01-12 21:55:18] - El paquete 'postfix' ya está instalado.
+[2026-01-12 21:55:18] - El paquete 'postgresql' se instalará.
+[2026-01-12 21:55:18] - El paquete 'postgresql' se instalará.
+[2026-01-12 21:55:18] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 21:55:18] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 21:55:18] - El paquete 'fred-db' se instalará.
+[2026-01-12 21:55:18] - El paquete 'fred-db' se instalará.
+[2026-01-12 21:55:18] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:55:18] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:56:18] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:56:18] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:56:18] - ----------------------------------------------------
+[2026-01-12 21:56:18] - Resumen final:
+[2026-01-12 21:56:18] - Resumen final:
+[2026-01-12 21:56:18] - Instalados en esta ejecución: 3
+[2026-01-12 21:56:18] - Instalados en esta ejecución: 3
+[2026-01-12 21:56:18] - Fallidos: 0
+[2026-01-12 21:56:18] - Fallidos: 0
+[2026-01-12 21:56:18] - ℹYa estaban instalados: 1
+[2026-01-12 21:56:18] - ℹYa estaban instalados: 1
+[2026-01-12 21:56:18] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:56:18] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:56:20] - OK: 1/2 Paquetes FRED DB postfix postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 21:56:23] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 21:56:23] - Ejecutando...
+[2026-01-12 21:56:38] - OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 21:56:38] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 21:56:39] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-12 21:57:48] - Running
+[2026-01-12 21:57:48] - Initialazing...
+[2026-01-12 21:57:48] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 21:57:48] - Ok!!!!!
+[2026-01-12 21:57:48] - Check mandatory OS...
+[2026-01-12 21:57:48] - Verificando versión del sistema operativo...
+[2026-01-12 21:57:48] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 21:57:48] - ✅ Root user OK.
+[2026-01-12 21:57:48] - OS: Ok
+[2026-01-12 21:57:48] - Init complete: Ok
+[2026-01-12 21:57:49] - Preparando el entorno pre requisitos
+[2026-01-12 21:57:49] - 1/5.Setting CZ Keyring
+[2026-01-12 21:57:49] - Ejecutando...
+[2026-01-12 21:57:49] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 21:57:49] - Ejecutando...
+[2026-01-12 21:57:50] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 21:57:50] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 21:57:50] - 2/5. Adding CZ Source list
+[2026-01-12 21:57:50] - Fuente agregada correctamente !!!!!
+[2026-01-12 21:57:50] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 21:57:50] - 3/5.Setting CZ PIN file
+[2026-01-12 21:57:50] - Ejecutando...
+[2026-01-12 21:57:51] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 21:57:51] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 21:57:51] - 4/5. Update sources
+[2026-01-12 21:57:51] - Ejecutando...
+[2026-01-12 21:58:01] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 21:58:01] - OK: 4/5.Updated sources !!!
+[2026-01-12 21:58:01] - 5/5 Instalando paquetes
+[2026-01-12 21:58:01] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:58:01] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:58:01] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:58:01] - El paquete 'postfix' se instalará.
+[2026-01-12 21:58:01] - El paquete 'postfix' se instalará.
+[2026-01-12 21:58:01] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 21:58:01] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 21:58:01] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 21:58:01] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 21:58:01] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 21:58:01] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 21:58:01] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:58:01] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 21:58:40] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:58:40] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 21:58:40] - ----------------------------------------------------
+[2026-01-12 21:58:40] - Resumen final:
+[2026-01-12 21:58:40] - Resumen final:
+[2026-01-12 21:58:40] - Instalados en esta ejecución: 4
+[2026-01-12 21:58:40] - Instalados en esta ejecución: 4
+[2026-01-12 21:58:40] - Fallidos: 0
+[2026-01-12 21:58:40] - Fallidos: 0
+[2026-01-12 21:58:40] - ℹYa estaban instalados: 4
+[2026-01-12 21:58:40] - ℹYa estaban instalados: 4
+[2026-01-12 21:58:40] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:58:40] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:58:42] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 21:58:42] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 21:58:57] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:59:01] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:59:04] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:59:06] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:59:09] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 21:59:35] - Running
+[2026-01-12 21:59:35] - Initialazing...
+[2026-01-12 21:59:35] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 21:59:35] - Ok!!!!!
+[2026-01-12 21:59:35] - Check mandatory OS...
+[2026-01-12 21:59:35] - Verificando versión del sistema operativo...
+[2026-01-12 21:59:35] - ✅ Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 21:59:35] - ✅ Root user OK.
+[2026-01-12 21:59:35] - OS: Ok
+[2026-01-12 21:59:35] - Init complete: Ok
+[2026-01-12 21:59:35] - Preparando el entorno pre requisitos
+[2026-01-12 21:59:35] - 1/5.Setting CZ Keyring
+[2026-01-12 21:59:35] - Ejecutando...
+[2026-01-12 21:59:35] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 21:59:35] - Ejecutando...
+[2026-01-12 21:59:36] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 21:59:36] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 21:59:36] - 2/5. Adding CZ Source list
+[2026-01-12 21:59:36] - ℹLa fuente ya existe, no se agrega nuevamente.
+[2026-01-12 21:59:36] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 21:59:36] - 3/5.Setting CZ PIN file
+[2026-01-12 21:59:36] - Ejecutando...
+[2026-01-12 21:59:37] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 21:59:37] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 21:59:37] - 4/5. Update sources
+[2026-01-12 21:59:37] - Ejecutando...
+[2026-01-12 21:59:45] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 21:59:45] - OK: 4/5.Updated sources !!!
+[2026-01-12 21:59:45] - 5/5 Instalando paquetes
+[2026-01-12 21:59:45] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:59:45] - Verificando estado de los paquetes solicitados...
+[2026-01-12 21:59:45] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'curl' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'postfix' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'postfix' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'cdnskey-scanner' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'cdnskey-scanner' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'pgbouncer' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'pgbouncer' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'postgresql-client' ya está instalado.
+[2026-01-12 21:59:45] - El paquete 'postgresql-client' ya está instalado.
+[2026-01-12 21:59:45] - No hay paquetes nuevos para instalar.
+[2026-01-12 21:59:45] - No hay paquetes nuevos para instalar.
+[2026-01-12 21:59:45] - ----------------------------------------------------
+[2026-01-12 21:59:45] - Resumen final:
+[2026-01-12 21:59:45] - Resumen final:
+[2026-01-12 21:59:45] - Instalados en esta ejecución: 0
+[2026-01-12 21:59:45] - Instalados en esta ejecución: 0
+[2026-01-12 21:59:45] - Fallidos: 0
+[2026-01-12 21:59:45] - Fallidos: 0
+[2026-01-12 21:59:45] - ℹYa estaban instalados: 8
+[2026-01-12 21:59:45] - ℹYa estaban instalados: 8
+[2026-01-12 21:59:45] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:59:45] - Revisa 'install.log' para más detalles.
+[2026-01-12 21:59:48] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 21:59:48] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 21:59:59] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 22:00:04] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 22:00:09] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-12 22:00:11] - 1/2 Instalando paquetes necesarios
+[2026-01-12 22:00:12] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:00:12] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:00:12] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:00:12] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:00:12] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:00:12] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:00:13] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:00:13] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:00:13] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:00:13] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:01:09] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:01:09] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:01:09] - ----------------------------------------------------
+[2026-01-12 22:01:09] - Resumen final:
+[2026-01-12 22:01:09] - Resumen final:
+[2026-01-12 22:01:09] - Instalados en esta ejecución: 3
+[2026-01-12 22:01:09] - Instalados en esta ejecución: 3
+[2026-01-12 22:01:09] - Fallidos: 0
+[2026-01-12 22:01:09] - Fallidos: 0
+[2026-01-12 22:01:09] - ℹYa estaban instalados: 0
+[2026-01-12 22:01:09] - ℹYa estaban instalados: 0
+[2026-01-12 22:01:09] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:01:09] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:01:11] - OK: 1/2 Paquetes FRED DB postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 22:01:14] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 22:01:14] - Ejecutando...
+[2026-01-12 22:01:28] - OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 22:01:28] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 22:01:29] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-12 22:03:37] - Running
+[2026-01-12 22:03:37] - Initialazing...
+[2026-01-12 22:03:37] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 22:03:37] - Ok!!!!!
+[2026-01-12 22:03:37] - Check mandatory OS...
+[2026-01-12 22:03:37] - Verificando versión del sistema operativo...
+[2026-01-12 22:03:37] - Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 22:03:37] - Root user OK.
+[2026-01-12 22:03:37] - OS: Ok
+[2026-01-12 22:03:37] - Init complete: Ok
+[2026-01-12 22:03:37] - Preparando el entorno pre requisitos
+[2026-01-12 22:03:37] - 1/5.Setting CZ Keyring
+[2026-01-12 22:03:37] - Ejecutando...
+[2026-01-12 22:03:37] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 22:03:37] - Ejecutando...
+[2026-01-12 22:03:38] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 22:03:38] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 22:03:38] - 2/5. Adding CZ Source list
+[2026-01-12 22:03:38] - Fuente agregada correctamente !!!!!
+[2026-01-12 22:03:38] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 22:03:38] - 3/5.Setting CZ PIN file
+[2026-01-12 22:03:38] - Ejecutando...
+[2026-01-12 22:03:39] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 22:03:39] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 22:03:39] - 4/5. Update sources
+[2026-01-12 22:03:39] - Ejecutando...
+[2026-01-12 22:03:48] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 22:03:48] - OK: 4/5.Updated sources !!!
+[2026-01-12 22:03:48] - 5/5 Instalando paquetes
+[2026-01-12 22:03:48] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:03:48] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:03:48] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:03:48] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:03:48] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:03:48] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:03:48] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:03:48] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:03:48] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:03:48] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:03:49] - El paquete 'postfix' se instalará.
+[2026-01-12 22:03:49] - El paquete 'postfix' se instalará.
+[2026-01-12 22:03:49] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:03:49] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:03:49] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:03:49] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:03:49] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:03:49] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:03:49] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:03:49] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:04:27] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:04:27] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:04:27] - ----------------------------------------------------
+[2026-01-12 22:04:27] - Resumen final:
+[2026-01-12 22:04:27] - Resumen final:
+[2026-01-12 22:04:27] - Instalados en esta ejecución: 4
+[2026-01-12 22:04:27] - Instalados en esta ejecución: 4
+[2026-01-12 22:04:27] - Fallidos: 0
+[2026-01-12 22:04:27] - Fallidos: 0
+[2026-01-12 22:04:27] - Ya estaban instalados: 4
+[2026-01-12 22:04:27] - Ya estaban instalados: 4
+[2026-01-12 22:04:27] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:04:27] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:04:29] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 22:04:29] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 22:06:22] - Running
+[2026-01-12 22:06:22] - Initialazing...
+[2026-01-12 22:06:22] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 22:06:22] - Ok!!!!!
+[2026-01-12 22:06:22] - Check mandatory OS...
+[2026-01-12 22:06:22] - Verificando versión del sistema operativo...
+[2026-01-12 22:06:22] - Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 22:06:22] - Root user OK.
+[2026-01-12 22:06:22] - OS: Ok
+[2026-01-12 22:06:22] - Init complete: Ok
+[2026-01-12 22:06:22] - Preparando el entorno pre requisitos
+[2026-01-12 22:06:22] - 1/5.Setting CZ Keyring
+[2026-01-12 22:06:22] - Ejecutando...
+[2026-01-12 22:06:22] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 22:06:22] - Ejecutando...
+[2026-01-12 22:06:24] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 22:06:24] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 22:06:24] - 2/5. Adding CZ Source list
+[2026-01-12 22:06:24] - Fuente agregada correctamente !!!!!
+[2026-01-12 22:06:24] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 22:06:24] - 3/5.Setting CZ PIN file
+[2026-01-12 22:06:24] - Ejecutando...
+[2026-01-12 22:06:25] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 22:06:25] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 22:06:25] - 4/5. Update sources
+[2026-01-12 22:06:25] - Ejecutando...
+[2026-01-12 22:06:34] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 22:06:34] - OK: 4/5.Updated sources !!!
+[2026-01-12 22:06:34] - 5/5 Instalando paquetes
+[2026-01-12 22:06:34] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:06:34] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:06:34] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:06:34] - El paquete 'postfix' se instalará.
+[2026-01-12 22:06:34] - El paquete 'postfix' se instalará.
+[2026-01-12 22:06:34] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:06:34] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:06:34] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:06:34] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:06:34] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:06:34] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:06:34] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:06:34] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:07:13] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:07:13] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:07:13] - ----------------------------------------------------
+[2026-01-12 22:07:13] - Resumen final:
+[2026-01-12 22:07:13] - Resumen final:
+[2026-01-12 22:07:13] - Instalados en esta ejecución: 4
+[2026-01-12 22:07:13] - Instalados en esta ejecución: 4
+[2026-01-12 22:07:13] - Fallidos: 0
+[2026-01-12 22:07:13] - Fallidos: 0
+[2026-01-12 22:07:13] - Ya estaban instalados: 4
+[2026-01-12 22:07:13] - Ya estaban instalados: 4
+[2026-01-12 22:07:13] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:07:13] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:07:15] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 22:07:15] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 22:07:21] - 1/2 Instalando paquetes necesarios
+[2026-01-12 22:07:22] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:07:22] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:07:22] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:07:22] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:07:22] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:07:22] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:07:22] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:07:22] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:07:22] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:07:22] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:08:23] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:08:23] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:08:23] - ----------------------------------------------------
+[2026-01-12 22:08:23] - Resumen final:
+[2026-01-12 22:08:23] - Resumen final:
+[2026-01-12 22:08:23] - Instalados en esta ejecución: 3
+[2026-01-12 22:08:23] - Instalados en esta ejecución: 3
+[2026-01-12 22:08:23] - Fallidos: 0
+[2026-01-12 22:08:23] - Fallidos: 0
+[2026-01-12 22:08:23] - Ya estaban instalados: 0
+[2026-01-12 22:08:23] - Ya estaban instalados: 0
+[2026-01-12 22:08:23] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:08:23] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:08:25] - OK: 1/2 Paquetes FRED DB postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 22:08:28] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 22:08:28] - Ejecutando...
+[2026-01-12 22:08:42] - OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 22:08:42] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 22:08:43] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf
+[2026-01-12 22:10:31] - Running
+[2026-01-12 22:10:31] - Initialazing...
+[2026-01-12 22:10:31] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 22:10:31] - Ok!!!!!
+[2026-01-12 22:10:31] - Check mandatory OS...
+[2026-01-12 22:10:31] - Verificando versión del sistema operativo...
+[2026-01-12 22:10:31] - Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 22:10:31] - Root user OK.
+[2026-01-12 22:10:31] - OS: Ok
+[2026-01-12 22:10:31] - Init complete: Ok
+[2026-01-12 22:10:31] - Instalando pre requisitos pre requisitos
+[2026-01-12 22:10:31] - 1/5.Setting CZ Keyring
+[2026-01-12 22:10:31] - Ejecutando...
+[2026-01-12 22:10:31] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 22:10:31] - Ejecutando...
+[2026-01-12 22:10:32] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 22:10:32] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 22:10:32] - 2/5. Adding CZ Source list
+[2026-01-12 22:10:33] - Fuente agregada correctamente !!!!!
+[2026-01-12 22:10:33] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 22:10:33] - 3/5.Setting CZ PIN file
+[2026-01-12 22:10:33] - Ejecutando...
+[2026-01-12 22:10:33] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 22:10:33] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 22:10:34] - 4/5. Update sources
+[2026-01-12 22:10:34] - Ejecutando...
+[2026-01-12 22:10:43] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 22:10:43] - OK: 4/5.Updated sources !!!
+[2026-01-12 22:10:43] - 5/5 Instalando paquetes
+[2026-01-12 22:10:43] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:10:43] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:10:43] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:10:43] - El paquete 'postfix' se instalará.
+[2026-01-12 22:10:43] - El paquete 'postfix' se instalará.
+[2026-01-12 22:10:43] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:10:43] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:10:43] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:10:43] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:10:43] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:10:43] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:10:43] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:10:43] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:11:22] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:11:22] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:11:22] - ----------------------------------------------------
+[2026-01-12 22:11:22] - Resumen final:
+[2026-01-12 22:11:22] - Resumen final:
+[2026-01-12 22:11:22] - Instalados en esta ejecución: 4
+[2026-01-12 22:11:22] - Instalados en esta ejecución: 4
+[2026-01-12 22:11:22] - Fallidos: 0
+[2026-01-12 22:11:22] - Fallidos: 0
+[2026-01-12 22:11:22] - Ya estaban instalados: 4
+[2026-01-12 22:11:22] - Ya estaban instalados: 4
+[2026-01-12 22:11:22] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:11:22] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:11:24] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 22:11:24] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 22:11:38] - 1/2 Instalando paquetes necesarios
+[2026-01-12 22:11:39] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:11:39] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:11:39] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:11:39] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:11:39] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:11:39] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:11:39] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:11:39] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:11:39] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:11:39] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:12:41] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:12:41] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:12:41] - ----------------------------------------------------
+[2026-01-12 22:12:41] - Resumen final:
+[2026-01-12 22:12:41] - Resumen final:
+[2026-01-12 22:12:41] - Instalados en esta ejecución: 3
+[2026-01-12 22:12:41] - Instalados en esta ejecución: 3
+[2026-01-12 22:12:41] - Fallidos: 0
+[2026-01-12 22:12:41] - Fallidos: 0
+[2026-01-12 22:12:41] - Ya estaban instalados: 0
+[2026-01-12 22:12:41] - Ya estaban instalados: 0
+[2026-01-12 22:12:41] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:12:41] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:12:43] - OK: 1/2 Paquetes FRED DB postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 22:12:46] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 22:12:46] - Ejecutando...
+[2026-01-12 22:13:00] - OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 22:13:00] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 22:13:01] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf.
+Para brindar acceso a la base de datos por red
+[2026-01-12 22:14:03] - Running
+[2026-01-12 22:14:03] - Initialazing...
+[2026-01-12 22:14:03] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 22:14:03] - Ok!!!!!
+[2026-01-12 22:14:03] - Check mandatory OS...
+[2026-01-12 22:14:03] - Verificando versión del sistema operativo...
+[2026-01-12 22:14:03] - Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 22:14:03] - Root user OK.
+[2026-01-12 22:14:03] - OS: Ok
+[2026-01-12 22:14:03] - Init complete: Ok
+[2026-01-12 22:14:03] - Instalando pre requisitos pre requisitos
+[2026-01-12 22:14:03] - 1/5.Setting CZ Keyring
+[2026-01-12 22:14:03] - Ejecutando...
+[2026-01-12 22:14:03] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 22:14:03] - Ejecutando...
+[2026-01-12 22:14:04] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 22:14:04] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 22:14:04] - 2/5. Adding CZ Source list
+[2026-01-12 22:14:04] - Fuente agregada correctamente !!!!!
+[2026-01-12 22:14:04] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 22:14:04] - 3/5.Setting CZ PIN file
+[2026-01-12 22:14:04] - Ejecutando...
+[2026-01-12 22:14:05] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 22:14:05] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 22:14:05] - 4/5. Update sources
+[2026-01-12 22:14:05] - Ejecutando...
+[2026-01-12 22:14:15] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 22:14:15] - OK: 4/5.Updated sources !!!
+[2026-01-12 22:14:15] - 5/5 Instalando paquetes
+[2026-01-12 22:14:15] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:14:15] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:14:15] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:14:15] - El paquete 'postfix' se instalará.
+[2026-01-12 22:14:15] - El paquete 'postfix' se instalará.
+[2026-01-12 22:14:15] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:14:15] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-12 22:14:15] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:14:15] - El paquete 'pgbouncer' se instalará.
+[2026-01-12 22:14:15] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:14:15] - El paquete 'postgresql-client' se instalará.
+[2026-01-12 22:14:15] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:14:15] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:14:54] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:14:54] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:14:54] - ----------------------------------------------------
+[2026-01-12 22:14:54] - Resumen final:
+[2026-01-12 22:14:54] - Resumen final:
+[2026-01-12 22:14:54] - Instalados en esta ejecución: 4
+[2026-01-12 22:14:54] - Instalados en esta ejecución: 4
+[2026-01-12 22:14:54] - Fallidos: 0
+[2026-01-12 22:14:54] - Fallidos: 0
+[2026-01-12 22:14:54] - Ya estaban instalados: 4
+[2026-01-12 22:14:54] - Ya estaban instalados: 4
+[2026-01-12 22:14:54] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:14:54] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:14:56] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 22:14:56] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 22:15:15] - Running
+[2026-01-12 22:15:15] - Initialazing...
+[2026-01-12 22:15:15] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-12 22:15:15] - Ok!!!!!
+[2026-01-12 22:15:15] - Check mandatory OS...
+[2026-01-12 22:15:15] - Verificando versión del sistema operativo...
+[2026-01-12 22:15:15] - Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-12 22:15:15] - Root user OK.
+[2026-01-12 22:15:15] - OS: Ok
+[2026-01-12 22:15:15] - Init complete: Ok
+[2026-01-12 22:15:15] - Instalando pre requisitos pre requisitos
+[2026-01-12 22:15:15] - 1/5.Setting CZ Keyring
+[2026-01-12 22:15:15] - Ejecutando...
+[2026-01-12 22:15:15] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-12 22:15:16] - Ejecutando...
+[2026-01-12 22:15:17] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-12 22:15:17] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-12 22:15:17] - 2/5. Adding CZ Source list
+[2026-01-12 22:15:17] - ℹLa fuente ya existe, no se agrega nuevamente.
+[2026-01-12 22:15:17] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-12 22:15:17] - 3/5.Setting CZ PIN file
+[2026-01-12 22:15:17] - Ejecutando...
+[2026-01-12 22:15:17] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-12 22:15:17] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-12 22:15:18] - 4/5. Update sources
+[2026-01-12 22:15:18] - Ejecutando...
+[2026-01-12 22:15:26] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-12 22:15:26] - OK: 4/5.Updated sources !!!
+[2026-01-12 22:15:26] - 5/5 Instalando paquetes
+[2026-01-12 22:15:26] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:15:26] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:15:26] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'curl' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'gnupg' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'lsb-release' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'postfix' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'postfix' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'cdnskey-scanner' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'cdnskey-scanner' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'pgbouncer' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'pgbouncer' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'postgresql-client' ya está instalado.
+[2026-01-12 22:15:26] - El paquete 'postgresql-client' ya está instalado.
+[2026-01-12 22:15:26] - No hay paquetes nuevos para instalar.
+[2026-01-12 22:15:26] - No hay paquetes nuevos para instalar.
+[2026-01-12 22:15:26] - ----------------------------------------------------
+[2026-01-12 22:15:26] - Resumen final:
+[2026-01-12 22:15:26] - Resumen final:
+[2026-01-12 22:15:26] - Instalados en esta ejecución: 0
+[2026-01-12 22:15:26] - Instalados en esta ejecución: 0
+[2026-01-12 22:15:26] - Fallidos: 0
+[2026-01-12 22:15:26] - Fallidos: 0
+[2026-01-12 22:15:26] - Ya estaban instalados: 8
+[2026-01-12 22:15:26] - Ya estaban instalados: 8
+[2026-01-12 22:15:26] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:15:26] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:15:28] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-12 22:15:28] - OK: Pre requisitos instalados exitosamente
+[2026-01-12 22:15:37] - 1/2 Instalando paquetes necesarios
+[2026-01-12 22:15:38] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:15:38] - Verificando estado de los paquetes solicitados...
+[2026-01-12 22:15:38] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:15:38] - El paquete 'postgresql' se instalará.
+[2026-01-12 22:15:38] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:15:38] - El paquete 'postgresql-contrib' se instalará.
+[2026-01-12 22:15:38] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:15:38] - El paquete 'fred-db' se instalará.
+[2026-01-12 22:15:38] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:15:38] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-12 22:16:38] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:16:38] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-12 22:16:38] - ----------------------------------------------------
+[2026-01-12 22:16:38] - Resumen final:
+[2026-01-12 22:16:38] - Resumen final:
+[2026-01-12 22:16:38] - Instalados en esta ejecución: 3
+[2026-01-12 22:16:38] - Instalados en esta ejecución: 3
+[2026-01-12 22:16:38] - Fallidos: 0
+[2026-01-12 22:16:38] - Fallidos: 0
+[2026-01-12 22:16:38] - Ya estaban instalados: 0
+[2026-01-12 22:16:38] - Ya estaban instalados: 0
+[2026-01-12 22:16:38] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:16:38] - Revisa 'install.log' para más detalles.
+[2026-01-12 22:16:40] - OK: 1/2 Paquetes FRED DB postgresql  postgresql-contrib fred-db instalados exitosamente !!!!!
+[2026-01-12 22:16:43] - 2/2 Creando la base de datos fred-dbmanager install
+[2026-01-12 22:16:43] - Ejecutando...
+[2026-01-12 22:16:57] - OK: El comando se ejecutó correctamente: su - postgres -c /usr/sbin/fred-dbmanager install
+[2026-01-12 22:16:57] - OK: Base de datos creada exitosamente !!!!!
+[2026-01-12 22:16:58] - OK: Base de datos instalada y creada correctamente !!!!!
+Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf.
+Para brindar acceso a la base de datos por red

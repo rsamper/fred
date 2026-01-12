@@ -31,6 +31,7 @@ draw_bar() {
   printf "%0.s#" $(seq 1 "$filled")
   printf "%0.s-" $(seq 1 "$empty")
   printf "] %3d%%" "$percent"
+  printf "\n"
 }
 
 
@@ -92,10 +93,10 @@ check_file(){
 
 check_root(){
   if [ "$EUID" -ne 0 ]
-   then print_log_message "❌ Please run installation as root."
+   then print_log_message "Please run installation as root."
    exit 1
   fi
-  print_log_message "✅ Root user OK."
+  print_log_message "Root user OK."
 }
 
 # --- Verificar versión del sistema operativo ---
@@ -111,14 +112,14 @@ check_os() {
 
     if { [ "$OS_ID" = "ubuntu" ] && [ "$OS_VERSION" = "20.04" ]; } || \
        { [ "$OS_ID" = "debian" ] && [ "$OS_VERSION" = "10" ]; }; then
-      print_log_message "✅ Sistema operativo compatible: $PRETTY_NAME"
+      print_log_message "Sistema operativo compatible: $PRETTY_NAME"
     else
-      print_log_message "❌ Sistema operativo no compatible: $PRETTY_NAME"
+      print_log_message "Sistema operativo no compatible: $PRETTY_NAME"
       print_log_message "Solo se admite Ubuntu 20.04 o Debian 10."
       exit 1
     fi
   else
-    print_log_message "❌ No se pudo determinar el sistema operativo (no existe /etc/os-release)."
+    print_log_message "No se pudo determinar el sistema operativo (no existe /etc/os-release)."
     exit 1
   fi
 }
@@ -138,20 +139,20 @@ install() {
   # Si no se pasan argumentos, usar la lista por defecto
   if [ ${#paquetes_solicitados[@]} -eq 0 ]; then
     paquetes_solicitados=("${default_paquetes[@]}")
-    print_log_message "ℹ️ No se especificaron paquetes. Usando la lista por defecto: ${paquetes_solicitados[*]}"
+    print_log_message "No se especificaron paquetes. Usando la lista por defecto: ${paquetes_solicitados[*]}"
     exit 1
   fi
 
   #print_log_message "Verificando paquetes: ${paquetes_solicitados[*]}"
-  print_log_message "🔍 Verificando estado de los paquetes solicitados..." | tee -a "$log_file"
+  print_log_message "Verificando estado de los paquetes solicitados..." | tee -a "$log_file"
 
   # 1. PRIMER BUCLE: VERIFICAR QUÉ NECESITA SER INSTALADO
   for paquete in "${paquetes_solicitados[@]}"; do
     if dpkg -s "$paquete" >/dev/null 2>&1; then
-      print_log_message "✅ El paquete '$paquete' ya está instalado." | tee -a "$log_file"
+      print_log_message "El paquete '$paquete' ya está instalado." | tee -a "$log_file"
       ((ya_instalado++))
     else
-      print_log_message "📝 El paquete '$paquete' se instalará." | tee -a "$log_file"
+      print_log_message "El paquete '$paquete' se instalará." | tee -a "$log_file"
       paquetes_a_instalar+=("$paquete")
     fi
   done
@@ -159,14 +160,14 @@ install() {
   # 2. INSTALACIÓN EN LOTE (SI ES NECESARIO)
   if [ ${#paquetes_a_instalar[@]} -gt 0 ]; then
     #print_log_message "📦 Iniciando instalación de: ${paquetes_a_instalar[*]}" | tee -a "$log_file"
-    print_log_message "📦 Iniciando instalación de paquetes. Por favor espere..." | tee -a "$log_file"
+    print_log_message "Iniciando instalación de paquetes. Por favor espere..." | tee -a "$log_file"
     
     # La redirección correcta para capturar salida y error es "2>&1"
     if salida=$(sudo apt install -y "${paquetes_a_instalar[@]}" 2>&1); then
-      print_log_message "✅ Todos los paquetes nuevos fueron instalados correctamente." | tee -a "$log_file"
+      print_log_message "Todos los paquetes nuevos fueron instalados correctamente." | tee -a "$log_file"
       ok=${#paquetes_a_instalar[@]} # Todos los que intentamos, se instalaron
     else
-      print_log_message "❌ Ocurrió un error durante la instalación." | tee -a "$log_file"
+      print_log_message "Ocurrió un error durante la instalación." | tee -a "$log_file"
       # Guardamos el log del error
       echo "$salida" | sed "s/^/$(timestamp) ERROR: /" | tee -a "$log_file"
       print_log_message  "Fin con error .....$salida" 
@@ -176,16 +177,16 @@ install() {
       fail=${#paquetes_a_instalar[@]} 
     fi
   else
-    print_log_message "👍 No hay paquetes nuevos para instalar." | tee -a "$log_file"
+    print_log_message "No hay paquetes nuevos para instalar." | tee -a "$log_file"
   fi
 
   # 3. RESUMEN FINAL
   print_log_message "----------------------------------------------------"
-  print_log_message "📊 Resumen final:" | tee -a "$log_file"
-  print_log_message "✅ Instalados en esta ejecución: $ok" | tee -a "$log_file"
-  print_log_message "❌ Fallidos: $fail" | tee -a "$log_file"
-  print_log_message "ℹ️ Ya estaban instalados: $ya_instalado" | tee -a "$log_file"
-  print_log_message "📝 Revisa '$log_file' para más detalles." | tee -a "$log_file"
+  print_log_message "Resumen final:" | tee -a "$log_file"
+  print_log_message "Instalados en esta ejecución: $ok" | tee -a "$log_file"
+  print_log_message "Fallidos: $fail" | tee -a "$log_file"
+  print_log_message "Ya estaban instalados: $ya_instalado" | tee -a "$log_file"
+  print_log_message "Revisa '$log_file' para más detalles." | tee -a "$log_file"
   sleep 2
 }
 
@@ -200,10 +201,10 @@ exec_command() {
     local status=$?
     if [ $status -ne 0 ]; then
         QUIET_MODE=false
-        print_log_message "❌ ERROR: Falló el comando: $cmd  - error: $output"
+        print_log_message "ERROR: Falló el comando: $cmd  - error: $output"
         exit 1
     fi
-    print_log_message "✅ OK: El comando se ejecutó correctamente: $cmd"
+    print_log_message "OK: El comando se ejecutó correctamente: $cmd"
     
 }
 

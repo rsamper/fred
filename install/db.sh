@@ -58,6 +58,6 @@ install_db(){
   draw_bar 100
   sleep 1
   print_message "OK: Base de datos instalada y creada correctamente !!!!!" 
-  print_notime "Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf" 
-  pause
+  print_notime "Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf."
+  print_notime  "Para brindar acceso a la base de datos por red" 
 }

@@ -127,8 +127,9 @@ print_info_pre(){
 }
 
 install_pre(){
+  clear
   #print_message "Ejecutando pre.sh"  
-  print_message "Preparando el entorno pre requisitos" 
+  print_message "Instalando pre requisitos pre requisitos" 
   #print_info_pre
   set_keyring
   add_source_list

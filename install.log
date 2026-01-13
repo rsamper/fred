@@ -5243,3 +5243,253 @@ Para brindar acceso a la base de datos por red
 [2026-01-12 22:16:58] - OK: Base de datos instalada y creada correctamente !!!!!
 Recuerda configurar la zona horaria en postgresql.conf y el archivo pg_hba.conf.
 Para brindar acceso a la base de datos por red
+[2026-01-13 19:28:41] - Running
+[2026-01-13 19:28:41] - Initialazing...
+[2026-01-13 19:28:41] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-13 19:28:41] - Ok!!!!!
+[2026-01-13 19:28:41] - Check mandatory OS...
+[2026-01-13 19:28:41] - Verificando versión del sistema operativo...
+[2026-01-13 19:28:41] - Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-13 19:28:41] - Root user OK.
+[2026-01-13 19:28:41] - OS: Ok
+[2026-01-13 19:28:41] - Init complete: Ok
+[2026-01-13 19:28:41] - Instalando pre requisitos pre requisitos
+[2026-01-13 19:28:41] - 1/5.Setting CZ Keyring
+[2026-01-13 19:28:41] - Ejecutando...
+[2026-01-13 19:28:41] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-13 19:28:41] - Ejecutando...
+[2026-01-13 19:28:43] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-13 19:28:43] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-13 19:28:43] - 2/5. Adding CZ Source list
+[2026-01-13 19:28:43] - Fuente agregada correctamente !!!!!
+[2026-01-13 19:28:43] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-13 19:28:43] - 3/5.Setting CZ PIN file
+[2026-01-13 19:28:43] - Ejecutando...
+[2026-01-13 19:28:44] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-13 19:28:44] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-13 19:28:45] - 4/5. Update sources
+[2026-01-13 19:28:45] - Ejecutando...
+[2026-01-13 19:28:54] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-13 19:28:54] - OK: 4/5.Updated sources !!!
+[2026-01-13 19:28:54] - 5/5 Instalando paquetes
+[2026-01-13 19:28:54] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:28:54] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:28:54] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'curl' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'curl' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'gnupg' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'gnupg' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'lsb-release' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'lsb-release' ya está instalado.
+[2026-01-13 19:28:54] - El paquete 'postfix' se instalará.
+[2026-01-13 19:28:54] - El paquete 'postfix' se instalará.
+[2026-01-13 19:28:54] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-13 19:28:54] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-13 19:28:54] - El paquete 'pgbouncer' se instalará.
+[2026-01-13 19:28:54] - El paquete 'pgbouncer' se instalará.
+[2026-01-13 19:28:54] - El paquete 'postgresql-client' se instalará.
+[2026-01-13 19:28:54] - El paquete 'postgresql-client' se instalará.
+[2026-01-13 19:28:54] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:28:54] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:29:33] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:29:33] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:29:33] - ----------------------------------------------------
+[2026-01-13 19:29:33] - Resumen final:
+[2026-01-13 19:29:33] - Resumen final:
+[2026-01-13 19:29:33] - Instalados en esta ejecución: 4
+[2026-01-13 19:29:33] - Instalados en esta ejecución: 4
+[2026-01-13 19:29:33] - Fallidos: 0
+[2026-01-13 19:29:33] - Fallidos: 0
+[2026-01-13 19:29:33] - Ya estaban instalados: 4
+[2026-01-13 19:29:33] - Ya estaban instalados: 4
+[2026-01-13 19:29:33] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:29:33] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:29:35] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-13 19:29:35] - OK: Pre requisitos instalados exitosamente
+[2026-01-13 19:29:52] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-13 19:29:55] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-13 19:29:56] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-13 19:29:59] - Finalizdo. Operación cancelada por el usuario.
+[2026-01-13 19:30:03] - 1.Instalando FRED APP Node
+[2026-01-13 19:30:04] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:30:04] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:30:04] - El paquete 'python3-dnspython' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-dnspython' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-pip' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-pip' se instalará.
+[2026-01-13 19:30:04] - El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-13 19:30:04] - El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-13 19:30:04] - El paquete 'omniorb-nameserver' se instalará.
+[2026-01-13 19:30:04] - El paquete 'omniorb-nameserver' se instalará.
+[2026-01-13 19:30:04] - El paquete 'omniorb' se instalará.
+[2026-01-13 19:30:04] - El paquete 'omniorb' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-pydantic' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-pydantic' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-fred-epplib' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-fred-epplib' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-django-secretary' se instalará.
+[2026-01-13 19:30:04] - El paquete 'python3-django-secretary' se instalará.
+[2026-01-13 19:30:04] - El paquete 'fred-rifd' se instalará.
+[2026-01-13 19:30:04] - El paquete 'fred-rifd' se instalará.
+[2026-01-13 19:30:04] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:30:04] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:35:33] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:35:33] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:35:33] - ----------------------------------------------------
+[2026-01-13 19:35:33] - Resumen final:
+[2026-01-13 19:35:33] - Resumen final:
+[2026-01-13 19:35:33] - Instalados en esta ejecución: 9
+[2026-01-13 19:35:33] - Instalados en esta ejecución: 9
+[2026-01-13 19:35:33] - Fallidos: 0
+[2026-01-13 19:35:33] - Fallidos: 0
+[2026-01-13 19:35:33] - Ya estaban instalados: 0
+[2026-01-13 19:35:33] - Ya estaban instalados: 0
+[2026-01-13 19:35:33] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:35:33] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:35:35] - OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb python3-pydantic  python3-fred-epplib  python3-django-secretary fred-rifd instalados exitosamente !!!!!
+[2026-01-13 19:35:35] - OK: FRED APP Node!!!!!
+[2026-01-13 19:35:35] - 1.Instalando FRED APP Node
+[2026-01-13 19:35:36] - Copiando archivos de configuracion FRED /etc/fred
+[2026-01-13 19:35:37] - OK: Archivos de configuracion copiados !!!!!
+[2026-01-13 19:35:37] - OK: FRED APP Node!!!!!
+[2026-01-13 19:35:38] - OK: Nodo FRED APP instalado
+Recuerda inciar los demonios de FRED
+[2026-01-13 19:47:07] - Running
+[2026-01-13 19:47:07] - Initialazing...
+[2026-01-13 19:47:07] - Revisando archivos necesarios/ Checking mandatory files...
+[2026-01-13 19:47:07] - Ok!!!!!
+[2026-01-13 19:47:08] - Check mandatory OS...
+[2026-01-13 19:47:08] - Verificando versión del sistema operativo...
+[2026-01-13 19:47:08] - Sistema operativo compatible: Ubuntu 20.04.6 LTS
+[2026-01-13 19:47:08] - Root user OK.
+[2026-01-13 19:47:08] - OS: Ok
+[2026-01-13 19:47:08] - Init complete: Ok
+[2026-01-13 19:47:08] - Instalando pre requisitos pre requisitos
+[2026-01-13 19:47:08] - 1/5.Setting CZ Keyring
+[2026-01-13 19:47:08] - Ejecutando...
+[2026-01-13 19:47:08] - OK: El comando se ejecutó correctamente: mkdir -p /usr/share/keyrings/
+[2026-01-13 19:47:08] - Ejecutando...
+[2026-01-13 19:47:09] - OK: El comando se ejecutó correctamente: wget https://archive.nic.cz/dists/cznic-archive-keyring.gpg --output-document=/usr/share/keyrings/cznic-archive-keyring.gpg
+[2026-01-13 19:47:09] - OK: 1/5.Setting CZ Keyring !!!!!
+[2026-01-13 19:47:09] - 2/5. Adding CZ Source list
+[2026-01-13 19:47:09] - Fuente agregada correctamente !!!!!
+[2026-01-13 19:47:09] - OK: 2/5. Adding CZ Source list !!!!!
+[2026-01-13 19:47:09] - 3/5.Setting CZ PIN file
+[2026-01-13 19:47:09] - Ejecutando...
+[2026-01-13 19:47:09] - OK: El comando se ejecutó correctamente: wget https://fred.nic.cz/media/filer_public/71/ce/71ce3145-a4bb-4583-9ff2-218627d71d5f/20241fredpreferencesd.txt -O /etc/apt/preferences.d/fred
+[2026-01-13 19:47:09] - OK: 3/5.Setting CZ PIN file !!!!
+[2026-01-13 19:47:10] - 4/5. Update sources
+[2026-01-13 19:47:10] - Ejecutando...
+[2026-01-13 19:47:19] - OK: El comando se ejecutó correctamente: apt update
+[2026-01-13 19:47:19] - OK: 4/5.Updated sources !!!
+[2026-01-13 19:47:19] - 5/5 Instalando paquetes
+[2026-01-13 19:47:19] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:47:19] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:47:19] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'ca-certificates' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'curl' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'curl' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'gnupg' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'gnupg' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'lsb-release' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'lsb-release' ya está instalado.
+[2026-01-13 19:47:19] - El paquete 'postfix' se instalará.
+[2026-01-13 19:47:19] - El paquete 'postfix' se instalará.
+[2026-01-13 19:47:19] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-13 19:47:19] - El paquete 'cdnskey-scanner' se instalará.
+[2026-01-13 19:47:19] - El paquete 'pgbouncer' se instalará.
+[2026-01-13 19:47:19] - El paquete 'pgbouncer' se instalará.
+[2026-01-13 19:47:19] - El paquete 'postgresql-client' se instalará.
+[2026-01-13 19:47:19] - El paquete 'postgresql-client' se instalará.
+[2026-01-13 19:47:19] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:47:19] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:47:58] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:47:58] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:47:58] - ----------------------------------------------------
+[2026-01-13 19:47:58] - Resumen final:
+[2026-01-13 19:47:58] - Resumen final:
+[2026-01-13 19:47:58] - Instalados en esta ejecución: 4
+[2026-01-13 19:47:58] - Instalados en esta ejecución: 4
+[2026-01-13 19:47:58] - Fallidos: 0
+[2026-01-13 19:47:58] - Fallidos: 0
+[2026-01-13 19:47:58] - Ya estaban instalados: 4
+[2026-01-13 19:47:58] - Ya estaban instalados: 4
+[2026-01-13 19:47:58] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:47:58] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:48:00] - OK: 5/5 Paquetes instalados exitosamente!!!!!
+[2026-01-13 19:48:00] - OK: Pre requisitos instalados exitosamente
+[2026-01-13 19:51:13] - 1.Instalando FRED APP Node
+[2026-01-13 19:51:14] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:51:14] - Verificando estado de los paquetes solicitados...
+[2026-01-13 19:51:14] - El paquete 'python3-dnspython' se instalará.
+[2026-01-13 19:51:14] - El paquete 'python3-dnspython' se instalará.
+[2026-01-13 19:51:14] - El paquete 'python3-pip' se instalará.
+[2026-01-13 19:51:14] - El paquete 'python3-pip' se instalará.
+[2026-01-13 19:51:14] - El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-13 19:51:14] - El paquete 'uwsgi-plugin-python3' se instalará.
+[2026-01-13 19:51:14] - El paquete 'omniorb-nameserver' se instalará.
+[2026-01-13 19:51:14] - El paquete 'omniorb-nameserver' se instalará.
+[2026-01-13 19:51:15] - El paquete 'omniorb' se instalará.
+[2026-01-13 19:51:15] - El paquete 'omniorb' se instalará.
+[2026-01-13 19:51:15] - El paquete 'python3-pydantic' se instalará.
+[2026-01-13 19:51:15] - El paquete 'python3-pydantic' se instalará.
+[2026-01-13 19:51:15] - El paquete 'python3-fred-epplib' se instalará.
+[2026-01-13 19:51:15] - El paquete 'python3-fred-epplib' se instalará.
+[2026-01-13 19:51:15] - El paquete 'python3-django-secretary' se instalará.
+[2026-01-13 19:51:15] - El paquete 'python3-django-secretary' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-rifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-rifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-pifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-pifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-accifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-accifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-adifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-adifd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-akm' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-akm' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-akmd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-akmd' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-api-fileman' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-api-fileman' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-api-logger' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-api-logger' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-dbreport' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-dbreport' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-fileman' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-fileman' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-logger' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-logger' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-logger-corba' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-public-request' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-public-request' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-registry' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-registry' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-zone' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-backend-zone' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-idl' se instalará.
+[2026-01-13 19:51:15] - El paquete 'fred-idl' se instalará.
+[2026-01-13 19:51:15] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:51:15] - Iniciando instalación de paquetes. Por favor espere...
+[2026-01-13 19:56:35] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:56:35] - Todos los paquetes nuevos fueron instalados correctamente.
+[2026-01-13 19:56:35] - ----------------------------------------------------
+[2026-01-13 19:56:35] - Resumen final:
+[2026-01-13 19:56:35] - Resumen final:
+[2026-01-13 19:56:35] - Instalados en esta ejecución: 24
+[2026-01-13 19:56:35] - Instalados en esta ejecución: 24
+[2026-01-13 19:56:35] - Fallidos: 0
+[2026-01-13 19:56:35] - Fallidos: 0
+[2026-01-13 19:56:35] - Ya estaban instalados: 0
+[2026-01-13 19:56:35] - Ya estaban instalados: 0
+[2026-01-13 19:56:35] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:56:35] - Revisa 'install.log' para más detalles.
+[2026-01-13 19:56:37] - OK: Paquetes FRED APP python3-dnspython  python3-pip  uwsgi-plugin-python3   omniorb-nameserver  omniorb python3-pydantic  python3-fred-epplib  python3-django-secretary fred-rifd fred-pifd fred-accifd fred-adifd fred-akm fred-akmd fred-api-fileman fred-api-logger fred-backend-dbreport fred-backend-fileman fred-backend-logger fred-backend-logger-corba fred-backend-public-request fred-backend-registry fred-backend-zone fred-idl instalados exitosamente !!!!!
+[2026-01-13 19:56:37] - OK: FRED APP Node!!!!!
+[2026-01-13 19:56:37] - 1.Instalando FRED APP Node
+[2026-01-13 19:56:38] - Copiando archivos de configuracion FRED /etc/fred
+[2026-01-13 19:56:39] - OK: Archivos de configuracion copiados !!!!!
+[2026-01-13 19:56:39] - OK: FRED APP Node!!!!!
+[2026-01-13 19:56:40] - OK: Nodo FRED APP instalado
+Recuerda inciar los demonios de FRED

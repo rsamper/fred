@@ -3,7 +3,6 @@ python3-pip
 uwsgi-plugin-python3  
 omniorb-nameserver 
 omniorb
-apache2
 #python-pyfred
 # pyfred-filemanager 
 #pyfred-genzone 
@@ -11,11 +10,21 @@ apache2
 python3-pydantic 
 python3-fred-epplib 
 python3-django-secretary
-fred-backend-logger 
-fred-backend-logger-corba 
+# FRED 
 fred-rifd
 fred-pifd
+fred-accifd
 fred-adifd
+fred-akm
+fred-akmd
+fred-api-fileman
+fred-api-logger
+fred-backend-dbreport
+fred-backend-fileman
+fred-backend-logger
+fred-backend-logger-corba
+fred-backend-public-request
 fred-backend-registry
-libapache2-mod-corba 
-libapache2-mod-eppd 
+fred-backend-zone
+#fred-logger-services
+fred-idl

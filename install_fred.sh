@@ -20,7 +20,9 @@ PRE_FILE="$SCRIPT_DIR/$INSTALL_PATH/pre.sh"
 EPP_FILE="$SCRIPT_DIR/$INSTALL_PATH/epp.sh"
 CLIENT_FILE="$SCRIPT_DIR/$INSTALL_PATH/client.sh"
 APP_FILE="$SCRIPT_DIR/$INSTALL_PATH/app.sh"
-
+WEB_FILE="$SCRIPT_DIR/$INSTALL_PATH/web.sh"
+HM_FILE="$SCRIPT_DIR/$INSTALL_PATH/hm.sh"
+MINIMAL_FILE="$SCRIPT_DIR/$INSTALL_PATH/minimal.sh"
 
 
 ##  packages files
@@ -29,6 +31,9 @@ PRE_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/pre.packages"
 APP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/app.packages"
 CONFIGS_FILES="$SCRIPT_DIR/$CONFIGS_PATH/"
 EPP_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/epp.packages"
+WEB_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/web.packages"
+HM_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/hm.packages"
+MINIMAL_PACKAGES_FILE="$SCRIPT_DIR/$PACKAGES_PATH/minimal.packages"
 
 safe_source() {
   [ -f "$1" ] || {
@@ -59,8 +64,18 @@ init_files(){
   check_file "$MENU_FILE"   
   check_file "$PRE_FILE"  
   check_file "$DB_FILE" 
+  check_file "$APP_FILE" 
+  check_file "$WEB_FILE" 
+  check_file "$EPP_FILE" 
+  check_file "$HM_FILE" 
+  check_file "$MINIMAL_FILE" 
+  
   check_file "$PRE_PACKAGES_FILE" 
   check_file "$DB_PACKAGES_FILE" 
+  check_file "$APP_PACKAGES_FILE" 
+  check_file "$WEB_PACKAGES_FILE" 
+  check_file "$HM_PACKAGES_FILE" 
+  check_file "$MINIMAL_PACKAGES_FILE" 
   print_message  "Ok!!!!!"
 }
 

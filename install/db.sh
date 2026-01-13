@@ -18,7 +18,7 @@ step1_install_db_packages(){
     install ${packages[@]}  # Descomenta cuando estés listo para instalar
     print_message "OK: 1/2 Paquetes FRED DB ${packages[@]} instalados exitosamente !!!!!"
   else
-    print_message "INFO: No se encontraron paquetes DB válidos para instalar en el archivo '$*'..."
+    print_message "INFO: No se encontraron paquetes válidos para instalar en el archivo '$*'..."
   fi
   sleep 2
 }

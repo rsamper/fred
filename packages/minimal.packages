@@ -1,0 +1,11 @@
+python3-dnspython 
+python3-pip 
+uwsgi-plugin-python3  
+omniorb-nameserver 
+omniorb
+python3-pydantic 
+python3-fred-epplib 
+python3-django-secretary
+# FRED 
+fred-rifd
+fred-pifd

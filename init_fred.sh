@@ -10,11 +10,11 @@ ask() {
     [[ "$value" == "q" ]] && return 1
 
     if [[ -n "$value" ]]; then
-      printf "%s" "$value"   # 👈 sin salto de línea extra
+      printf "%s" "$value"   #  sin salto de línea extra
       return 0
     fi
 
-    echo "❌ Campo obligatorio." >&2
+    echo "Campo obligatorio." >&2
   done
 }
 exec_command(){
@@ -22,11 +22,11 @@ exec_command(){
  status=$?
 
 if [ $status -ne 0 ]; then
-  print_log_message "❌ ERROR ejecutando fred-admin:"
+  print_log_message "ERROR ejecutando fred-admin:"
   print_log_message "$output"
   return 1
 else
-  print_log_message "✅ Comando ejecutado correctamente"
+  print_log_message "Comando ejecutado correctamente"
 fi
 
 }
@@ -42,13 +42,41 @@ grant_zone_access() {
 
 
 form_zone() {
-  ZONE_FQDN=$(ask "Zone FQDN (ej: cz)") || exit 0  
-  #ZONE_FQDN=$(ask "Zone FQDN (ej: ccr)") || return
-  TTL=$(ask "TTL (ej: 18000)") || return
-  HOSTMASTER=$(ask "Hostmaster email") || return
-  NS_FQDN=$(ask "NS primario (ej: ns.nic.cr)") || return
+  ZONE_FQDN=$(ask "Zone FQDN (ej: cz)") || return 1
+  TTL=$(ask "TTL (ej: 18000)") || return 1
+  HOSTMASTER=$(ask "Hostmaster email") || return 1
+  NS_FQDN=$(ask "NS primario (ej: ns.nic.cr)") || return 1
+  return 0
 }
 
+create_zone() {
+  if ! form_zone; then
+    echo
+    echo "Operación cancelada por el usuario."
+    echo
+    exit 0     # 🔥 salida limpia del programa
+  fi
+
+  cmd=(
+    fred-admin --zone_add
+    --zone_fqdn="$ZONE_FQDN"
+    --ex_period_min=12
+    --ex_period_max=120
+    --ttl="$TTL"
+    --hostmaster="$HOSTMASTER"
+    --refresh=900
+    --update_retr=300
+    --expiry=604800
+    --minimum=900
+    --ns_fqdn="$NS_FQDN"
+  )
+
+  echo "➡️ Ejecutando comando:"
+  printf ' %q' "${cmd[@]}"
+  echo
+
+  # run_cmd "${cmd[@]}"   # o exec_command
+}
 
 
 add_registrar_acl() {
@@ -79,30 +107,7 @@ add_nameservers() {
 
 
 
-create_zone() {
-  form_zone
-  cmd=(
-    fred-admin --zone_add
-    --zone_fqdn="$ZONE_FQDN"
-    --ex_period_min=12
-    --ex_period_max=120
-    --ttl="$TTL"
-    --hostmaster="$HOSTMASTER"
-    --refresh=900
-    --update_retr=300
-    --expiry=604800
-    --minimum=900
-    --ns_fqdn="$NS_FQDN"
-  )
 
-  echo "Creando zona $ZONE_FQDN"
-  cmd=(fred-admin --zone_add --zone_fqdn="$ZONE_FQDN" --ex_period_min=12 --ex_period_max=120 --ttl="$TTL" --hostmaster="$HOSTMASTER" --refresh=900 --update_retr=300 --expiry=604800 --minimum=900 --ns_fqdn="$NS_FQDN")
-  #cmd=(fred-admin --zone_add --zone_fqdn="$ZONE_FQDN" --ttl="$TTL")
-  echo "➡️ Ejecutando comando:"
-  printf ' %q' "${cmd[@]}"
-  echo
-  #exec_command "${cmd[@]}"
-}
 
 create_registrar() {
   cmd=(

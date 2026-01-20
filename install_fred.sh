@@ -95,6 +95,7 @@ init(){
 
 copy_fred_configs() {
   print_message "Copiando archivos de configuracion FRED /etc/fred"
+  rm /etc/fred/*.conf
   cp -av ./configs/* /etc/fred
   print_message "OK: Archivos de configuracion copiados !!!!!"
 }

@@ -156,9 +156,24 @@ add_registrar_acl() {
   echo "================================="
   echo "4/8  Dar acceso al Registrador del Sistema"
   echo "================================="
-  
-  CERT=$(ask "Certificate fingerprint") || return 1
-  PASS=$(ask "Password") || return 1
+  #CERT_FILE="/usr/share/fred-client/ssl/test-cert.pem"
+  CERT_FILE=$(ask "Digite al ruta completa del certificado digital.  ej /usr/share/fred-client/ssl/test-cert.pem") || return 1
+
+  if [[ ! -f "$CERT_FILE" ]]; then
+    echo "Certificado no encontrado: $CERT_FILE"
+    return 1
+  fi
+FINGERPRINT=$(openssl x509 -noout -fingerprint -md5 -in /usr/share/fred-client/ssl/test-cert.pem | cut -d= -f2)
+
+
+  if [[ -z "$FINGERPRINT" ]]; then
+    echo "❌ No se pudo obtener fingerprint del certificado"
+    return 1 
+  fi
+
+  echo "Fingerprint obtenido: $FINGERPRINT"
+
+  PASS=$(ask "Ingrese la clave para el registrador") || return 1
 
   cmd=(fred-admin --registrar_acl_add  --handle="$REG_HANDLE" --certificate="$CERT" --password="$PASS")
   exec_command "${cmd[@]}"

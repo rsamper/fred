@@ -22,8 +22,8 @@ confirm_continue() {
      echo ""
      echo "Finalizdo. Operación cancelada por el usuario."
      echo ""
-      #exit 1
-      return 1
+     exit 1
+      #return 1
       ;;
   esac
 }
@@ -57,11 +57,11 @@ exec_command() {
   fi
 
   # Mostrar el comando que se ejecutará
-  echo "Ejecutando comando:"
-  printf ' %q' "${comando_a_ejecutar[@]}"
-  echo
+  echo "Ejecutando..."
+  #printf ' %q' "${comando_a_ejecutar[@]}"
+  #echo
 
-  echo "Iniciando ejecución..."
+  #echo "Iniciando ejecución..."
 
   # Ejecutar comando capturando salida y errores
   local output
@@ -74,9 +74,7 @@ exec_command() {
     return 0
   else
     echo "Error: El comando falló durante la ejecución."
-    echo "---- Salida de error ----"
     echo "$output"
-    echo "-------------------------"
     return 1
   fi
 }
@@ -110,7 +108,7 @@ add_invoice_number() {
 
 
 add_price_general() {
- clear
+  clear
   echo "================================="
   echo "6/8  Crear la lista de precios del sistema.  Precio operacion EPP General"
   echo "================================="
@@ -276,7 +274,7 @@ print_info(){
   echo "7/8  Crear parametros de facturacion del sistema"
   echo "8/8  Agregar credito al registrador del sistema"
   echo "================================================="
-  confirm_continue || return
+  confirm_continue || return 1
 }
 
 

@@ -46,25 +46,37 @@ ask() {
   done
 }
 
-exec_command(){
- local comando_a_ejecutar="$1"
- 
-  if [ -z "$comando_a_ejecutar" ]; then
-    echo "Error: No se recibió ningún comando para ejecutar."
+exec_command() {
+  # Captura todos los parámetros como ARRAY de comando
+  local comando_a_ejecutar=("$@")
+
+  # Validar que se recibió al menos un elemento
+  if [ ${#comando_a_ejecutar[@]} -eq 0 ]; then
+    echo "❌ Error: No se recibió ningún comando para ejecutar."
     return 1
   fi
-  
+
+  # Mostrar el comando que se ejecutará
+  echo "Ejecutando comando:"
+  printf ' %q' "${comando_a_ejecutar[@]}"
+  echo
+
   echo "Iniciando ejecución..."
-  
-  # Ejecución real
-  $comando_a_ejecutar
-  
-  # Verificación del código de salida ($?) del comando anterior
-  if [ $? -eq 0 ]; then
+
+  # Ejecutar comando capturando salida y errores
+  local output
+  output=$("${comando_a_ejecutar[@]}" 2>&1)
+  local status=$?
+
+  # Verificar resultado
+  if [ $status -eq 0 ]; then
     echo "Éxito: El comando se completó correctamente."
     return 0
   else
     echo "Error: El comando falló durante la ejecución."
+    echo "---- Salida de error ----"
+    echo "$output"
+    echo "-------------------------"
     return 1
   fi
 }
@@ -163,7 +175,7 @@ add_registrar_acl() {
     echo "Certificado no encontrado: $CERT_FILE"
     return 1
   fi
-FINGERPRINT=$(openssl x509 -noout -fingerprint -md5 -in /usr/share/fred-client/ssl/test-cert.pem | cut -d= -f2)
+  FINGERPRINT=$(openssl x509 -noout -fingerprint -md5 -in /usr/share/fred-client/ssl/test-cert.pem | cut -d= -f2)
 
 
   if [[ -z "$FINGERPRINT" ]]; then

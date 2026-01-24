@@ -2,7 +2,7 @@
 HANDLE="REG-SYSTEM"
 ZONE_FQDN="cr"
 ZONE_ID=0
-REG_ID=0
+REGISTRAR_ID=0
 
 pause(){
   sleep 1
@@ -88,32 +88,39 @@ exec_command() {
 }
 
 get_ids() {
-  echo "Obteniendo ids"
-  # psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
+  echo "Obteniendo datos IDs"
+  #psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
   #psql -t -U fred -c "SELECT id FROM zone where fqdn = 'cr';"
-  REG_ID=$(psql -U fred -t -A -c "SELECT id FROM registrar WHERE handle = 'REG-FRED-A';" | tr -d '[:space:]')
-  ZONE_ID=$(psql -U fred -t -A -c  "SELECT id FROM zone WHERE fqdn = 'cz';" | tr -d '[:space:]')
-
-  echo "reg $REG_ID"  
-  echo "zone $REG_ID"  
-  
-  
-  
-  #exec_command "${cmd[@]}"
+  REGISTRAR_ID=$(psql -U fred -t -A -c "SELECT id FROM registrar WHERE handle = '$HANDLE';" | tr -d '[:space:]')
+  ZONE_ID=$(psql -U fred -t -A -c  "SELECT id FROM zone WHERE fqdn = '$ZONE_FQDN';" | tr -d '[:space:]')
+  echo "Obteniendo datos IDs... Ok !!!!"
+  return 0
+  #echo "reg $REGISTRAR_ID"  
+  #echo "zone $ZONE_FQDN" 
+  #psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
+ 
 }
 
 
-add_credit() {
-  
+add_credit() { 
   echo "================================="
   echo "7/8  Agregar credito a un registrador"
   echo "================================="
-  REG_ID=$(ask "Registrar ID") || return 1
-  ZONE_ID=$(ask "ZONE ID") || return 1
-  CREDIT=$(ask "Credito ") || return
-  
-  cmd=(fred-admin --invoice_credit --zone_id="$ZONE_ID" --registrar_id="$REG_ID" --price="$CREDIT")
+  if [[ -z "$REGISTRAR_ID" ]]; then
+    echo "No se encontró registrar REG-FRED-A"
+    return 1
+  fi
+
+  if [[ -z "$ZONE_ID" ]]; then
+    echo "❌ No se encontró zona cz"
+    return 1
+  fi
+  CREDIT=$(ask "Digite el creditro agregar a $HANDLE para la zona $ZONE_FQDN ") || return
+  echo "Agregando...$CREDIT"
+  cmd=(fred-admin --invoice_credit --zone_id="$ZONE_ID" --registrar_id="$REGISTRAR_ID" --price="$CREDIT")
   exec_command "${cmd[@]}"
+  echo "Credito agregado"
+
 }
 
 
@@ -129,7 +136,7 @@ add_invoice_number() {
   PREFIX=$(ask "Prefix for account") || return 1
   cmd=(fred-admin --add_invoice_number_prefix --prefix="$PREFIX" --zone_fqdn="$ZONE_FQDN" --invoice_type_name=account)
   exec_command "${cmd[@]}"
-  cmd=(fred-admin --create_invoice_prefixes --for_current_year
+  cmd=(fred-admin --create_invoice_prefixes --for_current_year)
   exec_command "${cmd[@]}"
   #fred-admin --invoice_add_prefix --zone_fqdn=cz --type 0 --year 2017 --prefix 401700001
 }

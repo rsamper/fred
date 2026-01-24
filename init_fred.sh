@@ -1,6 +1,8 @@
 #!/bin/bash
 HANDLE="REG-SYSTEM"
 ZONE_FQDN="cr"
+ZONE_ID=0
+REG_ID=0
 
 pause(){
   sleep 1
@@ -85,6 +87,22 @@ exec_command() {
   fi
 }
 
+get_ids() {
+  echo "Obteniendo ids"
+  # psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
+  #psql -t -U fred -c "SELECT id FROM zone where fqdn = 'cr';"
+  REG_ID=$(psql -U fred -t -A -c "SELECT id FROM registrar WHERE handle = 'REG-FRED-A';" | tr -d '[:space:]')
+  ZONE_ID=$(psql -U fred -t -A -c  "SELECT id FROM zone WHERE fqdn = 'cz';" | tr -d '[:space:]')
+
+  echo "reg $REG_ID"  
+  echo "zone $REG_ID"  
+  
+  
+  
+  #exec_command "${cmd[@]}"
+}
+
+
 add_credit() {
   
   echo "================================="
@@ -111,6 +129,9 @@ add_invoice_number() {
   PREFIX=$(ask "Prefix for account") || return 1
   cmd=(fred-admin --add_invoice_number_prefix --prefix="$PREFIX" --zone_fqdn="$ZONE_FQDN" --invoice_type_name=account)
   exec_command "${cmd[@]}"
+  cmd=(fred-admin --create_invoice_prefixes --for_current_year
+  exec_command "${cmd[@]}"
+  #fred-admin --invoice_add_prefix --zone_fqdn=cz --type 0 --year 2017 --prefix 401700001
 }
 
 
@@ -320,7 +341,9 @@ print_info
 #pause
 #add_price_general
 #pause
-add_invoice_number
-pause
-add_credit
+#add_invoice_number
+#pause
+#add_credit
+#pause
+get_ids
 pause

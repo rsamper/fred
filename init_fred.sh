@@ -8,7 +8,7 @@ pause(){
   sleep 1
   # Pausa hasta que el usuario presione una tecla
   echo
-  read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
+  read -n 1 -s -r -p "Presiona cualquier tecla para continuar.../Press any key for continue"
   echo
   #echo "Continuando la ejecución..."
 
@@ -17,7 +17,7 @@ pause(){
 
 confirm_continue() {
   echo ""
-  read -rp "¿Desea continuar (y/n)? " RESP
+  read -rp "¿Desea continuar (y/n)?/Do you wish to continue (y/n)? " RESP
 
   case "$RESP" in
     y|Y)
@@ -25,7 +25,8 @@ confirm_continue() {
       ;;
     *)
      echo ""
-     echo "Finalizdo. Operación cancelada por el usuario."
+     echo "Finalizado. Operación cancelada por el usuario."
+     echo "Completed. Operation cancelled by the user."
      echo ""
      exit 1
       #return 1
@@ -38,7 +39,7 @@ ask() {
   local value
 
   while true; do
-    read -rp "$prompt (ENTER para aceptar, 'q' para cancelar): " value
+    read -rp "$prompt (ENTER para aceptar, 'q' para cancelar/ENTER to accept, 'q' to cancel)): " value
 
     [[ "$value" == "q" ]] && return 1
 
@@ -47,7 +48,7 @@ ask() {
       return 0
     fi
 
-    echo "Campo obligatorio." >&2
+    echo "Campo obligatorio./Madatory field" >&2
   done
 }
 
@@ -57,12 +58,12 @@ exec_command() {
 
   # Validar que se recibió al menos un elemento
   if [ ${#comando_a_ejecutar[@]} -eq 0 ]; then
-    echo "Error: No se recibió ningún comando para ejecutar."
+    echo "Error: No se recibió ningún comando para ejecutar./ No command recived"
     return 1
   fi
 
   # Mostrar el comando que se ejecutará
-  echo "Ejecutando..."
+  echo "Ejecutando.../Executing..."
   printf ' %q' "${comando_a_ejecutar[@]}"
   #echo
 
@@ -76,24 +77,24 @@ exec_command() {
   # Verificar resultado
   if [ $status -eq 0 ]; then
     echo ""
-    echo "Éxito: El comando se completó correctamente."
+    echo "Éxito: El comando se completó correctamente./Succesfylly"
     return 0
   else
     echo ""
-    echo "Error: El comando falló durante la ejecución."
+    echo "Error: El comando falló durante la ejecución./Failed"
     echo "$output"
     #exit 1 
     return 1
   fi
 }
 
-get_ids() {
-  echo "Obteniendo datos IDs"
+step10_get_ids() {
+  echo "Obteniendo datos IDs/ Getting IDs"
   #psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
   #psql -t -U fred -c "SELECT id FROM zone where fqdn = 'cr';"
   REGISTRAR_ID=$(psql -U fred -t -A -c "SELECT id FROM registrar WHERE handle = '$HANDLE';" | tr -d '[:space:]')
   ZONE_ID=$(psql -U fred -t -A -c  "SELECT id FROM zone WHERE fqdn = '$ZONE_FQDN';" | tr -d '[:space:]')
-  echo "Obteniendo datos IDs... Ok !!!!"
+  echo "Obteniendo datos IDs/Getting IDs... Ok !!!!"
   return 0
   #echo "reg $REGISTRAR_ID"  
   #echo "zone $ZONE_FQDN" 
@@ -102,32 +103,35 @@ get_ids() {
 }
 
 
-add_credit() { 
+step11_add_credit() { 
   echo "================================="
   echo "7/8  Agregar credito a un registrador"
+  echo "7/8  Add credit to registrar"
   echo "================================="
   if [[ -z "$REGISTRAR_ID" ]]; then
-    echo "No se encontró registrar REG-FRED-A"
+    echo "Registrar not found"
     return 1
   fi
 
   if [[ -z "$ZONE_ID" ]]; then
-    echo "❌ No se encontró zona cz"
+    echo "Zone not found cz"
     return 1
   fi
-  CREDIT=$(ask "Digite el creditro agregar a $HANDLE para la zona $ZONE_FQDN ") || return
+  CREDIT=$(ask "Digite el creditro agregar a $HANDLE para la zona $ZONE_FQDN /Enter credit") || return
   echo "Agregando...$CREDIT"
+  echo "Adding...$CREDIT"
   cmd=(fred-admin --invoice_credit --zone_id="$ZONE_ID" --registrar_id="$REGISTRAR_ID" --price="$CREDIT")
   exec_command "${cmd[@]}"
-  echo "Credito agregado"
+  echo "Credito added"
 
 }
 
 
-add_invoice_number() {
+step9_add_invoice_number() {
   
   echo "================================="
   echo "7/8  Crear prefijo de facturacion"
+  echo "7/8  Create Invoice prefix" 
   echo "================================="
 
   PREFIX=$(ask "Prefix for advance") || return 1
@@ -142,10 +146,11 @@ add_invoice_number() {
 }
 
 
-add_price_general() {
+step8_add_price_general() {
   
   echo "================================="
   echo "6/8  Crear la lista de precios del sistema.  Precio operacion EPP General"
+  echo "Create the system price list. General EPP Operation"
   echo "================================="
 
 
@@ -156,11 +161,12 @@ add_price_general() {
   exec_command "${cmd[@]}"
 }
 
-add_price_renew() {
+step7_add_price_renew() {
 
   
   echo "================================="
   echo "6/8  Crear la lista de precios del sistema".  Renovacion de dominios
+  echo "Create the system price list. Renew Domain"
   echo "================================="
 
   VALID_FROM=$(ask "Valid from (ej 2014-12-31 23:00:00)") || return
@@ -169,14 +175,15 @@ add_price_renew() {
   exec_command "${cmd[@]}"
 }
 
-add_price_create() {
+step6_add_price_create() {
   echo "================================="
   echo "6/8  Crear la lista de precios del sistema.  Creacion de Dominios"
+  echo "Create the system price list. Create Domain"
   echo "================================="
 
 
   #CERT=$(ask "Certificate fingerprint") || return 1
-  VALID_FROM=$(ask "Valid from ej 2014-12-31 23:00:00") || return 1
+  VALID_FROM=$(ask "Valid from (ej 2014-12-31 23:00:00)") || return 1
   PRICE=$(ask "Precio por crear dominios (ej 25)") || return 1
   
   cmd=(fred-admin --price_add --operation="'CreateDomain'" --zone_fqdn="$ZONE_FQDN" --valid_from="$VALID_FROM" --operation_price "$PRICE" --period 1)
@@ -184,29 +191,32 @@ add_price_create() {
   exec_command "${cmd[@]}"
 }
 
-grant_zone_access() {
+step5_grant_zone_access() {
   
   echo "================================="
   echo "5/8  Dar acceso a la zona al Registrador"
+  echo "5/8  Grant acces to the Zone $ZONE_FQDN"
   echo "================================="
   
-  FROM_DATE=$(ask "From date (YYYY-MM-DD)") || return
+  FROM_DATE=$(ask "From date (ej YYYY-MM-DD)") || return
 
   cmd=(fred-admin --registrar_add_zone --zone_fqdn="$ZONE_FQDN" --handle="$HANDLE" --from_date="$FROM_DATE")
   exec_command "${cmd[@]}"  
 }
 
 
-add_registrar_acl() {
+step4_add_registrar_acl() {
   
   echo "================================="
   echo "4/8  Dar acceso al Registrador del Sistema"
+  echo "4/8  Creating login access"
+  
   echo "================================="
   #CERT_FILE="/usr/share/fred-client/ssl/test-cert.pem"
-  CERT_FILE=$(ask "Digite al ruta completa del certificado digital.  ej /usr/share/fred-client/ssl/test-cert.pem") || return 1
+  CERT_FILE=$(ask "Digite al ruta completa del certificado digital/Enter the full path of the digital certificate.  (ej /usr/share/fred-client/ssl/test-cert.pem)") || return 1
 
   if [[ ! -f "$CERT_FILE" ]]; then
-    echo "Certificado no encontrado: $CERT_FILE"
+    echo "Certificado no encontrado/Certificadte not found!!!!: $CERT_FILE"
     return 1
   fi
   FINGERPRINT=$(openssl x509 -noout -fingerprint -md5 -in /usr/share/fred-client/ssl/test-cert.pem | cut -d= -f2)
@@ -214,33 +224,34 @@ add_registrar_acl() {
   #echo $FINGERPRINT
   #exit 1  
   if [[ -z "$FINGERPRINT" ]]; then
-    echo "❌ No se pudo obtener fingerprint del certificado"
+    echo "No se pudo obtener fingerprint del certificado/The certificate fingerprint could not be obtained"
     return 1 
   fi
 
-  echo "Fingerprint obtenido: $FINGERPRINT"
+  echo "Fingerprint obtenido/Fingerprint obtained: $FINGERPRINT"
 
-  PASS=$(ask "Ingrese la clave para el registrador") || return 1
+  PASS=$(ask "Ingrese la clave para el registrador/Enter the regisrar password") || return 1
 
   cmd=(fred-admin --registrar_acl_add  --handle="$HANDLE" --certificate="$FINGERPRINT" --password="$PASS")
   exec_command "${cmd[@]}"
 }
 
 
-add_registrar() {
+step3_add_registrar() {
   
   echo "================================="
   echo "3/8  Agregar Registrador del Sistema"
+  echo "3/8  Add the System Registrar"
   echo "================================="
   
   #NAME=$(ask "Registrar name") || return 1
-  HANDLE=$(ask "HANDLE ej REG-SYSTEM") || return 1
-  ORGANIZATION=$(ask "Organization ej NICCR") || return 1
-  COUNTRY=$(ask "Country ej CR") || return 1
-  CITY=$(ask "City ej 27A") || return 1
-  STREET=$(ask "Street ej SJ") || return 1
-  EMAIL=$(ask "Organization Email  ej ti@nic.cr") || return 1
-  URL=$(ask "Organization URL  ej www.nic.cr") || return 1
+  HANDLE=$(ask "Ingrese el HANDLE del resgistrador/Enter de regisrar HANDLE  ej REG-SYSTEM") || return 1
+  ORGANIZATION=$(ask "Organizacion/Organization ej NICCR") || return 1
+  COUNTRY=$(ask "Pais/Country ej CR") || return 1
+  CITY=$(ask "Cidad/City ej 27A") || return 1
+  STREET=$(ask "Calle/Street ej SJ") || return 1
+  EMAIL=$(ask "Email/Organization Email  ej ti@nic.cr") || return 1
+  URL=$(ask "URL/Organization URL  ej www.nic.cr") || return 1
  
   
   cmd=(fred-admin --registrar_add --handle=$HANDLE --reg_name=$HANDLE --country=$COUNTRY --organization=$ORGANIZATION --street1=$STREET --city=$CITY --email=$EMAIL --url=$URL --dic=0000 --no_vat --system)
@@ -260,16 +271,17 @@ add_registrar() {
 }
 
 
-add_nameservers() {
+step2_add_nameservers() {
   
   echo "================================="
   echo "Paso 2/8.  Agregando NSs a la zona"
+  echo "Step 2/8. Adding NSs to the zone"
   echo "================================="
  
   #while true; do
-    NS=$(ask "Agregar NS (vacío para terminar)") || return 1
+    NS=$(ask "Agregar NS/Enter the NS value ( ej ns.nic.cr)") || return 1
    # [ -z "$NS" ] && break
-    ADDR=$(ask "IP del NS") || return 1
+    ADDR=$(ask "IP del NS/Enter the IP address (ej 200.107.200.10)") || return 1
     cmd=(fred-admin --zone_ns_add --zone_fqdn="$ZONE_FQDN" --ns_fqdn="$NS")
    # [ -n "$ADDR" ] && cmd+=(--addr $ADDR)
     exec_command "${cmd[@]}"
@@ -277,23 +289,25 @@ add_nameservers() {
 }
 
 form_zone() {
-  ZONE_FQDN=$(ask "Ingrese el FQDN de la zona (ej: cr)") || return 1
-  TTL=$(ask "Ingrese el TTL (ej: 18000)") || return 1
-  HOSTMASTER=$(ask "Ingrese el email del Hostmaster ej ti.nic.cr") || return 1
-  NS_FQDN=$(ask "Ingrese el nombre del servidor DNS primario (ej: ns.nic.cr)") || return 1
+  ZONE_FQDN=$(ask "Ingrese el FQDN de la zona/Enter the FQDN of the zone  (ej: cr)") || return 1
+  TTL=$(ask "Ingrese el TTL/Enter the TTL of the zone (ej: 18000)") || return 1
+  HOSTMASTER=$(ask "Ingrese el email del Hostmaster/Enter the email address ej ti.nic.cr") || return 1
+  NS_FQDN=$(ask "Ingrese el nombre del servidor DNS primario/Enter the primary DNS server (ej: ns.nic.cr)") || return 1
   return 0
 }
 
-create_zone() {
+step1_create_zone() {
   clear
   echo "================================="
   echo "Paso 1/8.  Creacion del Registro"
+  echo "Step 1/8. Creating the Record"
   echo "================================="
   if ! form_zone; then
     echo
     echo "Operación cancelada por el usuario."
+    echo "Operation cancelled by the user."
     echo
-    exit 0     # 🔥 salida limpia del programa
+    exit 0 
   fi
 
   cmd=(fred-admin 
@@ -327,30 +341,51 @@ print_info(){
   echo "7/8  Crear parametros de facturacion del sistema"
   echo "8/8  Agregar credito al registrador del sistema"
   echo "================================================="
+  echo "Initializing FRED involves the following steps"
+  echo "1/8 Create the zone served by the Registry"
+  echo "2/8 Add NS name servers for the defined zone"
+  echo "3/8 Add System Registrar"
+  echo "4/8 Grant access to the System Registrar"
+  echo "5/8 Grant zone access to the Registrar"
+  echo "6/8 Create the system price list"
+  echo "7/8 Create system billing parameters"
+  echo "8/8 Add credit to the system registrar"
+  echo "================================================="
   confirm_continue || return 1
 }
 
 
+exec_steps(){
+ print_info
+ step1_create_zone
+ pause 
+ step2_add_nameservers
+ pause
+ step3_add_registrar
+ pause
+ step4_add_registrar_acl
+ pause
+ step5_grant_zone_access
+ pause
+ step6_add_price_create
+ pause
+ step7_add_price_renew
+ pause
+ step8_add_price_general
+ pause
+ step9_add_invoice_number
+ pause
+ step10_get_ids
+ pause
+ step11_add_credit
+ pause
+}
 
-print_info
-#create_zone
-#pause 
-#add_nameservers
-#pause
-#add_registrar
-#add_registrar_acl
-#pause
-#grant_zone_access
-#pause
-#add_price_create
-#pause
-#add_price_renew
-#pause
-#add_price_general
-#pause
-#add_invoice_number
-#pause
-#add_credit
-#pause
-get_ids
-pause
+
+main() {
+   print_message  "Running"
+   exec_steps
+}
+
+# Run main function
+main

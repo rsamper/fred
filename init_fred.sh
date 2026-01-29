@@ -134,10 +134,10 @@ step9_add_invoice_number() {
   echo "7/8 Create Invoice prefix" 
   echo "================================="
 
-  PREFIX=$(ask "Prefijo para avanzada/Prefix for advance") || r|| exit 1
+  PREFIX=$(ask "Prefijo para avanzada/Prefix for advance") || exit 1
   cmd=(fred-admin --add_invoice_number_prefix --prefix="$PREFIX" --zone_fqdn="$ZONE_FQDN" --invoice_type_name=advance)
   exec_command "${cmd[@]}"
-  PREFIX=$(ask "Prefijo account/Prefix for account") || || exit 1
+  PREFIX=$(ask "Prefijo account/Prefix for account") || exit 1
   cmd=(fred-admin --add_invoice_number_prefix --prefix="$PREFIX" --zone_fqdn="$ZONE_FQDN" --invoice_type_name=account)
   exec_command "${cmd[@]}"
   cmd=(fred-admin --create_invoice_prefixes --for_current_year)

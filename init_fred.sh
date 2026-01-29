@@ -44,8 +44,9 @@ ask() {
     #[[ "$value" == "q" ]] && return 1
 
     if [[ "$value" == "q" ]]; then
-     echo "Operación cancelada por el usuario."
-     echo "Fin !!!!"
+     clear
+     echo "Operación cancelada por el usuario." >&2
+     echo "Fin !!!!" >&2
      return 1
     fi
     if [[ -n "$value" ]]; then

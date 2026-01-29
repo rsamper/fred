@@ -95,6 +95,7 @@ exec_command() {
 }
 
 step10_get_ids() {
+  clear
   echo "Obteniendo datos IDs/ Getting IDs"
   #psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
   #psql -t -U fred -c "SELECT id FROM zone where fqdn = 'cr';"
@@ -105,15 +106,17 @@ step10_get_ids() {
   #echo "reg $REGISTRAR_ID"  
   #echo "zone $ZONE_FQDN" 
   #psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
- 
+  echo "OK !!!!!"
+  
 }
 
 
 step11_add_credit() { 
-  echo "================================="
+  clear
+  echo "====================================="
   echo "7/8 Agregar credito a un registrador"
   echo "7/8 Add credit to registrar"
-  echo "================================="
+  echo "====================================="
   if [[ -z "$REGISTRAR_ID" ]]; then
     echo "Registrar not found"
     return 1
@@ -128,17 +131,18 @@ step11_add_credit() {
   echo "Adding...$CREDIT"
   cmd=(fred-admin --invoice_credit --zone_id="$ZONE_ID" --registrar_id="$REGISTRAR_ID" --price="$CREDIT") 
   exec_command "${cmd[@]}"
-  echo "Credito added"
-
+  echo "Credito agregado/Credit added"
+  echo "OK !!!!!"
+  
 }
 
 
 step9_add_invoice_number() {
-  
-  echo "================================="
+  clear
+  echo "=================================="
   echo "7/8 Crear prefijo de facturacion"
   echo "7/8 Create Invoice prefix" 
-  echo "================================="
+  echo "=================================="
 
   PREFIX=$(ask "Prefijo para avanzada/Prefix for advance") || exit 1
   cmd=(fred-admin --add_invoice_number_prefix --prefix="$PREFIX" --zone_fqdn="$ZONE_FQDN" --invoice_type_name=advance)
@@ -149,15 +153,17 @@ step9_add_invoice_number() {
   cmd=(fred-admin --create_invoice_prefixes --for_current_year)
   exec_command "${cmd[@]}"
   #fred-admin --invoice_add_prefix --zone_fqdn=cz --type 0 --year 2017 --prefix 401700001
+  echo "OK !!!!!"
+  
 }
 
 
 step8_add_price_general() {
-  
-  echo "================================="
+  clear
+  echo "=========================================================================="
   echo "6/8 Crear la lista de precios del sistema.  Precio operacion EPP General"
   echo "6/8 Create the system price list. General EPP Operation"
-  echo "================================="
+  echo "=========================================================================="
 
 
   VALID_FROM=$(ask "Valido desde/Valid from (ej 2014-12-31 23:00:00)") || exit 1
@@ -165,27 +171,32 @@ step8_add_price_general() {
   cmd=(fred-admin --price_add --operation="'GeneralEppOperation'" --zone_fqdn="$ZONE_FQDN" --valid_from="$VALID_FROM" --operation_price "$PRICE" --period 1)
 
   exec_command "${cmd[@]}"
+  echo "OK !!!!!"
+  
 }
 
 step7_add_price_renew() {
 
-  
-  echo "================================="
+  clear
+  echo "===================================================================="
   echo "6/8 Crear la lista de precios del sistema".  Renovacion de dominios
   echo "6/8 Create the system price list. Renew Domain"
-  echo "================================="
+  echo "===================================================================="
 
   VALID_FROM=$(ask "Valid from (ej 2014-12-31 23:00:00)") || exit 1
   PRICE=$(ask "Precio de renovacion de dominios (ej 25)") || exit 1
   cmd=(fred-admin --price_add --operation="'RenewDomain'" --zone_fqdn="$ZONE_FQDN" --valid_from="$VALID_FROM" --operation_price "$PRICE" --period 1)
   exec_command "${cmd[@]}"
+  echo "OK !!!!!"
+  
 }
 
 step6_add_price_create() {
-  echo "================================="
+  clear
+  echo "================================================================="
   echo "6/8 Crear la lista de precios del sistema.  Creacion de Dominios"
   echo "6/8 Create the system price list. Create Domain"
-  echo "================================="
+  echo "================================================================="
 
 
   #CERT=$(ask "Certificate fingerprint") || return 1
@@ -195,29 +206,32 @@ step6_add_price_create() {
   cmd=(fred-admin --price_add --operation="'CreateDomain'" --zone_fqdn="$ZONE_FQDN" --valid_from="$VALID_FROM" --operation_price "$PRICE" --period 1)
       #fred-admin --price_add --operation='CreateDomain' --zone_fqdn=cr --valid_from='2014-12-31 23:00:00'  --operation_price 333 --period 1
   exec_command "${cmd[@]}"
+  echo "OK !!!!!"
+  
 }
 
 step5_grant_zone_access() {
-  
-  echo "================================="
+  clear
+  echo "=========================================="
   echo "5/8 Dar acceso a la zona al Registrador"
   echo "5/8 Grant acces to the Zone $ZONE_FQDN"
-  echo "================================="
+  echo "=========================================="
   
   FROM_DATE=$(ask "Valida desde la fecha/From date (ej YYYY-MM-DD)") || exit 1
 
   cmd=(fred-admin --registrar_add_zone --zone_fqdn="$ZONE_FQDN" --handle="$HANDLE" --from_date="$FROM_DATE")
-  exec_command "${cmd[@]}"  
+  exec_command "${cmd[@]}" 
+  echo "OK !!!!!"
+   
 }
 
 
 step4_add_registrar_acl() {
-  
-  echo "================================="
+  clear
+  echo "============================================="
   echo "4/8 Dar acceso al Registrador del Sistema"
   echo "4/8 Creating login access"
-  
-  echo "================================="
+  echo "============================================="
   #CERT_FILE="/usr/share/fred-client/ssl/test-cert.pem"
   CERT_FILE=$(ask "Digite al ruta completa del certificado digital/Enter the full path of the digital certificate.  (ej /usr/share/fred-client/ssl/test-cert.pem)") || exit 1
 
@@ -240,15 +254,17 @@ step4_add_registrar_acl() {
 
   cmd=(fred-admin --registrar_acl_add  --handle="$HANDLE" --certificate="$FINGERPRINT" --password="$PASS")
   exec_command "${cmd[@]}"
+  echo "OK !!!!!"
+  
 }
 
 
 step3_add_registrar() {
-  
-  echo "================================="
+  clear
+  echo "====================================="
   echo "3/8 Agregar Registrador del Sistema"
   echo "3/8 Add the System Registrar"
-  echo "================================="
+  echo "====================================="
   
   #NAME=$(ask "Registrar name") || return 1
   HANDLE=$(ask "Ingrese el HANDLE del resgistrador/Enter de regisrar HANDLE  ej REG-SYSTEM") || exit 1
@@ -274,20 +290,24 @@ step3_add_registrar() {
   #--no_vat 
   #--system
   exec_command "${cmd[@]}"
+  echo "OK !!!!!"
+  
 }
 
 
 step2_add_nameservers() {
-  
-  echo "================================="
+  clear
+  echo "==================================="
   echo "Paso 2/8. Agregando NSs a la zona"
   echo "Step 2/8. Adding NSs to the zone"
-  echo "================================="
+  echo "===================================="
  
     NS=$(ask "Agregar NS/Enter the NS value (ej ns.nic.cr)") || exit 1
     ADDR=$(ask "IP del NS/Enter the IP address (ej 200.107.200.10)") || exit 1
     cmd=(fred-admin --zone_ns_add --zone_fqdn="$ZONE_FQDN" --ns_fqdn="$NS")
     exec_command "${cmd[@]}"
+    echo "OK !!!!!"
+  
 }
 
 form_zone() {
@@ -300,10 +320,10 @@ form_zone() {
 
 step1_create_zone() {
   clear
-  echo "================================="
+  echo "================================="=
   echo "Paso 1/8.  Creacion del Registro"
   echo "Step 1/8. Creating the Record"
-  echo "================================="
+  echo "=================================="
   if ! form_zone; then
     echo
     echo "Operación cancelada por el usuario."
@@ -327,6 +347,7 @@ step1_create_zone() {
   )
   #echo "${cmd[@]}"
   exec_command "${cmd[@]}"
+  echo "OK !!!!!"
   return 0
 }
 
@@ -352,7 +373,7 @@ print_info(){
   echo "6/8 Create the system price list"
   echo "7/8 Create system billing parameters"
   echo "8/8 Add credit to the system registrar"
-  echo "================================================="
+  echo "================================================"
   confirm_continue || return 1
 }
 

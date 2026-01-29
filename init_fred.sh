@@ -45,7 +45,7 @@ ask() {
 
     if [[ "$value" == "q" ]]; then
      clear
-     echo "Operación cancelada por el usuario." >&2
+     echo "Operación cancelada por el usuario."
      echo "Fin !!!!"
      return 1
     fi

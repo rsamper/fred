@@ -8,7 +8,7 @@ pause(){
   sleep 1
   # Pausa hasta que el usuario presione una tecla
   echo
-  read -n 1 -s -r -p "Presiona cualquier tecla para continuar.../Press any key for continue"
+  read -n 1 -s -r -p "Presiona cualquier tecla para continuar.../Press any key for continue..."
   echo
   #echo "Continuando la ejecución..."
 
@@ -274,24 +274,20 @@ step3_add_registrar() {
 step2_add_nameservers() {
   
   echo "================================="
-  echo "Paso 2/8.  Agregando NSs a la zona"
+  echo "Paso 2/8. Agregando NSs a la zona"
   echo "Step 2/8. Adding NSs to the zone"
   echo "================================="
  
-  #while true; do
-    NS=$(ask "Agregar NS/Enter the NS value ( ej ns.nic.cr)") || return 1
-   # [ -z "$NS" ] && break
+    NS=$(ask "Agregar NS/Enter the NS value (ej ns.nic.cr)") || exit 1
     ADDR=$(ask "IP del NS/Enter the IP address (ej 200.107.200.10)") || return 1
     cmd=(fred-admin --zone_ns_add --zone_fqdn="$ZONE_FQDN" --ns_fqdn="$NS")
-   # [ -n "$ADDR" ] && cmd+=(--addr $ADDR)
     exec_command "${cmd[@]}"
-  #done
 }
 
 form_zone() {
   ZONE_FQDN=$(ask "Ingrese el FQDN de la zona/Enter the FQDN of the zone  (ej: cr)") || return 1
   TTL=$(ask "Ingrese el TTL/Enter the TTL of the zone (ej: 18000)") || return 1
-  HOSTMASTER=$(ask "Ingrese el email del Hostmaster/Enter the email address ej ti.nic.cr") || return 1
+  HOSTMASTER=$(ask "Ingrese el email del Hostmaster/Enter the email address (ej ti.nic.cr)") || return 1
   NS_FQDN=$(ask "Ingrese el nombre del servidor DNS primario/Enter the primary DNS server (ej: ns.nic.cr)") || return 1
   return 0
 }
@@ -332,14 +328,14 @@ print_info(){
   clear
   echo "================================================="
   echo "Inicializar FRED involucra los siguientes pasos"
-  echo "1/8  Crear la zona servida por el Registry"
-  echo "2/8  Agregar servidores de nombres NS para la zona definida"
-  echo "3/8  Agregar Registrador del Sistema"
-  echo "4/8  Dar acceso al Registrador del Sistema"
-  echo "5/8  Dar acceso a la zona al Registrador"
-  echo "6/8  Crear la lista de precios del sistema"
-  echo "7/8  Crear parametros de facturacion del sistema"
-  echo "8/8  Agregar credito al registrador del sistema"
+  echo "1/8 Crear la zona servida por el Registry"
+  echo "2/8 Agregar servidores de nombres NS para la zona definida"
+  echo "3/8 Agregar Registrador del Sistema"
+  echo "4/8 Dar acceso al Registrador del Sistema"
+  echo "5/8 Dar acceso a la zona al Registrador"
+  echo "6/8 Crear la lista de precios del sistema"
+  echo "7/8 Crear parametros de facturacion del sistema"
+  echo "8/8 Agregar credito al registrador del sistema"
   echo "================================================="
   echo "Initializing FRED involves the following steps"
   echo "1/8 Create the zone served by the Registry"

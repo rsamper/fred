@@ -44,7 +44,6 @@ ask() {
     #[[ "$value" == "q" ]] && return 1
 
     if [[ "$value" == "q" ]]; then
-     clear
      echo "Operación cancelada por el usuario."
      echo "Fin !!!!"
      return 1
@@ -172,7 +171,7 @@ step7_add_price_renew() {
   
   echo "================================="
   echo "6/8  Crear la lista de precios del sistema".  Renovacion de dominios
-  echo "Create the system price list. Renew Domain"
+  echo "6/8 Create the system price list. Renew Domain"
   echo "================================="
 
   VALID_FROM=$(ask "Valid from (ej 2014-12-31 23:00:00)") || exit 1

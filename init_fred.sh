@@ -111,8 +111,8 @@ step10_get_ids() {
 
 step11_add_credit() { 
   echo "================================="
-  echo "7/8  Agregar credito a un registrador"
-  echo "7/8  Add credit to registrar"
+  echo "7/8 Agregar credito a un registrador"
+  echo "7/8 Add credit to registrar"
   echo "================================="
   if [[ -z "$REGISTRAR_ID" ]]; then
     echo "Registrar not found"
@@ -171,7 +171,7 @@ step7_add_price_renew() {
 
   
   echo "================================="
-  echo "6/8  Crear la lista de precios del sistema".  Renovacion de dominios
+  echo "6/8 Crear la lista de precios del sistema".  Renovacion de dominios
   echo "6/8 Create the system price list. Renew Domain"
   echo "================================="
 
@@ -380,6 +380,8 @@ exec_steps(){
  step10_get_ids
  step11_add_credit
  pause
+ echo "Exito/Success"
+ echo "Finalizado/Finish"
 }
 
 

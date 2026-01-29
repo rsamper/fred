@@ -41,8 +41,12 @@ ask() {
   while true; do
     read -rp "$prompt (ENTER para aceptar, 'q' para cancelar/ENTER to accept, 'q' to cancel)): " value
 
-    [[ "$value" == "q" ]] && return 1
+    #[[ "$value" == "q" ]] && return 1
 
+    if [[ "$value" == "q" ]]; then
+     echo "Operación cancelada por el usuario." >&2
+     return 1
+    fi
     if [[ -n "$value" ]]; then
       printf "%s" "$value"   #  sin salto de línea extra
       return 0

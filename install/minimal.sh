@@ -46,8 +46,8 @@ EOF
  print_section "$section"
  }
 install_minimal(){
-  if [ -z "$APP_PACKAGES_FILE" ]; then
-    print_message "Error: APP_PACKAGES_FILE no está definido o está vacío."
+  if [ -z "$MINIMAL_PACKAGES_FILE" ]; then
+    print_message "Error: MINIMAL_PACKAGES_FILE no está definido o está vacío."
     exit 1
   fi
   clear 

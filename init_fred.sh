@@ -377,8 +377,19 @@ print_info(){
   confirm_continue || return 1
 }
 
+check_fred_admin() {
+  clear
+  local file="/usr/sbin/fred-admin"
+  echo "Checking fred-admin utility"
+  if [[ ! -f "$file" ]]; then
+    echo "Error: No se encontró $file/fred-admin not found "
+    echo "Asegúrese de que FRED esté instalado correctamente/Make sure FRED is installed correctly."
+    exit 1
+  fi
+}
 
 exec_steps(){
+ check_fred_admin
  print_info
  step1_create_zone
  pause 

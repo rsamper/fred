@@ -87,8 +87,8 @@ exec_command() {
     echo ""
     echo "Command failed"
     echo "$output"
-    #exit 1 
-    return 1
+    exit 1 
+    #return 1
   fi
 }
 
@@ -99,13 +99,11 @@ step3_get_ids() {
   #psql -t -U fred -c "SELECT id FROM zone where fqdn = 'cr';"
   REGISTRAR_ID=$(psql -U fred -t -A -c "SELECT id FROM registrar WHERE handle = '$HANDLE';" | tr -d '[:space:]')
   ZONE_ID=$(psql -U fred -t -A -c  "SELECT id FROM zone WHERE fqdn = '$ZONE_FQDN';" | tr -d '[:space:]')
-  echo "Getting IDs... Ok !!!!"
-  return 0
-  #echo "reg $REGISTRAR_ID"  
-  #echo "zone $ZONE_FQDN" 
+  echo "Getting IDs... Ok !!!! Registrar $REGISTRAR_ID Zone $ZONE_ID" 
   #psql -t -U fred -c  "SELECT id FROM registrar where handle = 'REG-SYSTEM';"
   echo "OK !!!!!"
-  
+  return 0
+
 }
 
 
@@ -139,6 +137,8 @@ step1_get_registrar_zone() {
   echo "====================================="
   ZONE_FQDN=$(ask "Enter the Zone  ej cr ") || exit 1
   HANDLE=$(ask "Enter de regisrar HANDLE  ej REG-SYSTEM") || exit 1  
+  echo $ZONE_FQDN
+  echo $HANDLE 
 }
 
 print_info(){
@@ -167,8 +167,8 @@ exec_steps(){
  print_info
  pause
  step1_get_registrar_zone
- step5_get_ids
- step2_add_credit
+ step3_get_ids
+step2_add_credit
  pause
  echo ""
  echo "Exito/Success"

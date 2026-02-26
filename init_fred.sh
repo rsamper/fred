@@ -223,7 +223,8 @@ step4_add_registrar_acl() {
   echo "4/8 Creating login"
   echo "============================================="
   #CERT_FILE="/usr/share/fred-client/ssl/test-cert.pem"
-  CERT_FILE=$(ask "Enter the full path to certificate.  (ej /usr/share/fred-client/ssl/test-cert.pem)") || exit 1
+  # 2026 /usr/share/fred-mod-eppd/ssl/test-cert.pem 
+  CERT_FILE=$(ask "Enter the full path to certificate.  (ej /usr/share/fred-client/ssl/test-cert.pem for 2026 /usr/share/fred-mod-eppd/ssl/test-cert.pem)") || exit 1
 
   if [[ ! -f "$CERT_FILE" ]]; then
     echo "Certificate not found!!!!: $CERT_FILE"
